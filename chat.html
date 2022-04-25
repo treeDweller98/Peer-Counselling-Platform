@@ -16,9 +16,9 @@
 </head>
 <body>
 
-    <section id="chatwindow" class="m-5 p-4">
+    <section>
 
-        <div class="row no-gutters">
+        <div class="row no-gutters p-4"  id="chatwindow">
 
             <!-- CHAT SIDEBAR -->
             <div class="col-md-4 border-end border-5">
@@ -47,11 +47,11 @@
                         <button class="btn text-start border-0 py-2 pe-auto" type="button" data-bs-toggle="collapse" data-bs-target="#qCollapse" aria-expanded="false" aria-controls="qCollapse-control">
                             <div class="d-flex">
                                 <h6 class="pe-5 m-0">Questionnaires</h6>
-                                <span class="badge bg-secondary">New</span>
+                                <span class="badge bg-danger">New</span>
                             </div>
                         </button>
     
-                        <div class="collapse" id="qCollapse">
+                        <div class="collapse px-2 py-1" id="qCollapse">
                             <ul class="list-group">
                                 <li class="list-group-item list-group-item-action list-group-item-primary d-flex justify-content-between align-items-center" aria-current="true">
                                     <div class="me-auto">
@@ -90,28 +90,72 @@
             </div>
 
             <!-- MAIN CHAT WINDOW -->
-            <div class="col-md-8 d-flex flex-column">
+            <div class="col-md-8 d-flex flex-column justify-content-between">
+                <div class="d-flex justify-content-between">
 
-                <div class="container align-self-start text-end mb-4 p-2">
-                    <button class="border-0 rounded-circle position-relative mx-3">
-                        <i class="material-icons" title="refresh chat">cached</i>
-                    </button>
+                    <div class="text-start mb-4 p-2">
+                        <h6 class="m-0">*Volunteer Nickname*</h6>
+                        <small class="text-muted">Last Active 6 hours ago</small>
+                    </div>
+    
+                    <div class="d-flex justify-content-end mb-4 p-2">
+                        <button class="border-0 rounded-circle position-relative mx-3 p-2">
+                            <i class="material-icons" title="refresh chat">cached</i>
+                        </button>
+                        
+                        <div class="dropdown">
+                            <button class="border-0 rounded-circle position-relative mx-3 p-2" type="button" id="notifDrop" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="material-icons" title="notifications">circle_notifications</i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    5
+                                    <span class="visually-hidden">unread notifications</span>
+                                </span>
+                            </button>
 
-                    <button class="border-0 rounded-circle position-relative mx-3">
-                        <i class="material-icons" title="notifications">circle_notifications</i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            5
-                            <span class="visually-hidden">unread messages</span>
-                        </span>
-                    </button>
+                            <ul class="dropdown-menu dropdown-menu-end px-3 py-2" aria-labelledby="notifDrop">
+                                <li><h6 class="dropdown-header">Recent Notifications</h6></li>
+                                <li><hr class="dropdown-divider"></li>
 
-                    <button class="border-0 rounded-circle position-relative mx-3">
-                        <i class="material-icons" title="settings">menu</i>
-                    </button>
+                                <li class="dropdown-item d-flex justify-content-between align-items-center mb-2">
+                                    <i class="material-icons md-24">textsms</i>
+                                    <div>
+                                        <h6>New messages</h6>
+                                        <p class="text-muted m-0">Have you considered talking to...</p>
+                                        <small class="text-muted fs-6">10:24PM</small>
+                                    </div>
+                                    <span class="align-item-center badge bg-primary rounded-pill ms-1">10</span>
+                                </li>
+
+                                <li class="dropdown-item d-flex justify-content-between align-items-center mb-2">
+                                    <i class="material-icons md-24">checklist</i>
+                                    <div class="px-3">
+                                        <h6>Questionnaire pending</h6>
+                                        <p class="text-muted m-0"> Bi-monthly questionnaire posted<p>
+                                        <small class="text-muted fs-6">10:00AM</small>
+                                    </div>
+                                    <span class="align-item-center badge bg-primary rounded-pill ms-1">2</span>
+                                </li>
+                                
+                                <li class="dropdown-item d-flex justify-content-between align-items-center mb-2">
+                                    <i class="material-icons md-24">privacy_tip</i>
+                                    <div class="px-3">
+                                        <h6>Report Handled</h6>
+                                        <p class="text-muted m-0">Re: 19 April 2022</p>
+                                        <small>click here to read more</small>
+                                    </div>
+                                    <span class="align-item-center badge bg-danger rounded-pill ms-1">!</span>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <button class="border-0 rounded-circle position-relative mx-3 p-2">
+                            <i class="material-icons" title="settings">menu</i>
+                        </button>
+                    </div>
                 </div>
                 
-                <div class="chat-panel">
-                    <div class="align-self-stretch">
+                <div class="chat-panel mt-auto">
+
                         <!-- CHAT BUBBLES -->
                         <div class="row no-gutters">
                             <div class="col-lg-6 col-md-8">
@@ -141,21 +185,20 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- SEND ETC. -->
-                    <div class="align-self-baseline">
-                        <div class="col-12">
-                            <div class="chat-box-tray">
-                                <i class="material-icons" title="Add an image">image</i>
-                                <input type="text" placeholder="Type your message here...">
-                                <i class="material-icons" title="Emojis">sentiment_very_satisfied</i>
-                                <i class="material-icons" title="Send message">send</i>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
                 
+                <!-- SEND ETC. -->
+                <div class="col-12">
+                    <div class="chat-box-tray">
+                        <i class="material-icons" title="Add an image">image</i>
+                        <input type="text" placeholder="Type your message here...">
+                        <i class="material-icons" title="Emojis">sentiment_very_satisfied</i>
+                        <i class="material-icons" title="Send message">send</i>
+                    </div>
+                </div>
+
             </div>
 
         </div>

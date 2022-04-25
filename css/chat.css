@@ -1,11 +1,19 @@
 body {
+  font-size: 0.8em;
   background-color: #3498db;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+.dropdown-menu {
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
 #chatwindow {
     min-height: 80vh;
+    margin: 5% 15%;
     background: rgb(234, 245, 228);
     padding: 0;
     border-radius: 7px;
@@ -145,7 +153,7 @@ hr {
   color: #fff;
 }
 .chat-box-tray {
-  background: #eee;
+  background: #c5d7d2;
   display: flex;
   align-items: baseline;
   padding: 10px 15px;
