@@ -4,12 +4,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-.container {
-  min-height: 80vh;  
-  margin: 60px auto;
-  background: #fff;
-  padding: 0;
-  border-radius: 7px;
+#chatwindow {
+    min-height: 80vh;
+    background: rgb(234, 245, 228);
+    padding: 0;
+    border-radius: 7px;
 }
 .profile-image {
   width: 50px;
@@ -40,7 +39,7 @@ body {
   cursor: pointer;
 }
 .search-box {
-  background: #fafafa;
+  background: #c4e4e6;
   padding: 10px 13px;
 }
 .search-box .input-wrapper {
@@ -66,12 +65,14 @@ input:focus {
   outline: none;
 }
 .friend-drawer {
-  padding: 10px 15px;
-  display: flex;
-  align-items: center;
-  vertical-align: middle;
-  background: #fff;
-  transition: 0.3s ease;
+    border: 2px solid rgb(240, 229, 229);
+    border-radius: 25px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    background: #fff;
+    transition: 0.3s ease;
 }
 .friend-drawer--grey {
   background: #eee;

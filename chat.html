@@ -16,13 +16,13 @@
 </head>
 <body>
 
-    <div class="container">
+    <section id="chatwindow" class="m-5 p-4">
 
         <div class="row no-gutters">
 
             <!-- CHAT SIDEBAR -->
-            <div class="col-md-4 border-right">
-                <div class="settings-tray">
+            <div class="col-md-4 border-end border-5">
+                <div class="container align-self-start mb-4 p-2">
                     <img class="profile-image d-inline-block align-text-center" src="images/icons/band.png" alt="Profile img">
                     <span class="h3 p-2 mb-0">HealthyMind</span>
                 </div>
@@ -31,7 +31,7 @@
                     <i class="material-icons md-48">alarm</i>
                     <div class="text">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn text-start" data-bs-toggle="modal" data-bs-target="#scheduleModal">
+                        <button type="button" class="btn text-start py-2" data-bs-toggle="modal" data-bs-target="#scheduleModal">
                             <h6>Schedule a Conversation</h6>
                             <p class="text-muted">Scheduled for Today, 7:30PM</p>
                         </button>
@@ -53,17 +53,34 @@
     
                         <div class="collapse" id="qCollapse">
                             <ul class="list-group">
-                                <li class="list-group-item list-group-item-action list-group-item-light active d-flex justify-content-between align-items-start" aria-current="true">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">Wellbeing Checkup</div>
-                                        Bi-monthly assessment
+                                <li class="list-group-item list-group-item-action list-group-item-primary d-flex justify-content-between align-items-center" aria-current="true">
+                                    <div class="me-auto">
+                                        <div class="fw-bold">Well-being Checkup</div>
+                                        Bi-monthly mental health assessment
+                                        <br><small>May 01, 2022</small>
                                     </div>
-                                    <span class="badge bg-primary rounded-pill">pending</span>
+                                    <span class="badge bg-primary rounded-pill ms-1">pending</span>
                                 </li>
-                                <li class="list-group-item list-group-item-action list-group-item-light">A second item</li>
-                                <li class="list-group-item list-group-item-action list-group-item-light">A third item</li>
-                                <li class="list-group-item list-group-item-action list-group-item-light">A fourth item</li>
-                                <li class="list-group-item list-group-item-action list-group-item-light">And a fifth one</li>
+                                <li class="list-group-item list-group-item-action list-group-item-light  d-flex justify-content-between align-items-center">
+                                    <div class="me-auto">
+                                        <div class="fw-bold">A custom questionnaire</div>
+                                        About the football match
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill ms-1">pending</span>
+                                </li>
+                                <li class="list-group-item list-group-item-action list-group-item-light  d-flex justify-content-between align-items-center">
+                                    <div class="me-auto">
+                                        <div class="fw-bold">Well-being Checkup</div>
+                                        Bi-monthly mental health assessment
+                                        <br><small>April 15, 2022</small>
+                                    </div>
+                                </li>
+                                <li class="list-group-item list-group-item-action list-group-item-light  d-flex justify-content-between align-items-center">
+                                    <div class="me-auto">
+                                        <div class="fw-bold">Another questionnaire</div>
+                                        About some topic
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -73,59 +90,61 @@
             </div>
 
             <!-- MAIN CHAT WINDOW -->
-            <div class="col-md-8">
-                <div class="settings-tray d-flex justify-content-end">
-                    <div class="friend-drawer no-gutters friend-drawer--grey">
-                        <span class="settings-tray--right">
-                            <i class="material-icons" title="refresh chat">cached</i>
+            <div class="col-md-8 d-flex flex-column">
 
-                            <button class="border-0 position-relative mx-3">
-                                <i class="material-icons" title="notifications">circle_notifications</i>
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    5
-                                    <span class="visually-hidden">unread messages</span>
-                                </span>
-                            </button>
+                <div class="container align-self-start text-end mb-4 p-2">
+                    <button class="border-0 rounded-circle position-relative mx-3">
+                        <i class="material-icons" title="refresh chat">cached</i>
+                    </button>
 
-                            <i class="material-icons" title="settings">menu</i>
+                    <button class="border-0 rounded-circle position-relative mx-3">
+                        <i class="material-icons" title="notifications">circle_notifications</i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            5
+                            <span class="visually-hidden">unread messages</span>
                         </span>
-                    </div>
+                    </button>
+
+                    <button class="border-0 rounded-circle position-relative mx-3">
+                        <i class="material-icons" title="settings">menu</i>
+                    </button>
                 </div>
                 
                 <div class="chat-panel">
-                    
-                    <!-- CHAT BUBBLES -->
-                    <div class="row no-gutters">
-                        <div class="col-lg-6 col-md-8">
-                            <div class="chat-bubble chat-bubble--left">
-                                Hello dude!
+                    <div class="align-self-stretch">
+                        <!-- CHAT BUBBLES -->
+                        <div class="row no-gutters">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="chat-bubble chat-bubble--left">
+                                    Hello dude!
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-lg-6 col-md-8">
-                            <div class="chat-bubble chat-bubble--left">
-                                Hello dude!
+                        <div class="row no-gutters">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="chat-bubble chat-bubble--left">
+                                    Hello dude!
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-lg-6 col-md-8">
-                            <div class="chat-bubble chat-bubble--left">
-                                Hello dude!
+                        <div class="row no-gutters">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="chat-bubble chat-bubble--left">
+                                    Hello dude!
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-md-8 col-lg-6 offset-md-4 offset-lg-6">
-                            <div class="chat-bubble chat-bubble--right">
-                                Hello dude!
+                        <div class="row no-gutters">
+                            <div class="col-md-8 col-lg-6 offset-md-4 offset-lg-6">
+                                <div class="chat-bubble chat-bubble--right">
+                                    Hello dude!
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- SEND ETC. -->
-                    <div class="row">
+                    <div class="align-self-baseline">
                         <div class="col-12">
                             <div class="chat-box-tray">
                                 <i class="material-icons" title="Add an image">image</i>
@@ -135,8 +154,8 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
+                
             </div>
 
         </div>
@@ -146,62 +165,61 @@
                 $( '.chat-bubble' ).hide('slow').show('slow');
             });
         </script>
-    </div>
+    </section>
 
 
 
   
-     <!-- Modal -->
-    <div class="modal fade" id="scheduleModal" tabindex="-1" aria-labelledby="scheduleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-scrollable">
+     <!-- SCHEDULE MODAL -->
+    <div class="modal fade border-rounded" id="scheduleModal" tabindex="-1" aria-labelledby="scheduleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
 
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="scheduleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="scheduleModalLabel">Set a Conversation Schedule</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Recipient:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
 
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                    </form>
+                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check " id="btncheck1" autocomplete="off">
+                        <label class="btn btn-outline-primary p-2 mx-2 rounded-circle" for="btncheck1">SAT</label>
+                        
+                        <input type="checkbox" class="btn-check " id="btncheck2" autocomplete="off">
+                        <label class="btn btn-outline-primary p-2 mx-2 rounded-circle" for="btncheck2">SUN</label>
+
+                        <input type="checkbox" class="btn-check " id="btncheck3" autocomplete="off">
+                        <label class="btn btn-outline-primary p-2 mx-2 rounded-circle" for="btncheck3">MON</label>
+
+                        <input type="checkbox" class="btn-check " id="btncheck4" autocomplete="off">
+                        <label class="btn btn-outline-primary p-2 mx-2 rounded-circle" for="btncheck4">TUE</label>
+                        
+                        <input type="checkbox" class="btn-check " id="btncheck5" autocomplete="off">
+                        <label class="btn btn-outline-primary p-2 mx-2 rounded-circle" for="btncheck5">WED</label>
+                        
+                        <input type="checkbox" class="btn-check " id="btncheck6" autocomplete="off">
+                        <label class="btn btn-outline-primary p-2 mx-2 rounded-circle" for="btncheck6">THU</label>
+                        
+                        <input type="checkbox" class="btn-check " id="btncheck7" autocomplete="off">
+                        <label class="btn btn-outline-primary p-2 mx-2 rounded-circle" for="btncheck7">FRI</label>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center p-4">
+                        <label for="appt">Select a time:</label>
+                        <input class="text-center" type="time" id="appt" name="appt"> 
+                    </div>
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary px-4">  Set  </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <script>
-        var exampleModal = document.getElementById('exampleModal')
-        exampleModal.addEventListener('show.bs.modal', function (event) {
-            // Button that triggered the modal
-            var button = event.relatedTarget
-            // Extract info from data-bs-* attributes
-            var recipient = button.getAttribute('data-bs-whatever')
-            // If necessary, you could initiate an AJAX request here
-            // and then do the updating in a callback.
-            //
-            // Update the modal's content.
-            var modalTitle = exampleModal.querySelector('.modal-title')
-            var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-            modalTitle.textContent = 'New message to ' + recipient
-            modalBodyInput.value = recipient
-        })
-    </script>
 
 </body>
 </html>
