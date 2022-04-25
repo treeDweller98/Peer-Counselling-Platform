@@ -20,95 +20,164 @@
         <div class="row no-gutters p-4"  id="chatwindow">
 
             <!-- CHAT SIDEBAR -->
-            <div class="col-md-4 border-end border-5">
+            <div class="col-md-4 border-end border-5 d-flex flex-column ">
+                <!-- HEALTHYMIND BANNER -->
                 <div class="container align-self-start mb-4 p-2">
                     <img class="profile-image d-inline-block align-text-center" src="images/icons/band.png" alt="Profile img">
                     <span class="h3 p-2 mb-0">HealthyMind</span>
                 </div>
                 
-                <div class="friend-drawer friend-drawer--onhover">
-                    <i class="material-icons md-48">alarm</i>
-                    <div class="text">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn text-start py-2" data-bs-toggle="modal" data-bs-target="#scheduleModal">
-                            <h6>Schedule a Conversation</h6>
-                            <p class="text-muted">Scheduled for Today at 7:30PM</p>
-                        </button>
-                    </div>
-                </div>
-
-                <hr>
-                
-                <div class="friend-drawer friend-drawer--onhover">
-                    <i class="material-icons md-48">checklist</i>
-
-                    <div class="text">
-                        <button class="btn text-start border-0 py-2 pe-auto" type="button" data-bs-toggle="collapse" data-bs-target="#qCollapse" aria-expanded="false" aria-controls="qCollapse-control">
-                            <div class="d-flex">
-                                <h6 class="pe-5 m-0">Questionnaires</h6>
-                                <span class="badge bg-danger">New</span>
-                            </div>
-                        </button>
+                <!-- CLIENTS LIST -->
+                <div class="mb-auto">
+                    <div class="friend-drawer friend-drawer--onhover">
+                        <i class="material-icons md-48">people</i>
     
-                        <div class="collapse px-2 py-1" id="qCollapse">
-                            <ul class="list-group">
-                                <li class="list-group-item list-group-item-action list-group-item-primary d-flex justify-content-between align-items-center" aria-current="true">
-                                    <div class="me-auto">
-                                        <div class="fw-bold">Well-being Checkup</div>
-                                        Bi-monthly mental health assessment
-                                        <br><small>May 01, 2022</small>
+                        <div class="text">
+                            <button class="btn container text-start border-0 pe-4 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#usersCollapse" aria-expanded="false" aria-controls="qCollapse-control">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="ms-0 me-auto px-3">
+                                        <h5 class="mb-0">Chats</h5>
+                                        <small>(volunteer-only)</small>
                                     </div>
-                                    <span class="badge bg-primary rounded-pill ms-1">pending</span>
-                                </li>
-                                <li class="list-group-item list-group-item-action list-group-item-light  d-flex justify-content-between align-items-center">
-                                    <div class="me-auto">
-                                        <div class="fw-bold">A custom questionnaire</div>
-                                        About the football match
+                                    <div class="d-flex">
+                                        <span class="align-item-center badge bg-primary rounded-pill me-2">
+                                            <i class="material-icons md-18">textsms</i> <br> 10
+                                        </span>
+                                        <span class="align-item-center badge bg-danger rounded-pills">
+                                            <i class="material-icons md-18">person_add</i> <br> 1
+                                        </span>
                                     </div>
-                                    <span class="badge bg-primary rounded-pill ms-1">pending</span>
-                                </li>
-                                <li class="list-group-item list-group-item-action list-group-item-light  d-flex justify-content-between align-items-center">
-                                    <div class="me-auto">
-                                        <div class="fw-bold">Well-being Checkup</div>
-                                        Bi-monthly mental health assessment
-                                        <br><small>April 15, 2022</small>
-                                    </div>
-                                </li>
-                                <li class="list-group-item list-group-item-action list-group-item-light  d-flex justify-content-between align-items-center">
-                                    <div class="me-auto">
-                                        <div class="fw-bold">Another questionnaire</div>
-                                        About some topic
-                                    </div>
-                                </li>
-                                <li class="list-group-item list-group-item-action list-group-item-dark d-flex justify-content-between align-items-center">
-                                    <i class="material-icons md-48">add</i>
-                                    <div class="ps-2 me-auto text-center">
-                                        <div class="fw-bold">Add new questionnaire</div>
-                                        <small class="text-muted">(Volunteer-only Feature)</small>
-                                    </div>
-                                </li>
-                            </ul>
+                                </div>
+                            </button>
+
+                            <div class="collapse px-2 py-1" id="usersCollapse">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-action list-group-item-dark d-flex justify-content-between align-items-center">
+                                        <i class="material-icons md-16">person_add</i>
+                                        <div class="ps-2 me-auto">
+                                            <div class="fw-bold">New client alert</div>
+                                            <small class="text-muted">Click to view client details</small>
+                                            <br><small>April 28, 2022 at 01:15AM</small>
+                                        </div>
+                                        <span class="badge bg-danger rounded-pill ms-1">new</span>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-primary d-flex justify-content-between align-items-center" aria-current="true">
+                                        <div class="me-auto">
+                                            <div class="fw-bold">Anonymous Client A</div>
+                                            Them: I am aware of that...
+                                            <br><small>April 27, 2022 at 08:24PM     &middot unread</small>
+                                        </div>
+                                        <span class="badge bg-primary rounded-pill ms-1">new</span>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light  d-flex justify-content-between align-items-center">
+                                        <div class="me-auto">
+                                            <div class="fw-bold">Anonymous Client B</div>
+                                            Them: Football is not fun...
+                                            <br><small>April 27, 2022 at 05:45PM    &middot read</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light  d-flex justify-content-between align-items-center">
+                                        <div class="me-auto">
+                                            <div class="fw-bold">Anonymous Client B</div>
+                                            You: Bye! Take care!
+                                            <br><small>April 25, 2022 at 06:30PM    &middot seen</small> 
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-            
                 </div>
 
+                <!-- QUESTIONNAIRES AND SCHEDULING -->
+                <div class="mt-auto">
+                    <!-- QUESTIONNAIRES -->
+                    <div class="friend-drawer friend-drawer--onhover">
+                        <i class="material-icons md-48">checklist</i>
+    
+                        <div class="text">
+                            <div class="collapse px-2 py-1" id="qCollapse">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-action list-group-item-dark d-flex justify-content-between align-items-center">
+                                        <i class="material-icons md-48">add</i>
+                                        <div class="ps-2 me-auto text-center">
+                                            <div class="fw-bold">Add new questionnaire</div>
+                                            <small class="text-muted">(volunteer-only Feature)</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-primary d-flex justify-content-between align-items-center" aria-current="true">
+                                        <div class="me-auto">
+                                            <div class="fw-bold">Well-being Checkup</div>
+                                            Bi-monthly mental health assessment
+                                            <br><small>May 01, 2022</small>
+                                        </div>
+                                        <span class="badge bg-primary rounded-pill ms-1">pending</span>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light  d-flex justify-content-between align-items-center">
+                                        <div class="me-auto">
+                                            <div class="fw-bold">A custom questionnaire</div>
+                                            About the football match
+                                        </div>
+                                        <span class="badge bg-primary rounded-pill ms-1">pending</span>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light  d-flex justify-content-between align-items-center">
+                                        <div class="me-auto">
+                                            <div class="fw-bold">Well-being Checkup</div>
+                                            Bi-monthly mental health assessment
+                                            <br><small>April 15, 2022</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-light  d-flex justify-content-between align-items-center">
+                                        <div class="me-auto">
+                                            <div class="fw-bold">Another questionnaire</div>
+                                            About some topic
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <button class="btn container text-start border-0 pe-4 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#qCollapse" aria-expanded="false" aria-controls="qCollapse-control">
+                                <div class="d-flex">
+                                    <h6 class="ps-2 pe-5 m-0">Questionnaires</h6>
+                                    <span class="badge bg-danger">New</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <!-- SCHEDULE CHAT -->
+                    <div class="friend-drawer friend-drawer--onhover">
+                        <i class="material-icons md-48">alarm</i>
+                        <div class="text">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn text-start py-2" data-bs-toggle="modal" data-bs-target="#scheduleModal">
+                                <h6>Schedule a Conversation</h6>
+                                <p class="text-muted">Scheduled for Today at 7:30PM</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- MAIN CHAT WINDOW -->
             <div class="col-md-8 d-flex flex-column justify-content-between">
+                <!-- CHAT TOP BAR -->
                 <div class="d-flex justify-content-between">
 
+                    <!-- VOLUNTEER NAME BOX -->
                     <div class="text-start mb-4 p-2">
                         <h6 class="m-0">*Anonymous Volunteer Nickname*</h6>
                         <small class="text-muted">Last Active 6 hours ago</small>
                     </div>
     
+                    <!-- RIGHT BUTTONS PANEL -->
                     <div class="d-flex justify-content-end mb-4 p-2">
+                        <!-- RELOAD BUTTON -->
                         <button class="border-0 rounded-circle position-relative mx-3 p-2">
                             <i class="material-icons md-36" title="Reload Chat">cached</i>
                         </button>
                         
+                        <!-- NOTIFICATIONS -->
                         <div class="dropdown">
                             <button class="border-0 rounded-circle position-relative mx-3 p-2" type="button" id="notifDrop" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="material-icons md-36" title="notifications">circle_notifications</i>
@@ -154,6 +223,7 @@
                             </ul>
                         </div>
     
+                        <!-- MENU BUTTON -->
                         <div class="dropdown">
                             <button class="border-0 rounded-circle position-relative mx-3 p-2" type="button" id="menuDrop" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="material-icons md-36" title="menu">menu</i>
@@ -186,15 +256,16 @@
                             </ul>
                         </div>
 
+                        <!-- REPORT CONVERSATION BUTTON -->
                         <button type="button" class="border-0 rounded-circle position-relative mx-3 p-2" data-bs-toggle="modal" data-bs-target="#reportModal">
                             <i class="material-icons md-36" title="REPORT INAPPROPRIATE BEHAVIOUR">flag_circle</i>
                         </button>
                     </div>
                 </div>
                 
-                <div class="chat-panel mt-auto">
 
-                        <!-- CHAT BUBBLES -->
+                <!-- CHAT BUBBLES -->
+                <div class="chat-panel mt-auto">
                         <div class="row no-gutters">
                             <div class="col-lg-6 col-md-8">
                                 <div class="chat-bubble chat-bubble--left">
@@ -223,9 +294,8 @@
                                 </div>
                             </div>
                         </div>
-
-
                 </div>
+
                 
                 <!-- SEND ETC. -->
                 <div class="col-12">
