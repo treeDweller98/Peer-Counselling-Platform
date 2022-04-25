@@ -1,0 +1,45 @@
+table.ticket { 
+    border-collapse: separate; 
+    border-spacing: 2px;
+    clear: both;
+    width: 100%;
+
+ }
+table.ticket th { 
+    border-width: 1px; 
+    padding: 0.5em; 
+    position: relative; 
+    text-align: left; 
+    border-radius: 0.25em;
+    border-style: solid;
+    background: #EEE; 
+    border-color: #BBB; 
+    font-weight: bold; 
+    text-align: center; 
+    color:black
+}
+
+table.ticket td { 
+    border-color: #DDD;
+    border-width: 1px; 
+    padding: 0.5em; 
+    position: relative; 
+    text-align: center; 
+    border-radius: 0.25em;
+    border-style: solid; 
+    color:white;
+   
+}
+.accordion-item{
+    border-color: rgb(0, 0, 0);
+    border-width:2px;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #7c7c7c15;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}

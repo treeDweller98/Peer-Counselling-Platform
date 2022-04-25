@@ -1,0 +1,41 @@
+section {
+    min-height: 75vh;
+}
+.transbox {
+    background-color: #211e25f5;
+    border: 1px ridge rgba(240, 248, 255, 0.349);
+    border-radius: 30px;
+}
+
+form .form-control, form .form-control:focus, form .form-select, form .form-select:focus {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    background-color: #7c7c7c15;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contactForm {
+    background-image: url("../images/layout/concert1.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#loginForm {
+    background-image: url("../images/layout/concert2.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#signupForm {
+    font-size: small;
+    background-image: url("../images/layout/concert3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

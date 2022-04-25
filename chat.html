@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="css/chat.css">
+    <script defer src="js/form-validation.js"></script>    
+    <title>Chat</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row no-gutters">
+
+            <!-- CHAT SIDEBAR -->
+            <div class="col-md-4 border-right">
+                <div class="settings-tray">
+                    <img class="profile-image d-inline-block align-text-center" src="images/icons/band.png" alt="Profile img">
+                    <span class="h3 p-2 mb-0">HealthyMind</span>
+                </div>
+                
+                <div class="friend-drawer friend-drawer--onhover">
+                    <i class="material-icons md-48">alarm</i>
+                    <div class="text">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn text-start" data-bs-toggle="modal" data-bs-target="#scheduleModal">
+                            <h6>Schedule a Conversation</h6>
+                            <p class="text-muted">Scheduled for Today, 7:30PM</p>
+                        </button>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <div class="friend-drawer">
+                    <i class="material-icons md-48">checklist</i>
+
+                    <div class="text">
+                        <button class="btn text-start border-0 py-2 pe-auto" type="button" data-bs-toggle="collapse" data-bs-target="#qCollapse" aria-expanded="false" aria-controls="qCollapse-control">
+                            <div class="d-flex">
+                                <h6 class="pe-5 m-0">Questionnaires</h6>
+                                <span class="badge bg-secondary">New</span>
+                            </div>
+                        </button>
+    
+                        <div class="collapse" id="qCollapse">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action list-group-item-light active d-flex justify-content-between align-items-start" aria-current="true">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Wellbeing Checkup</div>
+                                        Bi-monthly assessment
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">pending</span>
+                                </li>
+                                <li class="list-group-item list-group-item-action list-group-item-light">A second item</li>
+                                <li class="list-group-item list-group-item-action list-group-item-light">A third item</li>
+                                <li class="list-group-item list-group-item-action list-group-item-light">A fourth item</li>
+                                <li class="list-group-item list-group-item-action list-group-item-light">And a fifth one</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                </div>
+
+            </div>
+
+            <!-- MAIN CHAT WINDOW -->
+            <div class="col-md-8">
+                <div class="settings-tray d-flex justify-content-end">
+                    <div class="friend-drawer no-gutters friend-drawer--grey">
+                        <span class="settings-tray--right">
+                            <i class="material-icons" title="refresh chat">cached</i>
+
+                            <button class="border-0 position-relative mx-3">
+                                <i class="material-icons" title="notifications">circle_notifications</i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    5
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
+
+                            <i class="material-icons" title="settings">menu</i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="chat-panel">
+                    
+                    <!-- CHAT BUBBLES -->
+                    <div class="row no-gutters">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="chat-bubble chat-bubble--left">
+                                Hello dude!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="chat-bubble chat-bubble--left">
+                                Hello dude!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="chat-bubble chat-bubble--left">
+                                Hello dude!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-8 col-lg-6 offset-md-4 offset-lg-6">
+                            <div class="chat-bubble chat-bubble--right">
+                                Hello dude!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEND ETC. -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="chat-box-tray">
+                                <i class="material-icons" title="Add an image">image</i>
+                                <input type="text" placeholder="Type your message here...">
+                                <i class="material-icons" title="Emojis">sentiment_very_satisfied</i>
+                                <i class="material-icons" title="Send message">send</i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            $( '.friend-drawer--onhover' ).on( 'click',  function() {
+                $( '.chat-bubble' ).hide('slow').show('slow');
+            });
+        </script>
+    </div>
+
+
+
+  
+     <!-- Modal -->
+    <div class="modal fade" id="scheduleModal" tabindex="-1" aria-labelledby="scheduleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-scrollable">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="scheduleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var exampleModal = document.getElementById('exampleModal')
+        exampleModal.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            var button = event.relatedTarget
+            // Extract info from data-bs-* attributes
+            var recipient = button.getAttribute('data-bs-whatever')
+            // If necessary, you could initiate an AJAX request here
+            // and then do the updating in a callback.
+            //
+            // Update the modal's content.
+            var modalTitle = exampleModal.querySelector('.modal-title')
+            var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+            modalTitle.textContent = 'New message to ' + recipient
+            modalBodyInput.value = recipient
+        })
+    </script>
+
+</body>
+</html>
