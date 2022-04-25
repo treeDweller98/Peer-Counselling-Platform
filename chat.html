@@ -9,9 +9,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script defer src="js/bootstrap.bundle.min.js"></script>
     <script defer src="js/jquery-3.6.0.min.js"></script>
-
     <link rel="stylesheet" href="css/chat.css">
-    <script defer src="js/form-validation.js"></script>    
+
     <title>Chat</title>
 </head>
 <body>
@@ -33,7 +32,7 @@
                         <!-- Button trigger modal -->
                         <button type="button" class="btn text-start py-2" data-bs-toggle="modal" data-bs-target="#scheduleModal">
                             <h6>Schedule a Conversation</h6>
-                            <p class="text-muted">Scheduled for Today, 7:30PM</p>
+                            <p class="text-muted">Scheduled for Today at 7:30PM</p>
                         </button>
                     </div>
                 </div>
@@ -101,25 +100,25 @@
                 <div class="d-flex justify-content-between">
 
                     <div class="text-start mb-4 p-2">
-                        <h6 class="m-0">*Volunteer Nickname*</h6>
+                        <h6 class="m-0">*Anonymous Volunteer Nickname*</h6>
                         <small class="text-muted">Last Active 6 hours ago</small>
                     </div>
     
                     <div class="d-flex justify-content-end mb-4 p-2">
                         <button class="border-0 rounded-circle position-relative mx-3 p-2">
-                            <i class="material-icons" title="Reload Chat">cached</i>
+                            <i class="material-icons md-36" title="Reload Chat">cached</i>
                         </button>
                         
                         <div class="dropdown">
                             <button class="border-0 rounded-circle position-relative mx-3 p-2" type="button" id="notifDrop" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="material-icons" title="notifications">circle_notifications</i>
+                                <i class="material-icons md-36" title="notifications">circle_notifications</i>
                                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                     3
                                     <span class="visually-hidden">unread notifications</span>
                                 </span>
                             </button>
 
-                            <ul class="dropdown-menu dropdown-menu-end px-3 py-2" aria-labelledby="notifDrop">
+                            <ul class="dropdown-menu dropdown-menu-end px-3 py-2" id="notif-dropdown-menu" aria-labelledby="notifDrop">
                                 <li><h6 class="dropdown-header">Recent Notifications</h6></li>
                                 <li><hr class="dropdown-divider"></li>
 
@@ -155,8 +154,40 @@
                             </ul>
                         </div>
     
-                        <button class="border-0 rounded-circle position-relative mx-3 p-2">
-                            <i class="material-icons" title="menu">menu</i>
+                        <div class="dropdown">
+                            <button class="border-0 rounded-circle position-relative mx-3 p-2" type="button" id="menuDrop" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="material-icons md-36" title="menu">menu</i>
+                            </button>
+
+                            <ul class="dropdown-menu dropdown-menu-end px-3 py-2" id="menu-dropdown-menu" aria-labelledby="menuDrop">
+                                <li><h6 class="dropdown-header">Menu</h6></li>
+                                <li><hr class="dropdown-divider w-100"></li>
+
+                                <li class="dropdown-item d-flex justify-content-between align-items-center mb-2">
+                                    <span class="me-5">Profile</span>
+                                    <i class="material-icons md-24">account_circle</i>
+                                </li>
+
+                                <li class="dropdown-item d-flex justify-content-between align-items-center mb-2">
+                                    <span class="me-5">Preferences</span>
+                                    <i class="material-icons md-24">tune</i>
+                                </li>
+                                
+                                <li class="dropdown-item d-flex justify-content-between align-items-center mb-2">
+                                    <span class="me-5">Help</span>
+                                    <i class="material-icons md-24">help_outline</i>
+                                </li>
+
+                                <li><hr class="dropdown-divider w-100"></li>
+                                <li class="dropdown-item d-flex justify-content-between align-items-center mb-2">
+                                    <span class="me-5">Log out</span>
+                                    <i class="material-icons md-24">logout</i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button type="button" class="border-0 rounded-circle position-relative mx-3 p-2" data-bs-toggle="modal" data-bs-target="#reportModal">
+                            <i class="material-icons md-36" title="REPORT INAPPROPRIATE BEHAVIOUR">flag_circle</i>
                         </button>
                     </div>
                 </div>
@@ -270,6 +301,107 @@
         </div>
     </div>
 
+    <!-- REPORT CONVERSATION MODAL -->
+    <div class="modal fade border-rounded" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
 
+            <div class="modal-content px-5">
+                <div class="modal-header">
+                    <i class="material-icons md-48" title="REPORT INAPPROPRIATE BEHAVIOUR">flag_circle</i>
+                    <h5 class="modal-title ps-2" id="reportModalLabel">Report Inappropriate Behaviour</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="#" class="needs-validation" onsubmit="return confirm('Are you sure you wish to submit?');" novalidate>
+                        <div class="row mb-4">
+                            <label for="" class="form-check-label mb-2">Choose your reasons for reporting</label>
+    
+                            <div class="col-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option0">
+                                    <label class="form-check-label" for="inlineCheckbox0">Triggered a trauma</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Rarely available for conversation</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Inconsiderate/Rude</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                    <label class="form-check-label" for="inlineCheckbox4">Sent inappropriate material in chat</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">Fake account (visible to volunteers only)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                                    <label class="form-check-label" for="inlineCheckbox5">More reasons etc.</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Take a moment to tell us about the issue</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">How do you wish this situation to be resolved?</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea2" rows="2" required></textarea>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck4" aria-describedby="invalidCheck4Feedback">
+                            <label class="form-check-label" for="invalidCheck4">I wish to be re-assigned</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                            <label class="form-check-label" for="invalidCheck3">
+                                I consent to giving access to this chat log
+                            </label>
+                            <div id="invalidCheck3Feedback" class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </form>
+
+                    <script>
+                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                        (function () {
+                        'use strict'
+
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.querySelectorAll('.needs-validation')
+
+                        // Loop over them and prevent submission
+                        Array.prototype.slice.call(forms)
+                            .forEach(function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault()
+                                    event.stopPropagation()
+                                }
+
+                                form.classList.add('was-validated')
+                            }, false)
+                            })
+                        })()
+                    </script>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary px-4" form="reportForm" type="submit">  Report  </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
