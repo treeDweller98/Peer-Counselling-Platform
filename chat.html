@@ -40,7 +40,7 @@
 
                 <hr>
                 
-                <div class="friend-drawer">
+                <div class="friend-drawer friend-drawer--onhover">
                     <i class="material-icons md-48">checklist</i>
 
                     <div class="text">
@@ -81,6 +81,13 @@
                                         About some topic
                                     </div>
                                 </li>
+                                <li class="list-group-item list-group-item-action list-group-item-dark d-flex justify-content-between align-items-center">
+                                    <i class="material-icons md-48">add</i>
+                                    <div class="ps-2 me-auto text-center">
+                                        <div class="fw-bold">Add new questionnaire</div>
+                                        <small class="text-muted">(Volunteer-only Feature)</small>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -100,14 +107,14 @@
     
                     <div class="d-flex justify-content-end mb-4 p-2">
                         <button class="border-0 rounded-circle position-relative mx-3 p-2">
-                            <i class="material-icons" title="refresh chat">cached</i>
+                            <i class="material-icons" title="Reload Chat">cached</i>
                         </button>
                         
                         <div class="dropdown">
                             <button class="border-0 rounded-circle position-relative mx-3 p-2" type="button" id="notifDrop" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="material-icons" title="notifications">circle_notifications</i>
                                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    5
+                                    3
                                     <span class="visually-hidden">unread notifications</span>
                                 </span>
                             </button>
@@ -118,7 +125,7 @@
 
                                 <li class="dropdown-item d-flex justify-content-between align-items-center mb-2">
                                     <i class="material-icons md-24">textsms</i>
-                                    <div>
+                                    <div class="ms-0 me-auto px-3">
                                         <h6>New messages</h6>
                                         <p class="text-muted m-0">Have you considered talking to...</p>
                                         <small class="text-muted fs-6">10:24PM</small>
@@ -128,7 +135,7 @@
 
                                 <li class="dropdown-item d-flex justify-content-between align-items-center mb-2">
                                     <i class="material-icons md-24">checklist</i>
-                                    <div class="px-3">
+                                    <div class="ms-0 me-auto px-3">
                                         <h6>Questionnaire pending</h6>
                                         <p class="text-muted m-0"> Bi-monthly questionnaire posted<p>
                                         <small class="text-muted fs-6">10:00AM</small>
@@ -138,7 +145,7 @@
                                 
                                 <li class="dropdown-item d-flex justify-content-between align-items-center mb-2">
                                     <i class="material-icons md-24">privacy_tip</i>
-                                    <div class="px-3">
+                                    <div class="ms-0 me-auto px-3">
                                         <h6>Report Handled</h6>
                                         <p class="text-muted m-0">Re: 19 April 2022</p>
                                         <small>click here to read more</small>
@@ -149,7 +156,7 @@
                         </div>
     
                         <button class="border-0 rounded-circle position-relative mx-3 p-2">
-                            <i class="material-icons" title="settings">menu</i>
+                            <i class="material-icons" title="menu">menu</i>
                         </button>
                     </div>
                 </div>
