@@ -269,28 +269,64 @@
                     <div class="row no-gutters">
                         <div class="col-lg-6 col-md-8">
                             <div class="chat-bubble chat-bubble--left">
-                                Hello dude!
+                                Hello!
                             </div>
                         </div>
                     </div>
                     <div class="row no-gutters">
                         <div class="col-lg-6 col-md-8">
                             <div class="chat-bubble chat-bubble--left">
-                                Hello dude!
+                                Have a bird<br>
+                                <img src="images/icons/bird.jpg" alt="" height="120px">
                             </div>
                         </div>
                     </div>
                     <div class="row no-gutters">
                         <div class="col-lg-6 col-md-8">
                             <div class="chat-bubble chat-bubble--left">
-                                Hello dude!
+
+                                <div id="censoredImageText" class="bg-dark p-3 m-2 rounded bg-opacity-50">
+                                    <div class="text-center text-light">
+                                        <p class="m-0">WARNING: This image has been censored by our AI</p>
+                                        <p class="mt-2 mb-3 text-warning">detected: violence, fire</p>
+                                        <button class="btn btn-sm rounded-pill btn-danger bg-opacity-50" onclick="myFunction()">click to unblur</button>
+                                    </div>
+                                </div>
+
+                                <div id="censoredImage" style="display: none;">
+                                    <img src="images/icons/fire.jpg" height="120px" alt="">
+                                    <button class="btn btn-sm rounded-pill btn-danger bg-opacity-50 ms-5" onclick="myFunction()">hide image</button>
+                                </div>
+
+                                <script>
+                                    function myFunction() {
+                                        var x = document.getElementById("censoredImageText");
+                                        var y = document.getElementById("censoredImage");
+
+                                        if (x.style.display === "none") {
+                                            x.style.display = "block";
+                                            y.style.display = "none";
+                                        } else {
+                                            x.style.display = "none";
+                                            y.style.display = "block";
+                                        }
+                                    }
+                                </script>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="chat-bubble chat-bubble--left">
+                                Images deemed inappropriate get censored by the AI
                             </div>
                         </div>
                     </div>
                     <div class="row no-gutters">
                         <div class="col-md-8 col-lg-6 offset-md-4 offset-lg-6">
                             <div class="chat-bubble chat-bubble--right">
-                                Hello dude!
+                                I can give consent to unblur/reblur censored images 
                             </div>
                         </div>
                     </div>
