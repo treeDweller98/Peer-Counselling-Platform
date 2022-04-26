@@ -3,9 +3,9 @@
     --bg-darker: hsla(185, 22%, 29%, 0.69);
     --bg-lighter: hsl(185, 100%, 86%);
     
-    --secondary-bg: hsla(116, 89%, 93%, 0.918);
-    --secondary-bg-dark: hsla(113, 45%, 80%, 0.938);
-    --secondary-bg-light: hsla(112, 36%, 75%, 0.801);
+    --secondary-bg: hsla(116, 89%, 93%, 0.78);
+    --secondary-bg-light: hsla(113, 100%, 90%, 0.898);
+    --secondary-bg-dark: hsla(113, 36%, 75%, 0.703);
 	
     --font-color-default: rgb(230, 255, 240);
     --font-color-dark-default: hsl(180, 17%, 12%);
@@ -20,6 +20,8 @@
     --border-radius-l: 25px;
     --border-circle: 50%;
     --border-style-1: 2px rgba(128, 128, 128, 0.621) solid;
+    --border-style-2: 2px rgba(44, 44, 44, 0.641) solid;
+    --border-style-3: 2px rgba(128, 128, 128, 0.255) solid;
 
     --price:green;
     --options:rgba(157, 245, 201, 0.484);

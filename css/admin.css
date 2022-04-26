@@ -1,7 +1,89 @@
 :root{
     --sidebar-width: 31ch;
 }
+
+
+
 .btn-primary:hover, .btn-primary{
+    border-radius: var(--border-radius-s);
+}
+
+.modal *{
+    border-radius: var(--border-radius-s);
+}
+.modal-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-control{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1ch;
+}
+.form-control >*{
+    flex-grow: 1;
+    
+}
+textarea, input, select, .checkbox-group, .radio-group, .btn-border-shadow{
+    border: var(--border-style-2);
+    padding: 1ch;
+    box-shadow: var(--shadows-shortest);
+}
+
+textarea, input, select, .checkbox-group, .radio-group{
+    background-color: var(--secondary-bg-light);
+}
+label{
+    border: var(--border-style-3);
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1ch;
+}
+
+.checkbox-group, .radio-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1ch;
+}
+
+.head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.head form{
+    display: flex;
+    gap: 1ch;
+    border-radius: var(--border-radius-s);
+    background-color: var(--secondary-bg);
+    padding: 1ch;
+}
+.head form input{
+    border-radius: var(--border-radius-s);
+    background-color: var(--secondary-bg-dark);
+    padding: 1ch;
+    color: black;
+}
+
+.head form select, form .form-control, form .form-control:focus, form .form-select, form .form-select:focus {
+    border: var(--border-style-2);
+    border-radius: var(--border-radius-s);
+    outline: none;
+    color: black;
+    background-color: var(--secondary-bg-dark);
+    box-shadow: var(--shadows-shortest);
+}
+
+
+.head form select option{
+    background-color: aliceblue;
     border-radius: var(--border-radius-s);
 }
 
@@ -26,7 +108,7 @@
     color: var(--font-color-dark-default);
 }
 .sidebar-list{
-    background-color: var(--secondary-bg-light);
+    background-color: var(--secondary-bg-dark);
     border-radius: var(--border-radius-s);
     padding: 2px;
 }
@@ -60,42 +142,10 @@ main{
 
 }
 
-.head{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.head form{
-    display: flex;
-    gap: 1ch;
-    border-radius: var(--border-radius-s);
-    background-color: var(--secondary-bg);
-    padding: 1ch;
-}
-.head form input{
-    border-radius: var(--border-radius-s);
-    background-color: var(--secondary-bg-dark);
-    padding: 1ch;
-    color: black;
-    border: var(--border-style-1);
-}
-
-.head form select, form .form-control, form .form-control:focus, form .form-select, form .form-select:focus {
-    border: var(--border-style-1);
-    border-radius: var(--border-radius-s);
-    outline: none;
-    color: black;
-    background-color: var(--secondary-bg-dark);
-    box-shadow: var(--shadows-shortest);
-}
 
 
 
-.head form select option{
-    background-color: aliceblue;
-    border-radius: var(--border-radius-s);
-}
+
 /* 
 #####################################################
 ############  PERSONAL DASHBOARD TAB ################
@@ -130,7 +180,7 @@ main{
 
 .leave-application-modal >*>*{
     color: black;
-    background-color: var(--secondary-bg-dark);
+    background-color: var(--secondary-bg-light);
 }
 
 

@@ -297,12 +297,16 @@
                                     modi quia temporibus quidem pariatur exercitationem a?
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Reject</button>
-                                    <button type="button" class="btn btn-primary"
-                                        data-bs-dismiss="modal">Approve</button>
+                                    <button type="button" data-bs-toggle="tab"
+                                    data-bs-target="#volunteer-management" class="btn btn-primary">View Volunteer Profile</button>
+                                    <div class="decision">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Reject</button>
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">Approve</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -319,7 +323,7 @@
                 <div class="head">
                     <div class="questionnaire-search">
                         <form>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-primary btn-border-shadow" data-bs-toggle="modal"
                                 data-bs-target="#add-questionnaire-modal">
                                 Add New Questionnaire
                             </button>
@@ -328,9 +332,11 @@
                                 <option value="all-q">All Questionnaires</option>
                                 <option value="signup-q">Sign Up Questionnaire</option>
                                 <option value="client-del-q">Client Account Deletion Questionnaire</option>
+                                <option value="vounteer-signup">Volunteer Signup Questionnaire</option>
                                 <option value="name">Others</option>
-
                             </select>
+                            <input type="text" name="tag" value="" placeholder="Search By Tag">
+                            
                             <input type="submit" value="Search">
                         </form>
                     </div>
@@ -347,24 +353,34 @@
                             </div>
                             <div class="modal-body">
                                 <form id="new-questionnaire-form">
-
+                                    <div class="form-control">
+                                        <label for="questionnaire-type" id="label-questionnaire-type">
+                                            Questionnaire Type
+                                        </label>
+                                        <select id="questionnaire-type">
+                                            <option value="signup-q">Sign Up Questionnaire</option>
+                                            <option value="client-del-q">Client Account Deletion Questionnaire</option>
+                                            <option value="vounteer-signup">Volunteer Signup Questionnaire</option>
+                                            <option value="name">Others</option>
+                                        </select>
+                                    </div>
                                     <!-- Details -->
                                     <div class="form-control">
-                                        <label for="name" id="label-name">
-                                            Name
+                                        <label>
+                                            Want to answer this question?
                                         </label>
 
                                         <!-- Input Type Text -->
-                                        <input type="text" id="name" placeholder="Enter your name" />
+                                        <textarea placeholder="Enter your comment here"></textarea>
                                     </div>
 
                                     <div class="form-control">
-                                        <label for="email" id="label-email">
-                                            Email
+                                        <label>
+                                            Perhaps answer this question?
                                         </label>
 
-                                        <!-- Input Type Email-->
-                                        <input type="email" id="email" placeholder="Enter your email" />
+                                        <!-- Input Type Text -->
+                                        <textarea placeholder="Enter your comment here"></textarea>
                                     </div>
 
                                     <div class="form-control">
@@ -394,47 +410,44 @@
 
                                     <div class="form-control">
                                         <label>
-                                            Would you recommend GeeksforGeeks
+                                            Would you recommend [This Website]
                                             to a friend?
                                         </label>
 
                                         <!-- Input Type Radio Button -->
-                                        <label for="recommed-1">
-                                            <input type="radio" id="recommed-1" name="recommed">Yes</input>
-                                        </label>
-                                        <label for="recommed-2">
-                                            <input type="radio" id="recommed-2" name="recommed">No</input>
-                                        </label>
-                                        <label for="recommed-3">
-                                            <input type="radio" id="recommed-3" name="recommed">Maybe</input>
-                                        </label>
+                                        <div class="radio-group">
+                                            <label for="recommed-1">
+                                                <input type="radio" id="recommed-1" name="recommed">Yes</input>
+                                            </label>
+                                            <label for="recommed-2">
+                                                <input type="radio" id="recommed-2" name="recommed">No</input>
+                                            </label>
+                                            <label for="recommed-3">
+                                                <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+                                            </label>
+                                        </div>
                                     </div>
 
                                     <div class="form-control">
-                                        <label>Languages and Frameworks known
+                                        <label>What are the issues you face?
                                             <small>(Check all that apply)</small>
                                         </label>
                                         <!-- Input Type Checkbox -->
-                                        <label for="inp-1">
-                                            <input type="checkbox" name="inp">C</input></label>
-                                        <label for="inp-2">
-                                            <input type="checkbox" name="inp">C++</input></label>
-                                        <label for="inp-3">
-                                            <input type="checkbox" name="inp">C#</input></label>
-                                        <label for="inp-4">
-                                            <input type="checkbox" name="inp">Java</input></label>
-                                        <label for="inp-5">
-                                            <input type="checkbox" name="inp">Python</input></label>
-                                        <label for="inp-6">
-                                            <input type="checkbox" name="inp">JavaScript</input></label>
-                                        <label for="inp-7">
-                                            <input type="checkbox" name="inp">React</input></label>
-                                        <label for="inp-7">
-                                            <input type="checkbox" name="inp">Angular</input></label>
-                                        <label for="inp-7">
-                                            <input type="checkbox" name="inp">Django</input></label>
-                                        <label for="inp-7">
-                                            <input type="checkbox" name="inp">Spring</input></label>
+                                        <div class="checkbox-group">
+                                            <label for="inp-1">
+                                                <input type="checkbox" id="inp-1" name="inp">This Issue</input></label>
+                                            <label for="inp-2">
+                                                <input type="checkbox" id="inp-2" name="inp">Another</input></label>
+                                            <label for="inp-3">
+                                                <input type="checkbox" id="inp-3" name="inp">Another 2</input></label>
+                                            <label for="inp-4">
+                                                <input type="checkbox" id="inp-4" name="inp">Some other</input></label>
+                                            <label for="inp-5">
+                                                <input type="checkbox" id="inp-5" name="inp">Some another</input></label>
+                                            <label for="inp-6">
+                                                <input type="checkbox" id="inp-6" name="inp">Other</input>
+                                            </label>
+                                        </div>
                                     </div>
 
                                     <div class="form-control">
@@ -443,22 +456,32 @@
                                         </label>
 
                                         <!-- multi-line text input control -->
-                                        <textarea name="comment" id="comment" placeholder="Enter your comment here">
-                                    </textarea>
+                                        <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
                                     </div>
+                                    
 
                                     <!-- Multi-line Text Input Control -->
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary">Add Multiple Choice Radio Button</button>
                                         <button type="button" class="btn btn-primary">Add Multiple Choice Checkbox</button>
-                                        <button type="button" class="btn btn-primary">Add Textual Question</button>
+                                        <button type="button" class="btn btn-primary">Add Short Question</button>
+                                        <button type="button" class="btn btn-primary">Add One Word Answer Question</button>
                                     </div>
+                                    <div class="form-control">
+                                        <label for="tag" id="label-tag">
+                                            Tags
+                                        </label>
+
+                                        <!-- Input Type Text -->
+                                        <input type="text" id="tag" placeholder="Enter comma separated tags" />
+                                    </div>
+
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reject</button>
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Approve</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Discard</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save Draft</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Publish</button>
                             </div>
                         </div>
                     </div>
