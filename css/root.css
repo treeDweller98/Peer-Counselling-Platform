@@ -42,4 +42,21 @@ body {
     background-color: var(--bg);
 }
 
-
+.icon {
+    height: auto;
+    opacity: 0.7;
+    transition: 0.2s ease-out;
+}
+.icon:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+.icon-sm {
+    width: 16px;
+}
+.icon-md {
+    width: 32px;
+}
+.icon-lg {
+    width: 72px;
+}
