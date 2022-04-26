@@ -3,19 +3,18 @@ section {
 }
 .transbox {
     background-color: var(--secondary-bg);
-    border: 1px ridge rgba(240, 248, 255, 0.349);
+    border: var(--border-style-1);
     border-radius: 30px;
 }
 
 form .form-control, form .form-control:focus, form .form-select, form .form-select:focus {
     border: none;
-    border-radius: 10px;
+    border-radius: var(--border-radius-s);
     outline: none;
     color: black;
     background-color: var(--secondary-bg-dark);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: var(--shadows-shortest);
 }
-
 #contactForm {
     background-image: url("../images/layout/concert1.jpg");
     min-height: 100vh;
