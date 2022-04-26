@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
     <script defer src="js/bootstrap.bundle.min.js"></script>
     <script defer src="js/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="css/forms.css">
     <script defer src="js/form-validation.js"></script>
 
     <title>Administration</title>
@@ -101,7 +102,7 @@
             ############  PERSONAL DASHBOARD TAB ################
             #####################################################
             -->
-            <div class="tab-pane active" id="personal-dashboard" role="tabpanel" aria-labelledby="personal-dashboard-tab">
+            <section class="tab-pane active" id="personal-dashboard" role="tabpanel" aria-labelledby="personal-dashboard-tab">
                 <img src="images/icons/volunteer-management.png" alt="volunteer-management-icon">
                 <img src="images/icons/volunteer-management.png" alt="volunteer-management-icon">
                 <img src="images/icons/volunteer-management.png" alt="volunteer-management-icon">
@@ -111,41 +112,184 @@
                 <img src="images/icons/volunteer-management.png" alt="volunteer-management-icon">
                 <img src="images/icons/volunteer-management.png" alt="volunteer-management-icon">
         
-            </div>
-            <div class="tab-pane active" id="report-management" role="tabpanel" aria-labelledby="report-management-tab">
-                <img src="images/icons/statistics.png" alt="statistics-icon">
-                <img src="images/icons/statistics.png" alt="statistics-icon">
-                <img src="images/icons/statistics.png" alt="statistics-icon">
-                <img src="images/icons/statistics.png" alt="statistics-icon">
-                <img src="images/icons/statistics.png" alt="statistics-icon">
-                <img src="images/icons/statistics.png" alt="statistics-icon">
-                <img src="images/icons/statistics.png" alt="statistics-icon">
-                <img src="images/icons/statistics.png" alt="statistics-icon">
-                <img src="images/icons/statistics.png" alt="statistics-icon">
+            </section>
+            <!--
+            #####################################################
+            #############  REPORT MANAGEMENT TAB ################
+            #####################################################
+            -->
+            <section class="tab-pane" id="report-management" role="tabpanel" aria-labelledby="report-management-tab">
+                <img src="images/icons/report.png" alt="report-icon">
+                <img src="images/icons/report.png" alt="report-icon">
+                <img src="images/icons/report.png" alt="report-icon">
+                <img src="images/icons/report.png" alt="report-icon">
+                <img src="images/icons/report.png" alt="report-icon">
+                <img src="images/icons/report.png" alt="report-icon">
+                <img src="images/icons/report.png" alt="report-icon">
+                <img src="images/icons/report.png" alt="report-icon">
+                <img src="images/icons/report.png" alt="report-icon">
 
         
-            </div>
-            <div class="tab-pane active" id="leave-application" role="tabpanel" aria-labelledby="leave-application-tab">
-        
-        
-            </div>
-            <div class="tab-pane active" id="questionnaire-management" role="tabpanel" aria-labelledby="questionnaire-management-tab">
-        
-        
-            </div>
-            <div class="tab-pane active" id="client-management" role="tabpanel" aria-labelledby="client-management-tab">
-        
-        
-            </div>
-            <div class="tab-pane active" id="volunteer-management" role="tabpanel" aria-labelledby="volunteer-management-tab">
-        
-        
-            </div>
-            <div class="tab-pane active" id="system-statistics" role="tabpanel" aria-labelledby="system-statistics-tab">
-        
-        
-            </div>
-        
+            </section>
+            <!--
+            #####################################################
+            #############  LEAVE APPLICATION TAB ################
+            #####################################################
+            -->
+            <section class="tab-pane" id="leave-application" role="tabpanel" aria-labelledby="leave-application-tab">
+                <div class="head">
+                    <div class="volunteer-search">
+                        <form>
+                            <select class="form-select">
+                                <option value="id">ID</option>
+                                <option value="name">Name</option>
+                            </select>
+                            <input type="text" name="volunteer-name" value="">
+                            <input type="submit" value="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="application-list">
+                    <table class="table">
+                        <thead>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Volunteer Rating</th>
+                            <th>Leave Start Date</th>
+                            <th>Leave End Date</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1910456</td>
+                                <td>A Name Ahmed</td>
+                                <td><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i></td>
+                                <td>leave start</td>
+                                <td>lelave end</td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        See Details
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1910456</td>
+                                <td>A Name Ahmed</td>
+                                <td><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-half"></i></td>
+                                <td>leave start</td>
+                                <td>lelave end</td>
+                                                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        See Details
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1910456</td>
+                                <td>A Name Ahmed</td>
+                                <td><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-half"></i></td>
+                                <td>leave start</td>
+                                <td>lelave end</td>
+                                                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        See Details
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1910456</td>
+                                <td>A Name Ahmed</td>
+                                <td><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-half"></i></td>
+                                <td>leave start</td>
+                                <td>lelave end</td>
+                                                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        See Details
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1910456</td>
+                                <td>A Name Ahmed</td>
+                                <td><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-half"></i></td>
+                                <td>leave start</td>
+                                <td>lelave end</td>
+                                                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        See Details
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     <!-- Modal -->
+                     <div class="modal fade leave-application-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Urgent Application for Leave</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, voluptate distinctio. Et non repellat asperiores dolore dolor, beatae sit pariatur nisi. Voluptatibus aut, possimus temporibus in adipisci voluptas tempore quos?
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore deleniti dicta libero optio repellendus sit enim id! Magni, a fugiat vel culpa molestias perferendis corporis id doloribus libero eveniet aut.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, culpa et. Reiciendis magni nobis quasi ipsum veritatis ab sint non nesciunt animi quibusdam. Accusamus ex blanditiis a delectus neque laborum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptas eligendi at nobis ipsa dolorum consequuntur! Quisquam expedita corporis nulla reiciendis praesentium, ratione optio qui. Praesentium quae ut perspiciatis illum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, fugiat distinctio. Voluptatibus deserunt sed architecto, unde provident eos ea aperiam at expedita rem asperiores, accusantium impedit, aspernatur veritatis deleniti eius.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non aperiam tempore porro provident a vero quidem sapiente, in fuga quae! Laudantium tenetur modi quia temporibus quidem pariatur exercitationem a?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, voluptate distinctio. Et non repellat asperiores dolore dolor, beatae sit pariatur nisi. Voluptatibus aut, possimus temporibus in adipisci voluptas tempore quos?
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore deleniti dicta libero optio repellendus sit enim id! Magni, a fugiat vel culpa molestias perferendis corporis id doloribus libero eveniet aut.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, culpa et. Reiciendis magni nobis quasi ipsum veritatis ab sint non nesciunt animi quibusdam. Accusamus ex blanditiis a delectus neque laborum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptas eligendi at nobis ipsa dolorum consequuntur! Quisquam expedita corporis nulla reiciendis praesentium, ratione optio qui. Praesentium quae ut perspiciatis illum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, fugiat distinctio. Voluptatibus deserunt sed architecto, unde provident eos ea aperiam at expedita rem asperiores, accusantium impedit, aspernatur veritatis deleniti eius.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non aperiam tempore porro provident a vero quidem sapiente, in fuga quae! Laudantium tenetur modi quia temporibus quidem pariatur exercitationem a?
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reject</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Approve</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--
+            #####################################################
+            ##########  QUESTIONNAIRE MANAGEMENT TAB ############
+            #####################################################
+            -->
+            <section class="tab-pane" id="questionnaire-management" role="tabpanel" aria-labelledby="questionnaire-management-tab">
+                
+            </section>
+            <!--
+            #####################################################
+            ###############  CLIENT MANAGEMENT TAB ##############
+            #####################################################
+            -->            
+            <section class="tab-pane" id="client-management" role="tabpanel" aria-labelledby="client-management-tab">
+                
+            </section>
+            <!--
+            #####################################################
+            ############## VOLUNTEER MANAGEMENT TAB #############
+            #####################################################
+            -->            
+            <section class="tab-pane" id="volunteer-management" role="tabpanel" aria-labelledby="volunteer-management-tab">
+                
+            </section>
+            <!--
+            #####################################################
+            ###############  SYSTEM STATISTICS TAB ##############
+            #####################################################
+            -->            
+            <section class="tab-pane" id="system-statistics" role="tabpanel" aria-labelledby="system-statistics-tab">
+                
+            </section>
         </div>
 
             

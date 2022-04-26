@@ -4,7 +4,7 @@
 /* SIDEBAR */
 
 .wide-sidebar{
-    background-color: var(--sidebar-bg);
+    background-color: var(--secondary-bg);
     position: fixed;
     float: left;
     display: flex;
@@ -21,13 +21,13 @@
     color: var(--font-color-dark-default);
 }
 .sidebar-list{
-    background-color: var(--sidebar-bg-light);
+    background-color: var(--secondary-bg-light);
     border-radius: var(--border-radius-s);
     padding: 2px;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     width: 100%;
-    background-color: var(--sidebar-bg);
+    background-color: var(--secondary-bg);
     color: black;
     border: 2px solid gray;
     border-radius: var(--border-radius-s);
@@ -55,7 +55,64 @@ main{
 
 }
 
+/* 
+#####################################################
+############  PERSONAL DASHBOARD TAB ################
+#####################################################
+*/
 
-/* #personal-dashboard-pill::before{
-    content: url('images/user-images/admin-profile-picture.jpg');
-} */
+
+
+
+
+/*
+#####################################################
+#############  LEAVE APPLICATION TAB ################
+#####################################################
+*/
+
+
+/* 
+#####################################################
+#############  REPORT MANAGEMENT TAB ################
+#####################################################
+*/
+#leave-application > .head{
+    display: flex;
+    justify-content: center;
+}
+.volunteer-search > form{
+    display: flex;
+    gap: 1ch;
+    border-radius: var(--border-radius-s);
+    background-color: var(--secondary-bg);
+    padding: 1ch;
+}
+.volunteer-search > form input{
+    border-radius: var(--border-radius-s);
+    background-color: var(--secondary-bg-dark);
+    padding: 1ch;
+    color: black;
+    border: var(--border-style-1);
+}
+.volunteer-search > form select, form .form-select, form .form-select:focus {
+    color: black;
+    background-color: var(--secondary-bg-dark);
+    border: var(--border-style-1);
+    box-shadow: none;
+    border-radius: var(--border-radius-s);
+
+}
+.application-list .table{
+    margin: 2ch 0;
+    border-collapse: separate;
+    background-color: var(--secondary-bg);
+    border: var(--border-style-1);
+    padding: 2ch;
+    border-radius: var(--border-radius-s);
+}
+
+.leave-application-modal >*>*{
+    color: black;
+    background-color: var(--secondary-bg);
+}
