@@ -1,6 +1,11 @@
 :root{
     --sidebar-width: 31ch;
 }
+.btn-primary:hover, .btn-primary{
+    border-radius: var(--border-radius-s);
+}
+
+
 /* SIDEBAR */
 
 .wide-sidebar{
@@ -14,7 +19,7 @@
     transform: translateY(-1ch);
     border-top-right-radius: var(--border-radius-s);
     border-bottom-right-radius: var(--border-radius-s);
-    box-shadow: 3px 3px 6px rgba(92, 92, 92, 0.414);
+    box-shadow: var(--shadows-shortest);
 
 }
 .sidebar > h1{
@@ -55,6 +60,42 @@ main{
 
 }
 
+.head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.head form{
+    display: flex;
+    gap: 1ch;
+    border-radius: var(--border-radius-s);
+    background-color: var(--secondary-bg);
+    padding: 1ch;
+}
+.head form input{
+    border-radius: var(--border-radius-s);
+    background-color: var(--secondary-bg-dark);
+    padding: 1ch;
+    color: black;
+    border: var(--border-style-1);
+}
+
+.head form select, form .form-control, form .form-control:focus, form .form-select, form .form-select:focus {
+    border: var(--border-style-1);
+    border-radius: var(--border-radius-s);
+    outline: none;
+    color: black;
+    background-color: var(--secondary-bg-dark);
+    box-shadow: var(--shadows-shortest);
+}
+
+
+
+.head form select option{
+    background-color: aliceblue;
+    border-radius: var(--border-radius-s);
+}
 /* 
 #####################################################
 ############  PERSONAL DASHBOARD TAB ################
@@ -77,32 +118,7 @@ main{
 #############  REPORT MANAGEMENT TAB ################
 #####################################################
 */
-#leave-application > .head{
-    display: flex;
-    justify-content: center;
-}
-.volunteer-search > form{
-    display: flex;
-    gap: 1ch;
-    border-radius: var(--border-radius-s);
-    background-color: var(--secondary-bg);
-    padding: 1ch;
-}
-.volunteer-search > form input{
-    border-radius: var(--border-radius-s);
-    background-color: var(--secondary-bg-dark);
-    padding: 1ch;
-    color: black;
-    border: var(--border-style-1);
-}
-.volunteer-search > form select, form .form-select, form .form-select:focus {
-    color: black;
-    background-color: var(--secondary-bg-dark);
-    border: var(--border-style-1);
-    box-shadow: none;
-    border-radius: var(--border-radius-s);
 
-}
 .application-list .table{
     margin: 2ch 0;
     border-collapse: separate;
@@ -114,5 +130,20 @@ main{
 
 .leave-application-modal >*>*{
     color: black;
-    background-color: var(--secondary-bg);
+    background-color: var(--secondary-bg-dark);
+}
+
+
+
+/* 
+#####################################################
+#############  QUSETIONNAIRE MANAGEMENT TAB ################
+#####################################################
+*/
+
+
+#new-questionnaire-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
 }
