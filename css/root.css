@@ -2,6 +2,13 @@
     --bg: hsl(185, 100%, 89%);
     --bg-darker: hsla(185, 22%, 29%, 0.69);
     --bg-lighter: hsl(185, 100%, 86%);
+    
+    --sidebar-bg: hsla(116, 89%, 93%, 0.78);
+    --sidebar-bg-dark: hsla(113, 45%, 80%, 0.898);
+    --sidebar-bg-light: hsla(113, 36%, 75%, 0.703);
+	
+    --font-color-default: rgb(230, 255, 240);
+    --font-color-dark-default: hsl(180, 17%, 12%);
 
     --footer-text: rgb(212, 204, 204);
     --footer-bg: #212529;
@@ -12,7 +19,6 @@
     --border-radius-l:25px;
     --border-circle:50%;
 
-    --nav-bg: rgba(172, 187, 255, 0.7);
     --price:green;
     --options:rgba(157, 245, 201, 0.484);
     --submit-btn: rgba(103, 222, 206, 0.911);
@@ -21,7 +27,6 @@
     --card-alpha : 0.75;
     --shadows-inner-s: 1px 1px 3px inset var(--bg-darker), -1px -1px 3px inset var(--bg-darker);
 	--shadows-inner-l: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker);
-	--font-color-default: rgb(230, 255, 240);
 }
 
 
