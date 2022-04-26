@@ -26,6 +26,7 @@
     --submit-btn: rgba(103, 222, 206, 0.911);
 	--shadows: 20px 20px 30px #333;
     --shadows-shorter: 7px 7px 10px;
+    --shadows-shortest: 3px 3px 6px rgba(92, 92, 92, 0.414);
     --card-alpha : 0.75;
     --shadows-inner-s: 1px 1px 3px inset var(--bg-darker), -1px -1px 3px inset var(--bg-darker);
 	--shadows-inner-l: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker);
