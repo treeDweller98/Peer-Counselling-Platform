@@ -5,6 +5,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+#reportManager {
+  margin: 5% 15%;
+  background: rgb(234, 245, 228);
+  border-radius: 7px;
+}
 #notif-dropdown-menu {
   width: fit-content;
   padding-left: 20px;
@@ -19,11 +24,11 @@ body {
 }
 
 #chatwindow {
-    min-height: 80vh;
-    margin: 5% 15%;
-    background: rgb(234, 245, 228);
-    padding: 0;
-    border-radius: 7px;
+  min-height: 80vh;
+  margin: 5% 15%;
+  background: rgb(234, 245, 228);
+  padding: 0;
+  border-radius: 7px;
 }
 .profile-image {
   width: 50px;
