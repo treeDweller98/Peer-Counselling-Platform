@@ -3,18 +3,19 @@ section {
 }
 .transbox {
     background-color: var(--secondary-bg);
-    border: var(--border-style-1);
+    border: 1px ridge rgba(240, 248, 255, 0.349);
     border-radius: 30px;
 }
 
 form .form-control, form .form-control:focus, form .form-select, form .form-select:focus {
     border: none;
-    border-radius: var(--border-radius-s);
+    border-radius: 10px;
     outline: none;
     color: black;
     background-color: var(--secondary-bg-dark);
-    box-shadow: var(--shadows-shortest);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
+
 #contactForm {
     background-image: url("../images/layout/concert1.jpg");
     min-height: 100vh;
@@ -24,7 +25,7 @@ form .form-control, form .form-control:focus, form .form-select, form .form-sele
 }
 
 #loginForm {
-    background-image: url("../images/layout/concert2.jpg");
+    background-image: url("../images/Others/login.jpeg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,7 +34,7 @@ form .form-control, form .form-control:focus, form .form-select, form .form-sele
 
 #signupForm {
     font-size: small;
-    background-image: url("../images/layout/concert3.jpg");
+    background-image: url("../images/Others/signup.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
