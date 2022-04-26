@@ -1,21 +1,45 @@
+:root{
+    --sidebar-width: 31ch;
+}
 /* SIDEBAR */
 
-aside{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    max-width: 30ch;
-    min-width: 15ch;
-}
-
 .wide-sidebar{
-    flex-grow: 1;
+    background-color: var(--sidebar-bg);
+    position: fixed;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: var(--sidebar-width);
+    transform: translateY(-1ch);
+    border-top-right-radius: var(--border-radius-s);
+    border-bottom-right-radius: var(--border-radius-s);
+    box-shadow: 3px 3px 6px rgba(92, 92, 92, 0.414);
 
 }
+.sidebar > h1{
+    color: var(--font-color-dark-default);
+}
+.sidebar-list{
+    background-color: var(--sidebar-bg-light);
+    border-radius: var(--border-radius-s);
+    padding: 2px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    width: 100%;
+    background-color: var(--sidebar-bg);
+    color: black;
+    border: 2px solid gray;
+    border-radius: var(--border-radius-s);
+    text-align: left;
+} 
 
 .sidebar-list img{
     width: 3ch;
     border-radius: var(--border-radius-s);
+}
+.sidebar-list *{
+    color: black;
 }
 
 .sidebar-list > li > a {
@@ -23,6 +47,12 @@ aside{
     align-items: center;
     /* justify-content: center; */
     gap: 1ch;
+}
+
+main{
+    overflow: auto;
+    margin: 1ch 2ch 0 calc(var(--sidebar-width) + 2ch);
+
 }
 
 
