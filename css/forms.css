@@ -2,18 +2,9 @@ section {
     min-height: 75vh;
 }
 .transbox {
-    background-color: var(--secondary-bg);
+    background-color: var(--secondary-bg-lightest);
     border: 1px ridge rgba(240, 248, 255, 0.349);
     border-radius: 30px;
-}
-
-form .form-control, form .form-control:focus, form .form-select, form .form-select:focus {
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    color: black;
-    background-color: var(--secondary-bg-dark);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 #contactForm {
@@ -32,10 +23,7 @@ form .form-control, form .form-control:focus, form .form-select, form .form-sele
     background-size: cover;
 }
 
-#signupForm {
-    font-size: small;
-    background-image: url("../images/Others/signup.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+#signupForm form{
+    border: var(--border-style-2);
 }

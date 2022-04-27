@@ -1,9 +1,3 @@
-body {
-  font-size: 0.8em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
 #reportManager {
   margin: 5% 15%;
   background: rgb(234, 245, 228);
@@ -23,13 +17,28 @@ body {
 }
 
 #chatwindow {
-  min-height: 80vh;
-  margin: 5% 15%;
-  /* background: rgb(234, 245, 228); */
+  /* max-height: 900px; */
+  margin: 2ch 10%;
   background-color: var(--secondary-bg);
   padding: 0;
-  border-radius: 7px;
+  border: var(--border-style-2);
+  border-radius: var(--border-radius-s);
 }
+.chat-sidebar{
+  /* border-radius: var(--border-radius-s); */
+  /* border: var(--border-style-2); */
+  height: 83vh;
+  padding: 2ch;
+  overflow-y: scroll;
+}
+
+.chat-panel{
+  border-radius: var(--border-radius-s);
+  height: 65vh;
+  padding: 2ch;
+  overflow-y: scroll;
+}
+
 .profile-image {
   width: 50px;
   height: 50px;
@@ -185,6 +194,23 @@ hr {
 .chat-box-tray i:last-of-type {
   margin-left: 25px;
 }
+
+.right-button-panel{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2ch;
+}
+
+.right-button-panel button{
+  border-radius: var(--border-circle);
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+
+
 
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 12px; }

@@ -4,8 +4,10 @@
     --bg-lighter: hsl(185, 100%, 86%);
     
     --secondary-bg: hsla(116, 89%, 93%, 0.78);
+    --secondary-bg-lightest: hsla(113, 100%, 93%, 0.92);
     --secondary-bg-light: hsla(113, 100%, 90%, 0.898);
     --secondary-bg-dark: hsla(113, 36%, 75%, 0.703);
+    --secondary-bg-darkest: hsla(113, 36%, 80%, 0.903);
 	
     --font-color-default: rgb(230, 255, 240);
     --font-color-dark-default: hsl(180, 17%, 12%);
@@ -33,6 +35,103 @@
     --shadows-inner-s: 1px 1px 3px inset var(--bg-darker), -1px -1px 3px inset var(--bg-darker);
 	--shadows-inner-l: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker);
 }
+
+
+/* ###################################################################### */
+/* SCROLLBAR DESIGN */
+/* ###################################################################### */
+::-webkit-scrollbar {
+    width: 1ch;
+    max-width: 1ch;
+    margin: 2vh;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-darker);
+    border-radius: var(--border-radius-l);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: var(--border-radius-l);
+    background: var(--secondary-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-lighter);
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+
+body::before{
+    content: "";
+    background-size: cover;
+    background-image: url("../images/Others/background.jpg");
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+
+
+
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+}
+
+.navbar{
+    background-color: var(--secondary-bg-dark);
+}
+.navbar *{
+    color: #212529;
+}
+
+form select, form .form-control, form .form-control:focus, form .form-select, form .form-select:focus {
+    border: var(--border-style-2);
+    border-radius: var(--border-radius-s);
+    outline: none;
+    color: black;
+    background-color: var(--secondary-bg-dark);
+    box-shadow: var(--shadows-shortest);
+}
+
+textarea, input, select, .checkbox-group, .radio-group, .btn-border-shadow{
+    border: var(--border-style-2);
+    padding: 1ch;
+    box-shadow: var(--shadows-shortest);
+}
+
+
+.leave-application-modal > * > *{
+    color: black;
+    background-color: var(--secondary-bg-light);
+}
+.end-nav-links{
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+}
+.end-nav-links .dropdown-menu{
+    background-color: var(--secondary-bg-dark);
+}
+
+.modal *{
+    border-radius: var(--border-radius-s);
+}
+.modal-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 
 
 .btn-primary{

@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/root.css">
     <script defer src="js/bootstrap.bundle.min.js"></script>
     <script defer src="js/jquery-3.6.0.min.js"></script>
-
-    <link rel="stylesheet" href="css/forms.css"><script defer src="js/form-validation.js"></script>    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <script defer src="js/form-validation.js"></script>
+    <title>Sign Up</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
-            
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand" href="home.html">
                 <img src="images/icons/band.png" class="d-inline-block align-text-center" alt="band icon" width="40px">
                 HealthyMind
             </a>
@@ -31,11 +32,9 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Home</a> </li>
-                    <li class="nav-item"><a class="nav-link" href="shop.php#merch">Merch</a></li>
-                    <li class="nav-item"><a class="nav-link" href="shop.php#tickets">Tickets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chat.html">Chat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">    
@@ -44,13 +43,14 @@
                             role="button" data-bs-toggle="dropdown" aria-expanded="false"
                             >
                             <img src="images/icons/account.png" class="d-inline-block align-text-center icon icon-md" alt="Account">
-                                                </a>
+                        </a>
             
                         <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                             <li><span class="dropdown-item-text text-muted">Account</span></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a href="login.php" class="dropdown-item" role="button">Log in</a></li>
-    <li><a href="signup.php" class="dropdown-item" role="button">Sign up</a></li>                    </ul>
+                            <li><a data-bs-toggle="modal" data-bs-target="#login-modal" class="dropdown-item" role="button">Log in</a></li>
+                            <li><a href="signup.html" class="dropdown-item" role="button">Sign up</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -58,9 +58,54 @@
         </div>
     </nav>
 
+    <div class="modal fade leave-application-modal" id="login-modal" tabindex="-1"
+        aria-labelledby="login-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="login-modalLabel">Login
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <div class="form-control">
+                            <label for="emailbox" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailbox" aria-describedby="emailHelp" placeholder="example@email.com" name="email" required>
+                            <div class="invalid-feedback">Please enter a valid email address</div>
+                        </div>
+                        <div class="form-control">
+                            <label for="pwbox" class="form-label">Password</label>
+                            <input 
+                                type="password" class="form-control" aria-describedby="pwHelp" id="pwbox" name="password" 
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required
+                            >
+                            <div class="invalid-feedback">
+                                Please enter a valid password
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="signup.html">Sign Up</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Forgot Password</button>
+                    <label for="inp-1">
+                        <input type="checkbox" id="inp-1" name="inp">Remember Me</input>
+                    </label>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main id="signupForm" >
         <section class="d-flex flex-column justify-content-center align-items-end">
-            <form action="#" method="POST" class="needs-validation transbox px-5 py-4 m-5 col-lg-6" novalidate>
+            <form action="#" method="POST" class="signup-form needs-validation transbox px-5 py-4 m-5 col-lg-6" novalidate>
                 <h1 class="mt-2 mb-4">Sign Up</h1>
         
                 <div class="row justify-content-evenly">
@@ -69,7 +114,7 @@
                         <label class="form-label" for="fname">First name:</label>
                         <input type="text" class="form-control" id="fname" name="fname" required>
                         <div class="valid-feedback">Hello!</div>
-                        <div class="invalid-feedback">I need a name to call you by</div>
+                        <div class="invalid-feedback">We need a name to call you by</div>
                     </div>
                     <div class="col-lg-6 col-sm-12 mb-3">
                         <label class="form-label" for="lname">Last name:</label>
@@ -82,7 +127,7 @@
                         <input type="email" class="form-control" id="emailbox" aria-describedby="emailHelp" placeholder="example@email.com" name="email" required>
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         <div class="invalid-feedback">
-                            Please enter a valid email address                    </div>
+                            Please enter a valid email address</div>
                     </div>
                     
                     <!-- PHONE -->
@@ -114,17 +159,17 @@
                         </div>
                     </div>
                     <div class="col-12 mb-2 mt-3">
-                        <label class="form-label">How would you like to use our services?</label>
-                        <div class="form-check " style="transform:scale(0.9);">
-                            <div class="m-2">
+                        <div class="form-control">
+                            <label class="form-label">How would you like to use our services?</label>
+                            <div class="radio-group">
                                 <input type="radio" id="hide" name="example" value="hide" checked />
-                                <label for="hide" style="font-size:15px">Client</label>
-                              </div>
-                          
-                              <div class="m-2">
+                                <label for="hide">Client</label>
+                            
                                 <input type="radio" id="show" name="example" value="show" />
-                                <label for="show" style="font-size:15px">Volunteer</label>
-                              </div>
+                                <label for="show">Volunteer</label>
+                            </div>
+                        </div>
+                        <div class="form-check">
                               
                               <div id="volunteer">
                                 <div class="alert alert-warning alert-dismissible fade show mt-4" role="alert">
@@ -301,27 +346,27 @@
                     </div>
                     
                     
-                    <p class="mb-4">Already have an account? <a href="login.html"> Log In</a></p>
+                    <p class="mb-4">Already have an account? <a data-bs-toggle="modal" data-bs-target="#login-modal" class="dropdown-item" role="button"> Log In</a></p>
                 </div>
         
             </form>
 
         </section>
     </main>
-
-    <footer class="d-flex flex-column justify-content-center align-items-center">
-        <a href="admin-panel.php" title="Admin Panel [TEST]">
+<!-- 
+    <footer class="d-flex justify-content-center align-items-center">
+        <a href="admin.html" title="Admin Panel [TEST]">
             <img src="images/icons/band.png" alt="" width=64px>
         </a>
 
         <div class="py-4">
-            <p>&copy 2022 Fahim, Suhaila, Shafayat</p>
+            &copy 2022 Fahim, Suhaila, Shafayat
             <small> 
                 Made with ♥ <br>
                 CSE309-1 Final Project. Spring 2022
             </small>
         </div>
-    </footer>
+    </footer> -->
 
 
 </body>
