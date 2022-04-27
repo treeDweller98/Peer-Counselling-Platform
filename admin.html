@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/chat.css">
     <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
@@ -129,16 +130,380 @@
             #####################################################
             -->
             <section class="tab-pane" id="report-management" role="tabpanel" aria-labelledby="report-management-tab">
-                <img src="images/icons/report.png" alt="report-icon">
-                <img src="images/icons/report.png" alt="report-icon">
-                <img src="images/icons/report.png" alt="report-icon">
-                <img src="images/icons/report.png" alt="report-icon">
-                <img src="images/icons/report.png" alt="report-icon">
-                <img src="images/icons/report.png" alt="report-icon">
-                <img src="images/icons/report.png" alt="report-icon">
-                <img src="images/icons/report.png" alt="report-icon">
-                <img src="images/icons/report.png" alt="report-icon">
-
+                <section class="w-75 min-vh-75 px-5 py-2" id="reportManager">
+                    <h1 class="text-center py-3">Reports Management</h1>
+                    <div class="table-responsive">
+                        <table class="table table-success caption-top table-striped table-hover">
+                            <caption>Pending Reports</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Reported by</th>
+                                    <th scope="col">Volunteer</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Reason(s) Cited</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-primary" role="button" data-bs-toggle="modal" data-bs-target="#report1">
+                                    <th scope="row">1</th>
+                                    <td>27th April 2022 at 12:00PM <span class="badge bg-danger ps-1">New</span></td>
+                                    <td>Chat Moderator AI</td>
+                                    <td>Real Volunteer Name</td>
+                                    <td>Anomymous Client Username</td>
+                                    <td>Sent inappropriate material</td>
+                                </tr>
+                                <tr role="button" data-bs-toggle="modal" data-bs-target="#report2">
+                                    <th scope="row">2</th>
+                                    <td>23rd April, 2022 11:00PM</td>
+                                    <td>Client</td>
+                                    <td>Another Volunteer Name</td>
+                                    <td>Some Other Client</td>
+                                    <td>Inconsiderate/Rude, Triggered a trauma </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>21st April 2022 05:40PM</td>
+                                    <td>Volunteer</td>
+                                    <td>Real Volunteer Name</td>
+                                    <td>Anomymous Client Username</td>
+                                    <td>Fake Account</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>10th April 2022 12:15PM</td>
+                                    <td>Chat Moderator AI</td>
+                                    <td>Some Other Volunteer</td>
+                                    <td>An Anomymous Client</td>
+                                    <td>Sent inappropriate material</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text-muted">Click to view report details</caption>
+                    </div>
+                </section>
+        
+                <div class="modal fade border-rounded" id="report1" tabindex="-1" aria-labelledby="report1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+            
+                        <div class="modal-content px-5 py-3">
+                            <div class="modal-header">
+                                <div>
+                                    <h5 class="modal-title" id="report1Label">AI-flagged Report Details</h5>
+                                    <h6 class="m-0 text-muted">Client: Anonymous Client Name<br>Volunteer: Real Volunteer Name</h6>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+            
+                            <div class="modal-body">
+                                <div class="container">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Timestamp</th>
+                                            <th scope="col">Censor Log Entry</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>12th April 2022 at 11:24PM</td>
+                                                <td>censored image of "violence-gore" (73% confidence level)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>12th April 2022 at 11:24PM</td>
+                                                <td>...</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">..</th>
+                                                <td>...</td>
+                                                <td>...</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>27th April 2022 at 12:00PM</td>
+                                                <td>censored image of "violence-gore" (94% confidence level)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="text-center py-3">
+                                    <button class="btn btn-danger">Request Chat Access</button>
+                                    <br><small class="text-muted">(Button changes to "View Chat log" once access is granted)</small>
+                                </div>
+                            </div>
+            
+                            <div class="modal-footer mt-5">
+                                <button type="button" class="btn btn-primary px-4">  Handle this report  </button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+        
+                <div class="modal fade border-rounded" id="report2" tabindex="-1" aria-labelledby="report2Label" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+            
+                        <div class="modal-content px-5 py-3">
+                            <div class="modal-header">
+                                <div>
+                                    <h5 class="modal-title" id="report2Label">Client-flagged Report Details</h5>
+                                    <h6 class="m-0 text-muted">Client: Some Other Client<br>Volunteer: Another Volunteer Name</h6>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+            
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <form action="#">
+                                            <div class="row mb-4">
+                                                <label for="" class="form-check-label mb-2">Reasons Cited</label>
+        
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox0" checked disabled>
+                                                    <label class="form-check-label" for="inlineCheckbox0">Triggered a trauma</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked disabled>
+                                                    <label class="form-check-label" for="inlineCheckbox2">Inconsiderate/Rude</label>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Take a moment to tell us about the issue</label>
+                                                
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" disabled
+                                                >This happened and that happened and that was not supposed to happened.</textarea>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">How do you wish this situation to be resolved?</label>
+                                                
+                                                <textarea class="form-control" id="exampleFormControlTextarea2" rows="2" disabled
+                                                >I am expecting this, that, etc.
+                                                </textarea>
+                                            </div>
+                    
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input is-invalid" type="checkbox" disabled id="invalidCheck4" aria-describedby="invalidCheck4Feedback">
+                                                <label class="form-check-label" for="invalidCheck4">I wish to be re-assigned</label>
+                                            </div>
+                                        </form>
+        
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Timestamp</th>
+                                                <th scope="col">Censor Log Entry</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>12th April 2022 at 11:24PM</td>
+                                                    <td>censored image of "violence-gore" (73% confidence level)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>12th April 2022 at 11:24PM</td>
+                                                    <td>...</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>27th April 2022 at 12:00PM</td>
+                                                    <td>censored image of "violence-gore" (42% confidence level)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        
+                                        <div class="text-center pt-2">
+                                            <button class="btn btn-info" id="chtbtn" onclick="openChatLog()">View Chat log >></button>
+                                            <script>
+                                                function openChatLog() {
+                                                    var chatlog = document.getElementById("chats");
+                                                    if ( chatlog.hidden ) {
+                                                        let person = prompt("Please enter your authorisation code:", "");
+                                                        if (person != null || person != "") {
+                                                            chatlog.hidden = false;
+                                                            document.getElementById("chtbtn").disabled = true;
+                                                        }
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-6 overflow-scroll">
+                                        <div id="chats" hidden>
+                                            <div class="d-flex justify-content-between">
+                                                <h6>Volunteer X</h6>
+                                                <h6>Client Y</h6>
+                                            </div>
+                                            <div class="chat-panel mt-auto" style="background-color: #eaf5e4;">
+                                                <div class="row no-gutters">
+                                                    <div class="col-lg-6 col-md-8">
+                                                        <div class="chat-bubble chat-bubble--left">
+                                                            Hello!
+                                                            <br><small class="text muted">21 Apr 10:30PM</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row no-gutters">
+                                                    <div class="col-lg-6 col-md-8">
+                                                        <div class="chat-bubble chat-bubble--left">
+                                                            How are you doing today?
+                                                            <br><small class="text muted">21 Apr 10:32PM</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row no-gutters">
+                                                    <div class="col-lg-6 col-md-8">
+                                                        <div class="chat-bubble chat-bubble--left">
+                                                            Have a bird<br>
+                                                            <img src="images/icons/bird.jpg" alt="" height="120px">
+                                                            <br><small class="text muted">21 Apr 10:44PM</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row no-gutters">
+                                                    <div class="col-lg-6 col-md-8">
+                                                        <div class="chat-bubble chat-bubble--left">
+                            
+                                                            <div id="censoredImageText" class="bg-dark p-3 m-2 rounded bg-opacity-50">
+                                                                <div class="text-center text-light">
+                                                                    <p class="m-0">WARNING: This image has been censored by our AI</p>
+                                                                    <p class="mt-2 mb-3 text-warning">detected: violence, fire</p>
+                                                                    <button class="btn btn-sm rounded-pill btn-danger bg-opacity-50" onclick="myFunction()">click to unblur</button>
+                                                                </div>
+                                                            </div>
+                            
+                                                            <div id="censoredImage" style="display: none;">
+                                                                <img src="images/icons/fire.jpg" height="120px" alt="">
+                                                                <button class="btn btn-sm rounded-pill btn-danger bg-opacity-50 ms-auto" onclick="myFunction()">hide image</button>
+                                                                <br><small class="text muted">21 Apr 10:45PM</small>
+                                                            </div>
+                            
+                                                            <script>
+                                                                function myFunction() {
+                                                                    var x = document.getElementById("censoredImageText");
+                                                                    var y = document.getElementById("censoredImage");
+                            
+                                                                    if (x.style.display === "none") {
+                                                                        x.style.display = "block";
+                                                                        y.style.display = "none";
+                                                                    } else {
+                                                                        x.style.display = "none";
+                                                                        y.style.display = "block";
+                                                                    }
+                                                                }
+                                                            </script>
+                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-8 col-lg-6 offset-md-4 offset-lg-6">
+                                                        <div class="chat-bubble chat-bubble--right">
+                                                            aaaaaaaaaa
+                                                            <br><small class="text muted">21 Apr 10:55PM</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+            
+                            <div class="modal-footer mt-3">
+                                <button type="button" class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#reportHandle2">  Handle this report  </button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+        
+                <div class="modal fade border-rounded" id="reportHandle2" tabindex="-1" aria-labelledby="reportHandle2Label" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+            
+                        <div class="modal-content px-5 py-3">
+                            <div class="modal-header">
+                                <div>
+                                    <h5 class="modal-title" id="reportHandle2Label">Client-flagged Report Details</h5>
+                                    <h6 class="m-0 text-muted">Client: Some Other Client<br>Volunteer: Another Volunteer Name</h6>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+            
+                            <div class="modal-body">
+                                <form action="#">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="checkbox" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <span class="input-group-text">Ban client</span>
+                                        <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Enter ban period in days">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="checkbox" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <span class="input-group-text">Ban volunteer</span>
+                                        <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Enter ban period in days">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="checkbox" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <label class="input-group-text" for="inputGroupSelect01">Re-assign client to</label>
+                                        <select class="form-select" id="inputGroupSelect01">
+                                          <option selected>Choose...</option>
+                                          <option value="1">Volunteer A</option>
+                                          <option value="2">Volunteer B</option>
+                                          <option value="3">Volunteer C</option>
+                                        </select>
+                                      </div>
+        
+                                    <div class="mb-3">
+                                        <label for="msgToVol" class="form-label">Message to Volunteer</label>
+                                        <textarea class="form-control" id="msgToVol" rows="3"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="msgToCli" class="form-label">Message to Client</label>
+                                        <textarea class="form-control" id="msgToCli" rows="3" ></textarea>
+                                    </div>
+        
+                                    <div class="mb-3">
+                                        <label for="msgComm" class="form-label">Comments (for internal use)</label>
+                                        <textarea class="form-control" id="msgComm" rows="1" ></textarea>
+                                    </div>
+        
+                                    <div class="form-check mt-5 mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            I have given this report the thorough consideration it deserves <br>
+                                            and have judged both parties fairly.
+                                        </label>
+                                      </div>
+                                </form>
+                            </div>
+            
+                            <div class="modal-footer mt-3">
+                                <button type="button" class="btn btn-secondary px-4" data-bs-toggle="modal" data-bs-target="#report2">  &leftarrow; Back  </button>
+                                <button type="button" class="btn btn-success px-4">  Mark as Handled </button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
 
             </section>
             <!--

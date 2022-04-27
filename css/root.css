@@ -109,7 +109,7 @@ textarea, input, select, .checkbox-group, .radio-group, .btn-border-shadow{
 }
 
 
-.leave-application-modal > * > *, .login-modal > * > *{
+.leave-application-modal > * > *, .login-modal > * > *, .modal-content{
     color: black;
     background-color: var(--secondary-bg-light);
 }

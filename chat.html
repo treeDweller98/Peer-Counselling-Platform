@@ -10,6 +10,7 @@
     <script defer src="js/bootstrap.bundle.min.js"></script>
     <script defer src="js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="css/chat.css">
 
     <title>HealthyMind | Chat</title>
@@ -183,10 +184,13 @@
                             <div class="collapse px-2 py-1" id="qCollapse">
                                 <ul class="list-group">
                                     <li class="list-group-item list-group-item-action list-group-item-dark d-flex justify-content-between align-items-center">
-                                        <i class="material-icons md-48">add</i>
                                         <div class="ps-2 me-auto text-center">
-                                            <div class="fw-bold">Add new questionnaire</div>
-                                            <small class="text-muted">(volunteer-only)</small>
+                                            <button type="button" class="btn btn-border-shadow" data-bs-toggle="modal"
+                                            data-bs-target="#add-questionnaire-modal">
+                                                <i class="material-icons md-48">add</i>
+                                                <div class="fw-bold">Add new questionnaire</div>
+                                                <small class="text-light">(volunteer-only)</small>
+                                            </button>
                                         </div>
                                     </li>
                                     <li class="list-group-item list-group-item-action list-group-item-primary d-flex justify-content-between align-items-center" aria-current="true">
@@ -504,7 +508,152 @@
 
         </div>
     </div>
+    <!-- NEW QUESTIONNAIRE MODAL -->
+    <div class="modal fade leave-application-modal" id="add-questionnaire-modal" tabindex="-1"
+                    aria-labelledby="add-questionnaire-modalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="add-questionnaire-modalLabel">New Questionnaire
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="new-questionnaire-form">
+                                    <div class="form-control">
+                                        <label for="questionnaire-type" id="label-questionnaire-type">
+                                            Questionnaire Type
+                                        </label>
+                                        <select id="questionnaire-type">
+                                            <option value="signup-q">Sign Up Questionnaire</option>
+                                            <option value="client-del-q">Client Account Deletion Questionnaire</option>
+                                            <option value="vounteer-signup">Volunteer Signup Questionnaire</option>
+                                            <option value="name">Others</option>
+                                        </select>
+                                    </div>
+                                    <!-- Details -->
+                                    <div class="form-control">
+                                        <label>
+                                            Want to answer this question?
+                                        </label>
 
+                                        <!-- Input Type Text -->
+                                        <textarea placeholder="Enter your comment here"></textarea>
+                                    </div>
+
+                                    <div class="form-control">
+                                        <label>
+                                            Perhaps answer this question?
+                                        </label>
+
+                                        <!-- Input Type Text -->
+                                        <textarea placeholder="Enter your comment here"></textarea>
+                                    </div>
+
+                                    <div class="form-control">
+                                        <label for="age" id="label-age">
+                                            Age
+                                        </label>
+
+                                        <!-- Input Type Text -->
+                                        <input type="text" id="age" placeholder="Enter your age" />
+                                    </div>
+
+                                    <div class="form-control">
+                                        <label for="role" id="label-role">
+                                            Which option best describes you?
+                                        </label>
+
+                                        <!-- Dropdown options -->
+                                        <select name="role" id="role">
+                                            <option value="student">Student</option>
+                                            <option value="intern">Intern</option>
+                                            <option value="professional">
+                                                Professional
+                                            </option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-control">
+                                        <label>
+                                            Would you recommend [This Website]
+                                            to a friend?
+                                        </label>
+
+                                        <!-- Input Type Radio Button -->
+                                        <div class="radio-group">
+                                            <label for="recommed-1">
+                                                <input type="radio" id="recommed-1" name="recommed">Yes</input>
+                                            </label>
+                                            <label for="recommed-2">
+                                                <input type="radio" id="recommed-2" name="recommed">No</input>
+                                            </label>
+                                            <label for="recommed-3">
+                                                <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-control">
+                                        <label>What are the issues you face?
+                                            <small>(Check all that apply)</small>
+                                        </label>
+                                        <!-- Input Type Checkbox -->
+                                        <div class="checkbox-group">
+                                            <label for="inp-1">
+                                                <input type="checkbox" id="inp-1" name="inp">This Issue</input></label>
+                                            <label for="inp-2">
+                                                <input type="checkbox" id="inp-2" name="inp">Another</input></label>
+                                            <label for="inp-3">
+                                                <input type="checkbox" id="inp-3" name="inp">Another 2</input></label>
+                                            <label for="inp-4">
+                                                <input type="checkbox" id="inp-4" name="inp">Some other</input></label>
+                                            <label for="inp-5">
+                                                <input type="checkbox" id="inp-5" name="inp">Some another</input></label>
+                                            <label for="inp-6">
+                                                <input type="checkbox" id="inp-6" name="inp">Other</input>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-control">
+                                        <label for="comment">
+                                            Any comments or suggestions
+                                        </label>
+
+                                        <!-- multi-line text input control -->
+                                        <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+                                    </div>
+                                    
+
+                                    <!-- Multi-line Text Input Control -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary">Add Multiple Choice Radio Button</button>
+                                        <button type="button" class="btn btn-primary">Add Multiple Choice Checkbox</button>
+                                        <button type="button" class="btn btn-primary">Add Short Question</button>
+                                        <button type="button" class="btn btn-primary">Add One Word Answer Question</button>
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="tag" id="label-tag">
+                                            Tags
+                                        </label>
+
+                                        <!-- Input Type Text -->
+                                        <input type="text" id="tag" placeholder="Enter comma separated tags" />
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Discard</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save Draft</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     <!-- REPORT CONVERSATION MODAL -->
     <div class="modal fade border-rounded" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
