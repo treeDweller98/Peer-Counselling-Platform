@@ -24,6 +24,7 @@
     --border-style-1: 2px rgba(128, 128, 128, 0.621) solid;
     --border-style-2: 2px rgba(44, 44, 44, 0.641) solid;
     --border-style-3: 2px rgba(128, 128, 128, 0.255) solid;
+    --border-style-4: 4px rgb(145, 200, 127) solid;
 
     --price:green;
     --options:rgba(157, 245, 201, 0.484);
@@ -58,6 +59,7 @@
 }
 
 body{
+    background-color: var(--bg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -76,9 +78,6 @@ body::before{
     opacity: 0.9;
     z-index: -1;
 }
-
-
-
 
 
 #login-form{
@@ -110,7 +109,7 @@ textarea, input, select, .checkbox-group, .radio-group, .btn-border-shadow{
 }
 
 
-.leave-application-modal > * > *{
+.leave-application-modal > * > *, .login-modal > * > *{
     color: black;
     background-color: var(--secondary-bg-light);
 }
@@ -139,9 +138,6 @@ textarea, input, select, .checkbox-group, .radio-group, .btn-border-shadow{
 }
 .btn-primary:hover{
     background-color: var(--btn-primary-hover);
-}
-body {
-    background-color: var(--bg);
 }
 
 .icon {

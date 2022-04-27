@@ -3,6 +3,13 @@
     max-height: 800px;
     height: 80vh;
 }
+
+.login-in-form{
+    text-align: center;
+    background-color: var(--secondary-bg-dark);
+    border-radius: var(--border-radius-s);
+}
+
 footer{
     height: 13ch;
 }

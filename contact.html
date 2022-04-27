@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/form-validation.js"></script>
+
+    <title>HealthyMind | Contact Us</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="images/icons/band.png" class="d-inline-block align-text-center" alt="band icon" width="40px">
+                HealthyMind
+            </a>
+
+            <button 
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chat.html">Chat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+                <ul class="navbar-nav end-nav-links">
+                    <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+                    <li class="nav-item dropdown">    
+                        <a
+                            class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" title="account"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            >
+                            <img src="images/icons/account.png" class="d-inline-block align-text-center icon icon-md" alt="Account">
+                        </a>
+            
+                        <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><span class="dropdown-item-text text-muted">Account</span></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a data-bs-toggle="modal"
+                                data-bs-target="#login-modal" class="dropdown-item" role="button">Log in</a></li>
+                            <li><a href="signup.html" class="dropdown-item" role="button">Sign up</a></li>                    </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="modal fade login-modal" id="login-modal" tabindex="-1"
+        aria-labelledby="login-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="login-modalLabel">Login
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <div class="form-control">
+                            <label for="emailbox" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailbox" aria-describedby="emailHelp" placeholder="example@email.com" name="email" required>
+                            <div class="invalid-feedback">Please enter a valid email address</div>
+                        </div>
+                        <div class="form-control">
+                            <label for="pwbox" class="form-label">Password</label>
+                            <input 
+                                type="password" class="form-control" aria-describedby="pwHelp" id="pwbox" name="password" 
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required
+                            >
+                            <div class="invalid-feedback">
+                                Please enter a valid password
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="signup.html">Sign Up</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Forgot Password</button>
+                    <label for="inp-1">
+                        <input type="checkbox" id="inp-1" name="inp">Remember Me</input>
+                    </label>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

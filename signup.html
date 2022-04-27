@@ -36,7 +36,8 @@
                     <li class="nav-item"><a class="nav-link" href="chat.html">Chat</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
-                <ul class="navbar-nav">
+                <ul class="navbar-nav end-nav-links">
+                    <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
                     <li class="nav-item dropdown">    
                         <a
                             class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" title="account"
@@ -45,12 +46,12 @@
                             <img src="images/icons/account.png" class="d-inline-block align-text-center icon icon-md" alt="Account">
                         </a>
             
-                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                        <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                             <li><span class="dropdown-item-text text-muted">Account</span></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a data-bs-toggle="modal" data-bs-target="#login-modal" class="dropdown-item" role="button">Log in</a></li>
-                            <li><a href="signup.html" class="dropdown-item" role="button">Sign up</a></li>
-                        </ul>
+                            <li><a data-bs-toggle="modal"
+                                data-bs-target="#login-modal" class="dropdown-item" role="button">Log in</a></li>
+                            <li><a href="signup.html" class="dropdown-item" role="button">Sign up</a></li>                    </ul>
                     </li>
                 </ul>
             </div>
@@ -58,7 +59,7 @@
         </div>
     </nav>
 
-    <div class="modal fade leave-application-modal" id="login-modal" tabindex="-1"
+    <div class="modal fade login-modal" id="login-modal" tabindex="-1"
         aria-labelledby="login-modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
@@ -102,6 +103,7 @@
             </div>
         </div>
     </div>
+
 
     <main id="signupForm" >
         <section class="d-flex flex-column justify-content-center align-items-end">
@@ -344,9 +346,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    
-                    <p class="mb-4">Already have an account? <a data-bs-toggle="modal" data-bs-target="#login-modal" class="dropdown-item" role="button"> Log In</a></p>
+                    <p class="mb-4">Already have an account? <a data-bs-toggle="modal" data-bs-target="#login-modal" class="dropdown-item login-in-form" role="button"> Log In</a></p>
                 </div>
         
             </form>

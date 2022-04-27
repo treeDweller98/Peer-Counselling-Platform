@@ -1,0 +1,44 @@
+:root{
+    --carousel-width:70vw;
+    --banner-side-box-width: calc(100vw - var(--carousel-width));
+    --main-banner-height: 60vh;
+}
+
+.main-banner{
+    display: flex;
+    gap: 2ch;
+    margin: 2ch;
+    height: var(--main-banner-height);
+}
+.main-banner > *{
+    border: var(--border-style-2);
+    border-radius: var(--border-radius-s);
+    opacity: 0.9;
+
+}
+.carousel.slide{
+    max-width: var(--carousel-width)
+}
+.carousel.slide *{
+    border-radius: var(--border-radius-s);
+}
+.carousel-inner{
+    height: var(--main-banner-height);
+    max-height: 900px;
+}
+.carousel-item img{
+    width: 70vw;
+    transform: translateY(-40%);
+}
+
+.banner-side-box{
+    padding: 1ch;
+    width: var(--banner-side-box-width);
+    background-color: var(--secondary-bg-lightest);
+    display: flex;
+    gap: 2ch;
+    flex-direction: column;
+}
+.banner-side-box > *{
+    flex-grow: 1;
+}
