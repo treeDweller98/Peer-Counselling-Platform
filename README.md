@@ -1,5 +1,5 @@
-<img src="./Pictures/100002010000009600000096AC1A0BD80DA021DF.png"
-style="width:2.7992in;height:2.7992in" />
+<img src="./media/image18.png" style="width:2.79938in;height:2.79938in"
+alt="logo_iub.png" />
 
 **Independent University, Bangladesh**
 
@@ -11,30 +11,320 @@ style="width:2.7992in;height:2.7992in" />
 
 **Term Project**
 
-<span
-id="anchor"></span><img src="./Pictures/10000201000002000000020087F7B80368049991.png"
-style="width:2.122in;height:2.122in" />
+<img src="./media/image9.png"
+style="width:2.12229in;height:2.12229in" />
 
-<span id="anchor-1"></span>HealthyMind
+HealthyMind
 
-<span id="anchor-2"></span>A Peer Counselling Platform
+A Peer Counselling Platform
 
-<span id="anchor-3"></span>**Fahim Ahmed**  
+**Fahim Ahmed**  
 2022409
 
-<span id="anchor-4"></span>**Suhaila**
+**Suhaila**
 
-<span id="anchor-5"></span>1910496
+1910496
 
-<span id="anchor-6"></span>**Mir Shafayat Ahmed**
+**Mir Shafayat Ahmed**
 
-<span id="anchor-7"></span>1910456
+1910456
 
-<span id="anchor-8"></span>**Table of Contents**
+**Table of Contents**
 
-<span id="anchor-9"></span>***Section 1:***
+**[1. Introduction](#introduction) 5**
 
-<span id="anchor-10"></span>**1. Introduction**
+**[2. History leading to project
+request](#history-leading-to-project-request) 5**
+
+**[3. Problems, opportunities](#problems-opportunities) 6**
+
+> [Problems and Solutions](#problems-and-solutions) 6
+>
+> [Opportunities](#opportunities) 6
+
+**[4. Project goal and objectives](#project-goal-and-objectives) 7**
+
+**[5. Product Description](#product-description) 8**
+
+**[6. System Context diagram](#system-context-diagram) 8**
+
+**[7. Hardware detail (Include Rich
+Picture)](#hardware-detail-include-rich-picture) 9**
+
+**[8. Key Technical Features of
+Software](#key-technical-features-of-software) 9**
+
+**[9. Information Gathering methods (At least three
+methods)](#information-gathering-methods-at-least-three-methods) 10**
+
+> [Questionnaires:](#questionnaires) 10
+>
+> [Interviews:](#interviews) 10
+>
+> [JAD sessions:](#jad-sessions) 10
+>
+> [Samples](#samples) 11
+>
+> [1. Questionnaire Sample](#questionnaire-sample) 11
+>
+> [2. Interview Questions](#interview-questions) 12
+>
+> [3. User Stories of the New System](#user-stories-of-the-new-system)
+> 13
+
+**[10. Major functionalities offered by the
+system](#major-functionalities-offered-by-the-system) 14**
+
+**[11. Use Case Diagram](#use-case-diagram) 15**
+
+> [User Initiation System](#user-initiation-system) 15
+>
+> [Notification System](#notification-system) 15
+>
+> [Chat System](#chat-system) 16
+>
+> [Report Handling System](#report-handling-system) 16
+>
+> [Questionnaire System](#questionnaire-system) 17
+>
+> [User Management System](#user-management-system) 17
+
+**[12. Normal and Alternate Scenarios](#normal-and-alternate-scenarios)
+18**
+
+> [User signup](#user-signup) 18
+>
+> [Reported notifications](#reported-notifications) 19
+>
+> [Have conversations in chat](#have-conversations-in-chat) 20
+>
+> [View flagged conversation report
+> details](#view-flagged-conversation-report-details) 21
+>
+> [Make Questionnaire](#make-questionnaire) 22
+>
+> [View Volunteer Profile](#view-volunteer-profile) 23
+
+**[13. Functional Requirements](#functional-requirements) 24**
+
+> [User Initiation System](#user-initiation-system-1) 24
+>
+> [Notification System](#notification-system-1) 24
+>
+> [Chat System](#chat-system-1) 24
+>
+> [Report Handling System](#report-handling-system-1) 24
+>
+> [Questionnaire System](#questionnaire-system-1) 24
+>
+> [User Management System](#user-management-system-1) 24
+
+**[14. Non-Functional Requirements](#non-functional-requirements) 25**
+
+> [Privacy](#privacy) 25
+>
+> [Security:](#security) 25
+>
+> [Cost:](#cost) 25
+>
+> [Usability:](#usability) 25
+>
+> [Misc.](#misc.) 25
+
+**[15. Entity Relationship Diagram](#entity-relationship-diagram) 26**
+
+**[16. Logical Data Flow diagram](#logical-data-flow-diagram) 27**
+
+> [Diagram 0](#diagram-0) 27
+>
+> [User Initiation System](#user-initiation-system-2) 28
+>
+> [Logical Dataflow: Existing](#logical-dataflow-existing) 28
+>
+> [Logical Dataflow: Proposed](#logical-dataflow-proposed) 28
+>
+> [Notification System](#notification-system-2) 29
+>
+> [Logical Dataflow: Proposed](#logical-dataflow-proposed-1) 29
+>
+> [Chat System](#chat-system-2) 30
+>
+> [Logical Dataflow: Existing](#logical-dataflow-existing-1) 30
+>
+> [Logical Dataflow: Proposed](#logical-dataflow-proposed-2) 30
+>
+> [Report System](#report-system) 31
+>
+> [Logical Dataflow: Existing](#logical-dataflow-existing-2) 31
+>
+> [Logical Dataflow: Proposed](#logical-dataflow-proposed-3) 31
+>
+> [Questionnaire System](#questionnaire-system-2) 32
+>
+> [Logical Dataflow: Existing](#logical-dataflow-existing-3) 32
+>
+> [Logical Dataflow: Proposed](#logical-dataflow-proposed-4) 32
+>
+> [User Management System](#user-management-system-2) 33
+>
+> [Logical Dataflow: Proposed](#logical-dataflow-proposed-5) 33
+
+**[17. Physical Data Flow diagram](#physical-data-flow-diagram) 34**
+
+> [User Initiation System](#user-initiation-system-3) 34
+>
+> [Notification System](#notification-system-3) 34
+>
+> [Chat System](#chat-system-3) 35
+>
+> [Report System](#report-system-1) 35
+
+**[18. Activity diagrams](#activity-diagrams) 36**
+
+> [Activity: User Initiation System](#activity-user-initiation-system)
+> 36
+>
+> [Activity: Volunteer signup System](#activity-volunteer-signup-system)
+> 37
+>
+> [Activity: Report Notification
+> System](#activity-report-notification-system) 38
+>
+> [Activity: Chat Notification
+> System](#activity-chat-notification-system) 39
+>
+> [Activity: Chat System](#activity-chat-system) 40
+>
+> [Activity: Report System](#activity-report-system) 41
+>
+> [Activity: Questionnaire System](#activity-questionnaire-system) 42
+
+**[19. Sequence diagrams](#sequence-diagrams) 43**
+
+> [User Initiation System](#user-initiation-system-4) 43
+>
+> [User sign up](#user-sign-up) 43
+>
+> [Notification System](#notification-system-4) 43
+>
+> [Reported Notification](#reported-notification) 43
+>
+> [Chat System](#chat-system-4) 44
+>
+> [Have Conversations](#have-conversations) 44
+>
+> [Report System](#report-system-2) 44
+>
+> [View Reported Conversation](#view-reported-conversation) 44
+>
+> [Questionnaire System](#questionnaire-system-3) 45
+>
+> [Edit Questionnaire](#edit-questionnaire) 45
+
+**[20. Communication diagrams](#communication-diagrams) 46**
+
+> [User Initiation System](#user-initiation-system-5) 46
+>
+> [User sign up](#user-sign-up-1) 46
+>
+> [Notification System](#notification-system-5) 46
+>
+> [Reported Notification](#reported-notification-1) 46
+>
+> [Chat System](#chat-system-5) 46
+>
+> [Have Conversations](#have-conversations-1) 46
+>
+> [Report System](#report-system-3) 47
+>
+> [View Reported Conversation](#view-reported-conversation-1) 47
+>
+> [Questionnaire System](#questionnaire-system-4) 47
+>
+> [Make questionnaire](#make-questionnaire-1) 47
+
+**[21. Class diagrams](#class-diagrams) 48**
+
+**[22. State-chart diagrams.](#state-chart-diagrams.) 49**
+
+> [Client class](#client-class) 49
+>
+> [Volunteer class](#volunteer-class) 49
+>
+> [Chat class](#chat-class) 50
+>
+> [Report class](#report-class) 50
+>
+> [Leave Application class](#leave-application-class) 51
+>
+> [Questionnaire class](#questionnaire-class) 51
+
+**[23. CRUD matrix](#crud-matrix) 52**
+
+> [User Initiation System](#user-initiation-system-6) 52
+>
+> [Chat System](#chat-system-6) 52
+>
+> [Report System](#report-system-4) 53
+>
+> [Questionnaire System](#questionnaire-system-5) 53
+
+**[24. Structure English pseudo code for the
+system](#structure-english-pseudo-code-for-the-system) 54**
+
+> [User Initiation System](#user-initiation-system-7) 54
+>
+> [Notification System](#notification-system-6) 55
+>
+> [Having Conversations](#having-conversations) 56
+>
+> [Handle Reports](#handle-reports) 57
+>
+> [User Management](#user-management) 58
+>
+> [Questionnaire Management](#questionnaire-management) 59
+
+**[25. Prototype the user interface](#prototype-the-user-interface) 60**
+
+> [User Signup](#user-signup-1) 60
+>
+> [Volunteer Application](#volunteer-application) 60
+>
+> [User Login](#user-login) 61
+>
+> [Chat](#chat) 61
+>
+> [Chat Client List (visible to volunteers
+> only)](#chat-client-list-visible-to-volunteers-only) 62
+>
+> [Chat Schedule](#chat-schedule) 62
+>
+> [Chat Questionnaire](#chat-questionnaire) 63
+>
+> [Add Custom Questionnaire (visible to volunteers
+> only)](#add-custom-questionnaire-visible-to-volunteers-only) 63
+>
+> [Chat Notification](#chat-notification) 64
+>
+> [Report Chat](#report-chat) 64
+>
+> [Report Management](#report-management) 65
+>
+> [AI-flagged Report Details](#ai-flagged-report-details) 65
+>
+> [Manually-flagged Report Details](#manually-flagged-report-details) 66
+>
+> [Report-handling wizard](#report-handling-wizard) 66
+>
+> [Leave Application List](#leave-application-list) 67
+>
+> [Leave Application Details](#leave-application-details) 67
+>
+> [Admin Add Questionnaire](#admin-add-questionnaire) 67
+
+**<u>Section 1:</u>**
+
+# **1. Introduction**
 
 HealthyMind is a non-profit organisation aimed at providing peer-support
 services to people of all ages. It is run by a group of mental health
@@ -45,7 +335,7 @@ connected, they can have conversations and receive counselling and
 support. At present their operations are small in scale; employing only
 a dozen or so volunteers, each connected to around five clients.
 
-<span id="anchor-11"></span>**2. History leading to project request**
+# **2. History leading to project request**
 
 The organisation uses Facebook Messenger to provide their services. All
 operations are conducted manually. Volunteer applications, client
@@ -69,87 +359,95 @@ Hence HealthyMind approached us with their problems - asking for a
 dedicated, all-in-one software solution automating their day-to-day
 activities.
 
-<span id="anchor-12"></span>**3. Problems, opportunities**
+# **3. Problems, opportunities**
 
-<span id="anchor-13"></span>***Problems and Solutions***
+## ***Problems and Solutions***
 
-|                                                                                                       |                                                                                                                                                                                                                                 |                                                                                                                                                                                                             |
-|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                       | Problem                                                                                                                                                                                                                         | Solution                                                                                                                                                                                                    |
-| Manual, tedious registration process that involves going to another site. May discourage signing up.  | User initiation will be handled within the application in a guided manner. Users will not be taken to another site.                                                                                                             |                                                                                                                                                                                                             |
-| Anonymity difficult to maintain due to Facebook being used                                            | User details will only be visible to supervisors in the new system.                                                                                                                                                             |                                                                                                                                                                                                             |
-| Confidentiality cannot be maintained as one volunteer’s messages are not kept isolated from another’s | Each volunteer will have completely separate accounts so this limitation of the previous messaging platform will not apply. Only supervisors will have access to chat logs, and only after a report has been filed by the user. |                                                                                                                                                                                                             |
-|                                                                                                       | Supervising a large number of chats unfeasible                                                                                                                                                                                  | AI will be employed to moderate chats. Alerts will be sent to supervisors if inappropriate activity is detected.                                                                                            |
-|                                                                                                       | Reporting conversations is done manually via google forms                                                                                                                                                                       | Reporting can be done within the chat application window.                                                                                                                                                   |
-|                                                                                                       | Pending reports have to be periodically by supervisors.                                                                                                                                                                         | Urgent alerts will be sent to the supervisor whenever a conversation is reported. All pending reports can be seen in the supervisor’s dashboard.                                                            |
-|                                                                                                       | Reports have to dealt with manually                                                                                                                                                                                             | List of possible actions can be seen in the dashboard and handing can be done directly from there                                                                                                           |
-|                                                                                                       | Various mental health assessment questionnaires have to be taken off-site                                                                                                                                                       | Editable questionnaires will be integrated into the application so users can have a seamless experience.                                                                                                    |
-|                                                                                                       | Questionnaires have to be manually handed out.                                                                                                                                                                                  | Questionnaires can be scheduled and set by supervisors and volunteers. These are to be automatically distributed to clients and the responses can be accessed in a convenient manner from their dashboards. |
-|                                                                                                       | Conversations have to be manually scheduled/agreed upon by parties                                                                                                                                                              | Scheduling and notification system will be integrated in the chat application itself.                                                                                                                       |
+|     | Problem                                                                                               | Solution                                                                                                                                                                                                                        |
+|-----|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     | Manual, tedious registration process that involves going to another site. May discourage signing up.  | User initiation will be handled within the application in a guided manner. Users will not be taken to another site.                                                                                                             |
+|     | Anonymity difficult to maintain due to Facebook being used                                            | User details will only be visible to supervisors in the new system.                                                                                                                                                             |
+|     | Confidentiality cannot be maintained as one volunteer’s messages are not kept isolated from another’s | Each volunteer will have completely separate accounts so this limitation of the previous messaging platform will not apply. Only supervisors will have access to chat logs, and only after a report has been filed by the user. |
+|     | Supervising a large number of chats unfeasible                                                        | AI will be employed to moderate chats. Alerts will be sent to supervisors if inappropriate activity is detected.                                                                                                                |
+|     | Reporting conversations is done manually via google forms                                             | Reporting can be done within the chat application window.                                                                                                                                                                       |
+|     | Pending reports have to be periodically by supervisors.                                               | Urgent alerts will be sent to the supervisor whenever a conversation is reported. All pending reports can be seen in the supervisor’s dashboard.                                                                                |
+|     | Reports have to dealt with manually                                                                   | List of possible actions can be seen in the dashboard and handing can be done directly from there                                                                                                                               |
+|     | Various mental health assessment questionnaires have to be taken off-site                             | Editable questionnaires will be integrated into the application so users can have a seamless experience.                                                                                                                        |
+|     | Questionnaires have to be manually handed out.                                                        | Questionnaires can be scheduled and set by supervisors and volunteers. These are to be automatically distributed to clients and the responses can be accessed in a convenient manner from their dashboards.                     |
+|     | Conversations have to be manually scheduled/agreed upon by parties                                    | Scheduling and notification system will be integrated in the chat application itself.                                                                                                                                           |
 
-<span id="anchor-14"></span>***Opportunities***
+## ***Opportunities***
 
 -   No similar all-in-one platform currently exists.
+
 -   User convenience will be unparalleled.
+
 -   AI-based supervision would ensure confidentiality.
+
 -   Automation will reduce supervisor workloads and will allow them to
-    work more efficiently.
+    > work more efficiently.
+
 -   Volunteer management (leaves, signup, assigning) can be done via
-    this application.
+    > this application.
+
 -   Chat application will be purpose-designed for this organisation’s
-    needs so it can better guarantee confidentiality.
+    > needs so it can better guarantee confidentiality.
+
 -   Due to questionnaires etc. being integrated into the chat
-    application, the new system can give a much more cohesive and
-    unified experience.
+    > application, the new system can give a much more cohesive and
+    > unified experience.
+
 -   Confidentiality and convenience will attract a large number of
-    users.
+    > users.
+
 -   Automation will allow the organisation to scale up their operations.
 
-<span id="anchor-15"></span>**4. Project goal and objectives**
+# **4. Project goal and objectives**
 
-HealthyMind aims to provide cost free service to the users ranging from
-all ages. This website is designed to provide a safe space and learning
-environment for people without fear of judgement, misunderstanding,
-harassment or abuse. It carves out a way for promotion of mental health
-through service, advocacy, and education. It offers a very efficient ,
-smooth, and comfortable website to use (from home) as well as an
-excellent platform that is accessible for all people (including
-disability).
+> HealthyMind aims to provide cost free service to the users ranging
+> from all ages. This website is designed to provide a safe space and
+> learning environment for people without fear of judgement,
+> misunderstanding, harassment or abuse. It carves out a way for
+> promotion of mental health through service, advocacy, and education.
+> It offers a very efficient , smooth, and comfortable website to use
+> (from home) as well as an excellent platform that is accessible for
+> all people (including disability).
+>
+> One of the advantages is that the users can easily navigate through
+> the platform with minimum effort where the service can be available
+> 24/7. In addition, the platform is structured in a way ensuring
+> confidentiality of both client and volunteer through high monitoring
+> by the employees to ensure a safe and secure environment for both the
+> parties.
 
-One of the advantages is that the users can easily navigate through the
-platform with minimum effort where the service can be available 24/7. In
-addition, the platform is structured in a way ensuring confidentiality
-of both client and volunteer through high monitoring by the employees to
-ensure a safe and secure environment for both the parties.
+**<u>Section 2:</u>**
 
-<span id="anchor-16"></span>***Section 2:***
-
-<span id="anchor-17"></span>**5. Product Description**
+# **5. Product Description**
 
 1.  **Product summary**
 
-It is a platform in which people from all around Bangladesh can connect
-and share their inner thoughts while being anonymous to a peer support
-volunteer. The volunteers can also apply with just a few steps by
-signing up and uploading their resume. The administration is updated
-from time to time of the ongoing activities on the website. Moreover,
-they can maintain and have an overview of all the users at any
-preferable time they want.
+> It is a platform in which people from all around Bangladesh can
+> connect and share their inner thoughts while being anonymous to a peer
+> support volunteer. The volunteers can also apply with just a few steps
+> by signing up and uploading their resume. The administration is
+> updated from time to time of the ongoing activities on the website.
+> Moreover, they can maintain and have an overview of all the users at
+> any preferable time they want.
+>
+> Furthermore, after the volunteers and clients have successfully
+> registered and are part of HealthyMind, they can start communicating
+> with each other with proper security and privacy ensured on both ends
+> and also set up schedules if they wish. On the other hand, The
+> volunteer has an option to even reject a request for chat and clients
+> can also wish to reassign the volunteer. To maintain security and
+> privacy, an AI chat moderator is incorporated in the system which will
+> detect any inappropriate images or messages sent in the chat log and
+> immediately notify the supervisor.
+>
+> To summarise, the platform will help increase awareness of mental
+> health and people will be more willing to share their problems.
 
-Furthermore, after the volunteers and clients have successfully
-registered and are part of HealthyMind, they can start communicating
-with each other with proper security and privacy ensured on both ends
-and also set up schedules if they wish. On the other hand, The volunteer
-has an option to even reject a request for chat and clients can also
-wish to reassign the volunteer. To maintain security and privacy, an AI
-chat moderator is incorporated in the system which will detect any
-inappropriate images or messages sent in the chat log and immediately
-notify the supervisor.
-
-To summarise, the platform will help increase awareness of mental health
-and people will be more willing to share their problems.
-
-1.  **Product Stakeholders**
+2.  **Product Stakeholders**
 
 -   Client
 
@@ -159,186 +457,310 @@ and people will be more willing to share their problems.
 
 -   Volunteer
 
-<span id="anchor-18"></span>**6. System Context diagram**
+# **6. System Context diagram**
 
-<img src="./Pictures/100002010000080000000512485BA97A4125E52C.png"
-style="width:9.4429in;height:5.9862in" />
+<img src="./media/image30.png"
+style="width:9.44291in;height:5.98611in" />
 
-<span id="anchor-19"></span>**7. Hardware detail (Include Rich
-Picture)**
+# **7. Hardware detail (Include Rich Picture)**
 
 **Frontend**:
 
 -   Smartphone, PC or Laptop
+
 -   Internet connection capable of smooth browsing experience
+
 -   A Web Browser or an Android or iOS app.
 
 **Backend:**
 
 -   Servers capable of handling 1000 users concurrently hosted by a
-    cloud service provider.
+    > cloud service provider.
+
 -   At least 100MB of storage allocated per user.
+
 -   A relational database - MySQL.
+
 -   A language like Python that is capable of handling thousands of
-    requests every second.
+    > requests every second.
 
-<img src="./Pictures/10000201000003A80000026EA5BF3E721623AA59.png"
-style="width:8.5417in;height:5.6945in" />
+<img src="./media/image24.png"
+style="width:8.54167in;height:5.69444in" />
 
-<span id="anchor-20"></span>**8. Key Technical Features of Software**
+# **8. Key Technical Features of Software**
 
--    JavaScript will be the main frontend language as it allows for
-    making Web Apps that can easily be made into Native apps for Android
-    and iOS. Ensuring compatibility.
--    Compute-Heavy tasks like Image Manipulation and Natural Language
-    Processing are offloaded to powerful servers, hence allowing for
-    older smartphones to use the service.
--    AI model inappropriate content detection is incorporated in the
-    system to detect inappropriate chat messages.
--    Backend uses Django/Python for ease of maintainability.
--    End-to-end encryption of all chat messages using SHA256 to ensure
-    privacy.
--    User authentication code system to ensure sensitive data is not
-    revealed.
--    OTP 2FA used for signup/login
+-   JavaScript will be the main frontend language as it allows for
+    > making Web Apps that can easily be made into Native apps for
+    > Android and iOS. Ensuring compatibility.
 
-<span id="anchor-21"></span>***Section 3:***
+-   Compute-Heavy tasks like Image Manipulation and Natural Language
+    > Processing are offloaded to powerful servers, hence allowing for
+    > older smartphones to use the service.
 
-<span id="anchor-22"></span>**9. Information Gathering methods (At least
-three methods)**
+-   AI model inappropriate content detection is incorporated in the
+    > system to detect inappropriate chat messages.
 
-<span id="anchor-23"></span>Upon a cursory examination of the
-organisation, we settled for several interactive data gathering messages
-for this project. Due to the small size of the organisation, sampling a
-large pool of members was not an option. The decentralised/virtual
-nature of the organisation, plus the need for maintaining strict
-confidentiality did not permit us the ability to sit down and observe
-organisation members carrying out their day to day tasks in their own
-environment. Information gathering was carried out in phases:
+-   Backend uses Django/Python for ease of maintainability.
 
--   <span id="anchor-24"></span>***Questionnaires: ***
+-   End-to-end encryption of all chat messages using SHA256 to ensure
+    > privacy.
 
-To gather preliminary information about their requirements,
-questionnaires were emailed to all the volunteers and supervisors
-working under the organisation, plus a few willing clients of the
-organisation. The questionnaire had a small description of the new
-system to give them some context. Responses were submitted via Google
-Forms.
+-   User authentication code system to ensure sensitive data is not
+    > revealed.
 
--   <span id="anchor-25"></span>***Interviews: ***
+-   OTP 2FA used for signup/login
 
-Our interviewer carried out background research by taking notes of the
-facebook page of the organisation, their blog and their press releases
-detailing the policies, values and vision of the organisation.
+**<u>Section 3:</u>**
 
-We decided to individually interview the vice president (who is also a
-former supervisor), a peer support volunteer and two willing clients.
-Interview questions were mailed out a week in advance to prepare the
-interviewees. The interview was conducted virtually as each individual
-was situated at different places. Each session lasted approximately an
-hour.
+# **9. Information Gathering methods (At least three methods)**
 
-The objective of the interview was to find out how they worked, their
-software requirements, what they wish to achieve with the new system,
-the resource budget etc. Beside the specific interview questions,
-interviewees were encouraged to elaborate on their questionnaire
-answers, tell us stories about their time with the organisation, voice
-their personal concerns with the old and new system and their opinions
-on certain policies and requirements of the organisation.
+Upon a cursory examination of the organisation, we settled for several
+interactive data gathering messages for this project. Due to the small
+size of the organisation, sampling a large pool of members was not an
+option. The decentralised/virtual nature of the organisation, plus the
+need for maintaining strict confidentiality did not permit us the
+ability to sit down and observe organisation members carrying out their
+day to day tasks in their own environment. Information gathering was
+carried out in phases:
 
--   <span id="anchor-26"></span>***JAD sessions: ***
+-   ## ***Questionnaires:*** 
 
-At a later date following the conclusion of the interviews, we sat down
-together with all the interviewees for four consecutive days to discuss
-the functionalities and UI of the system.
+> To gather preliminary information about their requirements,
+> questionnaires were emailed to all the volunteers and supervisors
+> working under the organisation, plus a few willing clients of the
+> organisation. The questionnaire had a small description of the new
+> system to give them some context. Responses were submitted via Google
+> Forms.
 
-After an hour-long orientation session, led jointly by our senior
-analyst and the organisation’s vice president, we first wrote down the
-user stories of the existing system, and decided upon the logical
-workflow. We raised concerns about some of their requirements (namely,
-the extent of the AI moderator’s abilities) - the cost, workability and
-practicality made certain requirements unfeasible with their budgetary
-constraints and our limited expertise. They were understanding and we
-settled upon a scalable system that would allow easy integration with
-the components that they may wish to add in the future.
+-   ## ***Interviews:*** 
 
-Once the workflow and requirements were tweaked to satisfaction, the new
-user stories were written up and the entirety of the last day was spent
-drawing up the user interface. Here the clients of the organisation had
-particular inputs about its ease of use, which was incorporated into the
-final prototype.
+> Our interviewer carried out background research by taking notes of the
+> facebook page of the organisation, their blog and their press releases
+> detailing the policies, values and vision of the organisation.
+>
+> We decided to individually interview the vice president (who is also a
+> former supervisor), a peer support volunteer and two willing clients.
+> Interview questions were mailed out a week in advance to prepare the
+> interviewees. The interview was conducted virtually as each individual
+> was situated at different places. Each session lasted approximately an
+> hour.
+>
+> The objective of the interview was to find out how they worked, their
+> software requirements, what they wish to achieve with the new system,
+> the resource budget etc. Beside the specific interview questions,
+> interviewees were encouraged to elaborate on their questionnaire
+> answers, tell us stories about their time with the organisation, voice
+> their personal concerns with the old and new system and their opinions
+> on certain policies and requirements of the organisation.
 
-  
-Samples for the questions and the user stories generated are attached
-below.
+-   ## ***JAD sessions:*** 
 
-<span id="anchor-27"></span>Samples
+> At a later date following the conclusion of the interviews, we sat
+> down together with all the interviewees for four consecutive days to
+> discuss the functionalities and UI of the system.
+>
+> After an hour-long orientation session, led jointly by our senior
+> analyst and the organisation’s vice president, we first wrote down the
+> user stories of the existing system, and decided upon the logical
+> workflow. We raised concerns about some of their requirements (namely,
+> the extent of the AI moderator’s abilities) - the cost, workability
+> and practicality made certain requirements unfeasible with their
+> budgetary constraints and our limited expertise. They were
+> understanding and we settled upon a scalable system that would allow
+> easy integration with the components that they may wish to add in the
+> future.
+>
+> Once the workflow and requirements were tweaked to satisfaction, the
+> new user stories were written up and the entirety of the last day was
+> spent drawing up the user interface. Here the clients of the
+> organisation had particular inputs about its ease of use, which was
+> incorporated into the final prototype.
+>
+> Samples for the questions and the user stories generated are attached
+> below.
 
-<span id="anchor-28"></span>1. Questionnaire Sample
+## Samples
+
+### 1. Questionnaire Sample
 
 <table>
-<tbody>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><blockquote>
+<p><strong>Choose your position:</strong></p>
+</blockquote>
+<ul>
+<li><blockquote>
+<p>Supervisor</p>
+</blockquote></li>
+<li><blockquote>
+<p>Client</p>
+</blockquote></li>
+<li><blockquote>
+<p>Volunteer</p>
+</blockquote></li>
+<li><blockquote>
+<p>Other</p>
+</blockquote></li>
+</ul></th>
+</tr>
 <tr class="odd">
-<td><strong>Choose your position:</strong></td>
+<th><blockquote>
+<p><strong>How long have you been involved with the
+organisation?</strong></p>
+</blockquote>
+<ul>
+<li><blockquote>
+<p>Less than 6 months</p>
+</blockquote></li>
+<li><blockquote>
+<p>6 months to 1 year</p>
+</blockquote></li>
+<li><blockquote>
+<p>1 to 2 years</p>
+</blockquote></li>
+<li><blockquote>
+<p>More than two years</p>
+</blockquote></li>
+</ul></th>
 </tr>
-<tr class="even">
-<td><strong>How long have you been involved with the
-organisation?</strong></td>
+<tr class="header">
+<th><blockquote>
+<p><strong>What device(s) do you currently use to access the service?
+(Check all that apply)</strong></p>
+</blockquote>
+<ul>
+<li><blockquote>
+<p>Tablet</p>
+</blockquote></li>
+<li><blockquote>
+<p>Laptop</p>
+</blockquote></li>
+<li><blockquote>
+<p>Smartphone</p>
+</blockquote></li>
+<li><blockquote>
+<p>Desktop</p>
+</blockquote></li>
+</ul></th>
 </tr>
 <tr class="odd">
-<td><strong>What device(s) do you currently use to access the service?
-(Check all that apply)</strong></td>
+<th><blockquote>
+<p><strong>How much time do you spend using the service every
+week?</strong></p>
+</blockquote>
+<ul>
+<li><blockquote>
+<p>More than 5 hours</p>
+</blockquote></li>
+<li><blockquote>
+<p>1-3 hours</p>
+</blockquote></li>
+<li><blockquote>
+<p>Less than 1 hour</p>
+</blockquote></li>
+</ul></th>
 </tr>
-<tr class="even">
-<td><strong>How much time do you spend using the service every
-week?</strong></td>
+<tr class="header">
+<th><blockquote>
+<p><strong>Rate your satisfaction with the current system (on a scale of
+1-10): _______</strong></p>
+</blockquote></th>
 </tr>
 <tr class="odd">
-<td><strong>Rate your satisfaction with the current system (on a scale
-of 1-10): _______</strong></td>
+<th><blockquote>
+<p><strong>How much are you willing to adapt to the new
+system?</strong></p>
+</blockquote>
+<ul>
+<li><blockquote>
+<p>Very willing</p>
+</blockquote></li>
+<li><blockquote>
+<p>Somewhat willing</p>
+</blockquote></li>
+<li><blockquote>
+<p>Neutral</p>
+</blockquote></li>
+<li><blockquote>
+<p>Unwilling</p>
+</blockquote></li>
+<li><blockquote>
+<p>Very unwilling</p>
+</blockquote></li>
+</ul></th>
 </tr>
-<tr class="even">
-<td><strong>How much are you willing to adapt to the new
-system?</strong></td>
+<tr class="header">
+<th><blockquote>
+<p><strong>Which is most important?</strong></p>
+</blockquote>
+<ul>
+<li><blockquote>
+<p>Confidentiality</p>
+</blockquote></li>
+<li><blockquote>
+<p>Clienty safety</p>
+</blockquote></li>
+</ul></th>
 </tr>
 <tr class="odd">
-<td><strong>Which is most important?</strong></td>
-</tr>
-<tr class="even">
-<td><p><strong>Explain your role in the organisation.</strong></p>
+<th><blockquote>
+<p><strong>Explain your role in the organisation.</strong></p>
 <p><strong>_______________________________________________________________________</strong></p>
 <p><strong>_______________________________________________________________________</strong></p>
-<p><strong>_______________________________________________________________________</strong></p></td>
+<p><strong>_______________________________________________________________________</strong></p>
+</blockquote></th>
 </tr>
-<tr class="odd">
-<td><p><strong>How effective do you find the current system at its task
-of providing/receiving counselling?</strong></p>
+<tr class="header">
+<th><blockquote>
+<p><strong>How effective do you find the current system at its task of
+providing/receiving counselling?</strong></p>
 <p><strong>_______________________________________________________________________</strong></p>
 <p><strong>_______________________________________________________________________</strong></p>
 <p><strong>Why?</strong></p>
 <p><strong>_______________________________________________________________________</strong></p>
-<p><strong>_______________________________________________________________________</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><strong>What would make it easier for you to more effectively use
-the service? </strong></p>
 <p><strong>_______________________________________________________________________</strong></p>
-<p><strong>_______________________________________________________________________</strong></p></td>
+</blockquote></th>
 </tr>
 <tr class="odd">
-<td><p><strong>Briefly describe 3 worst aspects about the current system
-in your opinion.</strong></p></td>
+<th><blockquote>
+<p><strong>What would make it easier for you to more effectively use the
+service?</strong></p>
+<p><strong>_______________________________________________________________________</strong></p>
+<p><strong>_______________________________________________________________________</strong></p>
+</blockquote></th>
 </tr>
+<tr class="header">
+<th><blockquote>
+<p><strong>Briefly describe 3 worst aspects about the current system in
+your opinion.</strong></p>
+</blockquote>
+<ol type="1">
+<li><blockquote>
+<p>_____________________________________________________</p>
+</blockquote></li>
+<li><blockquote>
+<p>_____________________________________________________</p>
+</blockquote></li>
+<li><blockquote>
+<p>_____________________________________________________</p>
+</blockquote></li>
+</ol></th>
+</tr>
+</thead>
+<tbody>
 </tbody>
 </table>
 
 \* only questions shown here, no instructions etc.
 
-<span id="anchor-29"></span>2. Interview Questions
+### 2. Interview Questions
 
-|                                                                                                         |
-|---------------------------------------------------------------------------------------------------------|
 | **Supervisor/Vice President Interview Questions (arranged in a funnel to extract maximum information)** |
+|---------------------------------------------------------------------------------------------------------|
 | A short rundown of how the current system works.                                                        |
 | Why is there a need for a new system?                                                                   |
 | What are your biggest concerns regarding the current system?                                            |
@@ -352,9 +774,8 @@ in your opinion.</strong></p></td>
 | How much is the maintenance budget?                                                                     |
 | How many people can the organisation dedicate towards keeping this system running day-to-day?           |
 
-|                                                                                        |
-|----------------------------------------------------------------------------------------|
 | **Volunteer Interview Questions (arranged in a pyramid to ease them into opening up)** |
+|----------------------------------------------------------------------------------------|
 | How often do you counsel the clients?                                                  |
 | How many clients do you regularly take on per month?                                   |
 | How is the overall experience while interacting with the clients?                      |
@@ -367,9 +788,8 @@ in your opinion.</strong></p></td>
 | What things should remain unchanged in the current system?                             |
 | What issues did they face with the supervisor and client                               |
 
-|                                                                                      |
-|--------------------------------------------------------------------------------------|
 | **Client Interview Questions**                                                       |
+|--------------------------------------------------------------------------------------|
 | Why did you choose this organisation?                                                |
 | What is the best part of the current system in your opinion?                         |
 | Are there any new features you want to see added?                                    |
@@ -379,14 +799,14 @@ in your opinion.</strong></p></td>
 | Have you experienced any inappropriate situations? If yes, what did you do about it? |
 | What would make you feel more comfortable using this service?                        |
 
-<span id="anchor-30"></span>3. User Stories of the New System
+### 3. User Stories of the New System
 
 **Welcome new user**
 
 Show users a short welcome message and tell them about the service, how
 it works, who it’s for, and how to get started.
 
-**Sign up new user **
+**Sign up new user**
 
 Users sign up by entering their name, email and optionally other
 personal details. To maintain confidentiality, personal details can only
@@ -503,690 +923,1310 @@ Administrator of the service can create/set the various questionnaires
 served to users through the questionnaire creation wizard in their
 dashboard
 
-<span id="anchor-31"></span>**10. Major functionalities offered by the
-system**
+# **10. Major functionalities offered by the system**
 
 -   Send and Receive chat messages (Chatting).
+
 -   AI Chat moderator detects inappropriate contents.
+
 -   Accepting volunteers.
+
 -   View user related graphs and profiles.
+
 -   Request to chat with a Volunteer.
+
 -   Manually report chats.
+
 -   Signup, Login, Ban/Removing Users.
+
 -   Create and edit questionnaires.
+
 -   Leave Application for Volunteers.
--    Report handling for Supervisors.
+
+-   Report handling for Supervisors.
+
 -   Edit user profiles and questionnaire responses.
 
-<span id="anchor-32"></span>**11. Use Case Diagram**
+# **11. Use Case Diagram**
 
-<span id="anchor-33"></span>***User Initiation System***
+## ***User Initiation System***
 
-<span
-id="anchor-34"></span><img src="./Pictures/10000000000004C40000030C7B5005AAE66A320F.png"
-style="width:6.7866in;height:4.3453in" />
+### <img src="./media/image19.png"
+style="width:6.78646in;height:4.34529in" />
 
-<span id="anchor-35"></span>***Notification System***
+## ***Notification System***
 
-<img src="./Pictures/100000000000064000000384793197084312B896.png"
-style="width:6.8598in;height:3.8846in" />
+> <img src="./media/image55.png"
+> style="width:6.85938in;height:3.88459in" />
 
-<span id="anchor-36"></span>***Chat System***
+## ***Chat System***
 
-<img src="./Pictures/1000020100000800000005FB6763B69FB3EF57EA.png"
-style="width:7.4673in;height:5.5764in" />
+<img src="./media/image54.png"
+style="width:7.46729in;height:5.57643in" />
 
-<span id="anchor-37"></span>***Report Handling System***
+## ***Report Handling System***
 
-<img src="./Pictures/10000201000004550000044C110C81E4C35AD101.png"
-style="width:7.1736in;height:7.1138in" />
+<img src="./media/image29.png"
+style="width:7.17348in;height:7.11386in" />
 
-<span id="anchor-38"></span>***Questionnaire System***
+## ***Questionnaire System***
 
-<img src="./Pictures/1000000000000576000003DD0678FC73B1D7AB46.png"
-style="width:9.4429in;height:6.6807in" />
+<img src="./media/image26.png"
+style="width:9.44291in;height:6.68056in" />
 
-<span id="anchor-39"></span>***User Management System***
+## ***User Management System***
 
-<img src="./Pictures/100000000000050B0000035C6FB50728F4C97973.png"
-style="width:9.4429in;height:6.2917in" />
+<img src="./media/image46.png"
+style="width:9.44291in;height:6.29167in" />
 
-<span id="anchor-40"></span>**12. Normal and Alternate Scenarios**
+# **12. Normal and Alternate Scenarios**
 
 <table>
+<colgroup>
+<col style="width: 59%" />
+<col style="width: 1%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><p><strong>Use Case Name :</strong></p>
+<h2 id="user-signup">User signup</h2></th>
+<th><strong>UniqueID: INIT01</strong></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Area:</strong> User Signup page</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Actors(s):</strong> Client</th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Stakeholder :</strong> Supervisor,
+volunteer</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Description :</strong> Users are able to
+register into the system.</th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Triggering Event:</strong> Click on Signup
+button on the website</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Trigger Type :</strong> External</th>
+</tr>
+<tr class="odd">
+<th><strong>Steps Performed (Main Path)</strong></th>
+<th colspan="2"><strong>Information for steps</strong></th>
+</tr>
+<tr class="header">
+<th><ol type="1">
+<li><blockquote>
+<p>Click on the Signup button</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Sign up form</th>
+</tr>
+<tr class="odd">
+<th><ol start="2" type="1">
+<li><blockquote>
+<p>Complete the personal information section and click on the next
+button</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Sign up form and personal details</th>
+</tr>
+<tr class="header">
+<th><ol start="3" type="1">
+<li><blockquote>
+<p>Completes answering the questionnaires and clicks on the next
+button.</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Questionnaire form, responses, preferences</th>
+</tr>
+<tr class="odd">
+<th><ol start="4" type="1">
+<li><blockquote>
+<p>Read and agree to the Terms and conditions by clicking on the
+checkbox. And clicks on signup</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Response and sign up form</th>
+</tr>
+<tr class="header">
+<th><ol start="5" type="1">
+<li><blockquote>
+<p>System automatically sends request for chat to the volunteer</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Request</th>
+</tr>
+<tr class="odd">
+<th colspan="3"><blockquote>
+<p><strong>Alternative Scenario</strong></p>
+</blockquote></th>
+</tr>
+<tr class="header">
+<th><ol type="1">
+<li><blockquote>
+<p>User clicks on Sign Up.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Fills all the information required.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Clicks on submit but fails and shows “Already account created”.</p>
+</blockquote></li>
+<li><blockquote>
+<p>User is redirected to the login page.</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2"></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Preconditions :</strong></p>
+<ul>
+<li><blockquote>
+<p>Have an internet connection.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Complete each section at a time to proceed next.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Users might not be fully registered yet.</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Postconditions:</strong></p>
+<ul>
+<li><blockquote>
+<p>User has successfully registered</p>
+</blockquote></li>
+<li><blockquote>
+<p>User will be able to fully use the features of the system</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Assumptions:</strong></p>
+<ul>
+<li><blockquote>
+<p>User profile details have been properly registered in the system</p>
+</blockquote></li>
+<li><blockquote>
+<p>User can view the signup page</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Success Guarantee :</strong></p>
+<ul>
+<li><blockquote>
+<p>User can request for volunteer</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Minimum Guarantee :</strong></p>
+<ul>
+<li><blockquote>
+<p>The profile details have been saved</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Requirements Met:</strong></p>
+<ul>
+<li><blockquote>
+<p>Users are allowed to create new profiles and request for
+volunteers.</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Outstanding Issues :</strong></p>
+<ul>
+<li><blockquote>
+<p>Can users log from different devices at the same time?</p>
+</blockquote></li>
+<li><blockquote>
+<p>Can the users log back and complete the registration procedure or
+start all over again?</p>
+</blockquote></li>
+</ul></th>
+</tr>
+</thead>
 <tbody>
-<tr class="odd">
-<td><p><strong>Use Case Name :</strong></p>
-<p><span id="anchor-41"></span>User signup</p></td>
-<td><strong>UniqueID: INIT01</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Area:</strong> User Signup page</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Actors(s): </strong>Client</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Stakeholder : </strong>Supervisor, volunteer</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Description : </strong>Users are able to register into the
-system.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Triggering Event: </strong>Click on Signup button on the
-website</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Trigger Type : </strong>External </td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Steps Performed (Main Path)</strong></td>
-<td><strong>Information for steps</strong></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Sign up form</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Sign up form and personal details</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Questionnaire form, responses, preferences </td>
-</tr>
-<tr class="even">
-<td></td>
-<td> Response and sign up form</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Request</td>
-</tr>
-<tr class="even">
-<td><strong>Alternative Scenario</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Preconditions : </strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Postconditions:</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Assumptions:</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Success Guarantee :</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Minimum Guarantee :</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Requirements Met: </strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Outstanding Issues : </strong></td>
-<td></td>
-</tr>
 </tbody>
 </table>
 
 <table>
+<colgroup>
+<col style="width: 58%" />
+<col style="width: 0%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><p><strong>Use Case Name :</strong></p>
+<h2 id="reported-notifications">Reported notifications</h2></th>
+<th><strong>UniqueID: NOTIF01</strong></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Area :</strong> Notification System</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Actors(s) :</strong> Supervisor</th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Stakeholder :</strong> Client and Volunteer</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Description :</strong> The notifications
+received by the supervisor when malicious content is detected.</th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Triggering Event :</strong> Malicious text or
+images detected by AI chat moderator</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Trigger Type :</strong> Temporal</th>
+</tr>
+<tr class="odd">
+<th><strong>Steps Performed (Main Path)</strong></th>
+<th colspan="2"><strong>Information for steps</strong></th>
+</tr>
+<tr class="header">
+<th><ol type="1">
+<li><blockquote>
+<p>Logs into the system</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">User ID and password</th>
+</tr>
+<tr class="odd">
+<th><ol start="2" type="1">
+<li><blockquote>
+<p>Clicks on the notification button</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2"></th>
+</tr>
+<tr class="header">
+<th><ol start="3" type="1">
+<li><blockquote>
+<p>Views the notifications</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2"></th>
+</tr>
+<tr class="odd">
+<th><ol start="4" type="1">
+<li><blockquote>
+<p>Clicks on the notification and directed to the report page</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Report page</th>
+</tr>
+<tr class="header">
+<th><ol start="5" type="1">
+<li><blockquote>
+<p>Responses to the report</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Report page</th>
+</tr>
+<tr class="odd">
+<th colspan="3"><blockquote>
+<p><strong>Alternative Scenarios</strong></p>
+</blockquote></th>
+</tr>
+<tr class="header">
+<th><blockquote>
+<p>Report notification</p>
+</blockquote>
+<ol type="1">
+<li><blockquote>
+<p>Send notification to the supervisor.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Waits for few days for action</p>
+</blockquote></li>
+<li><blockquote>
+<p>Resend the notification to another supervisor.</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2"></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Preconditions</strong></p>
+<ul>
+<li><blockquote>
+<p>Must be logged into the website to view notification.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Users must have a good internet connection to get notifications
+without any delay.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Users must be logged in as supervisor to be able to view the reported
+notification.</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Postconditions:</strong></p>
+<ul>
+<li><blockquote>
+<p>Supervisors receive notification and are directed to the report
+detail page.</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Assumptions:</strong></p>
+<ul>
+<li><blockquote>
+<p>User has a browser and a valid password and user ID.</p>
+</blockquote></li>
+<li><blockquote>
+<p>User is logged into the system to view notification.</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Success Guarantee:</strong></p>
+<ul>
+<li><blockquote>
+<p>Supervisor can view the report detail page.</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Minimum Guarantee</strong></p>
+<ul>
+<li><blockquote>
+<p>Notification reached the supervisor's end.</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Requirements Met :</strong></p>
+<ul>
+<li><blockquote>
+<p>Supervisor can receive the reported notification.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Can receive notification without any delay.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Can instantly access the report detail page on clicking the
+notification.</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Outstanding Issues :</strong></p>
+<ul>
+<li><blockquote>
+<p>Should the users be aware of the notification when not logged into
+the system?</p>
+</blockquote></li>
+<li><blockquote>
+<p>Can users delete the notifications?</p>
+</blockquote></li>
+</ul></th>
+</tr>
+</thead>
 <tbody>
-<tr class="odd">
-<td><p><strong>Use Case Name :</strong></p>
-<p><span id="anchor-42"></span>Reported notifications</p></td>
-<td><strong>UniqueID: NOTIF01</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Area : </strong>Notification System</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Actors(s) : </strong>Supervisor</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Stakeholder : </strong>Client and Volunteer</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Description : </strong>The notifications received by the
-supervisor when malicious content is detected.</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Triggering Event : </strong>Malicious text or images
-detected by AI chat moderator</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Trigger Type : </strong>Temporal</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Steps Performed (Main Path)</strong></td>
-<td><strong>Information for steps</strong></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>User ID and password</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Report page</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Report page</td>
-</tr>
-<tr class="even">
-<td><strong>Alternative Scenarios</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Report notification</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Preconditions</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Postconditions: </strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Assumptions:</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Success Guarantee: </strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Minimum Guarantee </strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Requirements Met : </strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Outstanding Issues : </strong></td>
-<td></td>
-</tr>
 </tbody>
 </table>
 
 <table>
-<tbody>
-<tr class="odd">
-<td><p><strong>Use Case Name: </strong></p>
-<p><span id="anchor-43"></span>Have conversations in chat</p></td>
-<td><strong>UniqueID: CHA 01</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Area</strong>: Chat system</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Actors(s):</strong> Client, Volunteer, AI moderator</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Stakeholder: </strong>Supervisor</td>
-<td></td>
+<colgroup>
+<col style="width: 59%" />
+<col style="width: 1%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><p><strong>Use Case Name:</strong></p>
+<h2 id="have-conversations-in-chat">Have conversations in chat</h2></th>
+<th><strong>UniqueID: CHA 01</strong></th>
 </tr>
 <tr class="odd">
-<td><strong>Description: </strong>Clients and volunteers can have
-conversations over chat which is moderated by an AI moderator.</td>
-<td></td>
+<th colspan="3"><strong>Area</strong>: Chat system</th>
 </tr>
-<tr class="even">
-<td><strong>Triggering Event: </strong>Client or volunteer sends a text
-or image in the chat window.</td>
-<td></td>
+<tr class="header">
+<th colspan="3"><strong>Actors(s):</strong> Client, Volunteer, AI
+moderator</th>
 </tr>
 <tr class="odd">
-<td><strong>Trigger Type:</strong> External</td>
-<td></td>
+<th colspan="3"><strong>Stakeholder:</strong> Supervisor</th>
 </tr>
-<tr class="even">
-<td><strong>Steps Performed (Main Path)</strong></td>
-<td><strong>Information for steps</strong></td>
+<tr class="header">
+<th colspan="3"><strong>Description:</strong> Clients and volunteers can
+have conversations over chat which is moderated by an AI moderator.</th>
 </tr>
 <tr class="odd">
-<td></td>
-<td><p>messages</p>
+<th colspan="3"><strong>Triggering Event:</strong> Client or volunteer
+sends a text or image in the chat window.</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Trigger Type:</strong> External</th>
+</tr>
+<tr class="odd">
+<th><strong>Steps Performed (Main Path)</strong></th>
+<th colspan="2"><strong>Information for steps</strong></th>
+</tr>
+<tr class="header">
+<th><ol type="1">
+<li><blockquote>
+<p>Open chat window to view latest chat log</p>
+</blockquote></li>
+<li><blockquote>
+<p>Enter text in chat box</p>
+</blockquote></li>
+<li><blockquote>
+<p>Press send to send text</p>
+</blockquote></li>
+<li><blockquote>
+<p>AI moderator verifies text does not contain blacklisted links</p>
+</blockquote></li>
+<li><blockquote>
+<p>Receiver reads text delivered to them.</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2"><p>messages</p>
 <p>anonymised sender information</p>
-<p>message text</p></td>
-</tr>
-<tr class="even">
-<td><strong>Extensions or Alternative Scenarios</strong></td>
-<td></td>
+<p>message text</p></th>
 </tr>
 <tr class="odd">
-<td><p><strong>Sending Images</strong></p>
-<p><strong>Unblur Censored Image</strong></p></td>
-<td></td>
+<th><strong>Extensions or Alternative Scenarios</strong></th>
+<th colspan="2"></th>
 </tr>
-<tr class="even">
-<td><strong>Preconditions:</strong></td>
-<td></td>
+<tr class="header">
+<th><p><strong>Sending Images</strong></p>
+<ol type="1">
+<li><blockquote>
+<p>Click on “Add image” button</p>
+</blockquote></li>
+<li><blockquote>
+<p>Select image on device</p>
+</blockquote></li>
+<li><blockquote>
+<p>Press send to send image</p>
+</blockquote></li>
+<li><blockquote>
+<p>Image is compressed on device before sending off to server</p>
+</blockquote></li>
+<li><blockquote>
+<p>AI moderator checks image for inappropriate content</p>
+</blockquote></li>
+<li><blockquote>
+<p>Image is delivered to receiver</p>
+</blockquote></li>
+</ol>
+<p><strong>Unblur Censored Image</strong></p>
+<ol type="1">
+<li><blockquote>
+<p>AI blurs out images it considers inappropriate.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Warning message is displayed to user</p>
+</blockquote></li>
+<li><blockquote>
+<p>User clicks “unblur image”</p>
+</blockquote></li>
+<li><blockquote>
+<p>Request confirmation from user</p>
+</blockquote></li>
+<li><blockquote>
+<p>Display image to user if confirmation received</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2"></th>
 </tr>
 <tr class="odd">
-<td><strong>Postconditions:</strong></td>
-<td></td>
+<th colspan="3"><p><strong>Preconditions:</strong></p>
+<ul>
+<li><blockquote>
+<p>The volunteer is connected to this client by accepting their chat
+request.</p>
+</blockquote></li>
+</ul></th>
 </tr>
-<tr class="even">
-<td><strong>Assumptions:</strong></td>
-<td></td>
+<tr class="header">
+<th colspan="3"><p><strong>Postconditions:</strong></p>
+<ul>
+<li><blockquote>
+<p>Messages sent have been received by the other party</p>
+</blockquote></li>
+</ul></th>
 </tr>
 <tr class="odd">
-<td><strong>Success Guarantee:</strong></td>
-<td></td>
+<th colspan="3"><p><strong>Assumptions:</strong></p>
+<ul>
+<li><blockquote>
+<p>Neither party is banned by a supervisor.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Sender is logged in to the web or mobile application.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Receiver logs in (to view received messages).</p>
+</blockquote></li>
+</ul></th>
 </tr>
-<tr class="even">
-<td><strong>Minimum Guarantee:</strong></td>
-<td></td>
+<tr class="header">
+<th colspan="3"><p><strong>Success Guarantee:</strong></p>
+<ul>
+<li><blockquote>
+<p>Message is delivered to the receiver’s device and is read.</p>
+</blockquote></li>
+</ul></th>
 </tr>
 <tr class="odd">
-<td><strong>Requirements Met:</strong></td>
-<td></td>
+<th colspan="3"><p><strong>Minimum Guarantee:</strong></p>
+<ul>
+<li><blockquote>
+<p>Sent message has reached the server and been saved.</p>
+</blockquote></li>
+<li><blockquote>
+<p>“Message censored” message shown.</p>
+</blockquote></li>
+</ul></th>
 </tr>
-<tr class="even">
-<td><strong>Outstanding Issues:</strong></td>
-<td></td>
+<tr class="header">
+<th colspan="3"><p><strong>Requirements Met:</strong></p>
+<ul>
+<li><blockquote>
+<p>Exchange messages in chat via the server.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Volunteers and clients are kept anonymous to each other.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Employ AI to censor inappropriate images.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Images censored by the chat moderator AI can be unblurred with user
+permission.</p>
+</blockquote></li>
+</ul></th>
 </tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Outstanding Issues:</strong></p>
+<ul>
+<li><blockquote>
+<p>Automatically resend messages that failed to be sent due to network
+issues etc.?</p>
+</blockquote></li>
+<li><blockquote>
+<p>Max size of text and image?</p>
+</blockquote></li>
+<li><blockquote>
+<p>Can users delete sent texts?</p>
+</blockquote></li>
+<li><blockquote>
+<p>Implement reply-in-thread feature?</p>
+</blockquote></li>
+</ul></th>
+</tr>
+</thead>
+<tbody>
 </tbody>
 </table>
 
 <table>
-<tbody>
-<tr class="odd">
-<td><p><strong>Use Case Name: </strong></p>
-<p><span id="anchor-44"></span>View flagged conversation report
-details</p></td>
-<td><strong>UniqueID: REP 01</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Area</strong>: Report Handling</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Actors(s):</strong> Supervisor</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Stakeholder: </strong>Client, Volunteer</td>
-<td></td>
+<colgroup>
+<col style="width: 60%" />
+<col style="width: 0%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><p><strong>Use Case Name:</strong></p>
+<h2 id="view-flagged-conversation-report-details">View flagged
+conversation report details</h2></th>
+<th><strong>UniqueID: REP 01</strong></th>
 </tr>
 <tr class="odd">
-<td><strong>Description: </strong>Supervisor sees the user or AI
-generated chat report details and decides what to do.</td>
-<td></td>
+<th colspan="3"><strong>Area</strong>: Report Handling</th>
 </tr>
-<tr class="even">
-<td><strong>Triggering Event: </strong>Supervisor receives “Conversation
-Reported” notification.</td>
-<td></td>
+<tr class="header">
+<th colspan="3"><strong>Actors(s):</strong> Supervisor</th>
 </tr>
 <tr class="odd">
-<td><strong>Trigger Type:</strong> External</td>
-<td></td>
+<th colspan="3"><strong>Stakeholder:</strong> Client, Volunteer</th>
 </tr>
-<tr class="even">
-<td><strong>Steps Performed (Main Path)</strong></td>
-<td><strong>Information for steps</strong></td>
+<tr class="header">
+<th colspan="3"><strong>Description:</strong> Supervisor sees the user
+or AI generated chat report details and decides what to do.</th>
 </tr>
 <tr class="odd">
-<td></td>
-<td><p>list of reported conversations</p>
+<th colspan="3"><strong>Triggering Event:</strong> Supervisor receives
+“Conversation Reported” notification.</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Trigger Type:</strong> External</th>
+</tr>
+<tr class="odd">
+<th><strong>Steps Performed (Main Path)</strong></th>
+<th colspan="2"><strong>Information for steps</strong></th>
+</tr>
+<tr class="header">
+<th><ol type="1">
+<li><blockquote>
+<p>Open Reported Conversation Overview page to view pending reports
+table for this supervisor.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Latest reports are at the top of the table.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Click View Details to see details of the users and the
+conversation</p>
+</blockquote>
+<ol type="1">
+<li><blockquote>
+<p>AI reported conversations have logs of previous moderation
+events.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Manual reports have information filled in by the user in the report
+form.</p>
+</blockquote></li>
+</ol></li>
+<li><blockquote>
+<p>Click “Handle Report” to open the report-handling wizard and take
+appropriate action.</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2"><p>list of reported conversations</p>
 <p>moderation events log</p>
-<p>Report Conversation form responses</p></td>
-</tr>
-<tr class="even">
-<td><strong>Extensions or Alternative Scenarios</strong></td>
-<td></td>
+<p>Report Conversation form responses</p></th>
 </tr>
 <tr class="odd">
-<td><p><strong>View Entire Chat-log</strong></p>
-<p><strong>Request Permission to View Chat-log</strong></p></td>
-<td><p>chat logs</p></td>
+<th><strong>Extensions or Alternative Scenarios</strong></th>
+<th colspan="2"></th>
 </tr>
-<tr class="even">
-<td><strong>Preconditions:</strong></td>
-<td></td>
+<tr class="header">
+<th><p><strong>View Entire Chat-log</strong></p>
+<ol type="1">
+<li><blockquote>
+<p>To view the entire chat log of the manually reported conversation,
+click “View Chat-log”.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Re-enter supervisor’s private access code in the popup.</p>
+</blockquote></li>
+<li><blockquote>
+<p>2FA text sent to supervisor’s phone.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Upon identity verification, the supervisor is given access to view
+the chat.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Access remains for a limited time.</p>
+</blockquote></li>
+</ol>
+<p><strong>Request Permission to View Chat-log</strong></p>
+<ol type="1">
+<li><blockquote>
+<p>Click “View Chat-log” of an AI-generated report.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Display “You do not have permission” message</p>
+</blockquote></li>
+<li><blockquote>
+<p>Click “Request Access from Client”.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Re-enter supervisor’s private access code in the popup.</p>
+</blockquote></li>
+<li><blockquote>
+<p>2FA text sent to supervisor’s phone.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Upon identity verification, type a message to users detailing why
+permission is being requested.</p>
+</blockquote></li>
+<li><blockquote>
+<p>The request with the message is delivered to the users.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Await permission given/declined notification to view chat.</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">chat logs</th>
 </tr>
 <tr class="odd">
-<td><strong>Postconditions:</strong></td>
-<td></td>
+<th colspan="3"><p><strong>Preconditions:</strong></p>
+<ul>
+<li><blockquote>
+<p>Supervisor has entered his private access code after logging in to
+view this page.</p>
+</blockquote></li>
+</ul></th>
 </tr>
-<tr class="even">
-<td><strong>Assumptions:</strong></td>
-<td></td>
+<tr class="header">
+<th colspan="3"><p><strong>Postconditions:</strong></p>
+<ul>
+<li><blockquote>
+<p>Report Handling wizard has been started.</p>
+</blockquote></li>
+</ul></th>
 </tr>
 <tr class="odd">
-<td><strong>Success Guarantee:</strong></td>
-<td></td>
+<th colspan="3"><p><strong>Assumptions:</strong></p>
+<ul>
+<li><blockquote>
+<p>Only the supervisor knows their specific access code so that no
+unauthorised access occurs.</p>
+</blockquote></li>
+</ul></th>
 </tr>
-<tr class="even">
-<td><strong>Minimum Guarantee:</strong></td>
-<td></td>
+<tr class="header">
+<th colspan="3"><p><strong>Success Guarantee:</strong></p>
+<ul>
+<li><blockquote>
+<p>Supervisor has seen all the necessary report details to come to a
+conclusion about handling it</p>
+</blockquote></li>
+</ul></th>
 </tr>
 <tr class="odd">
-<td><strong>Requirements Met:</strong></td>
-<td></td>
+<th colspan="3"><p><strong>Minimum Guarantee:</strong></p>
+<ul>
+<li><blockquote>
+<p>Supervisor can see the list of pending reports</p>
+</blockquote></li>
+</ul></th>
 </tr>
-<tr class="even">
-<td><strong>Outstanding Issues:</strong></td>
-<td></td>
+<tr class="header">
+<th colspan="3"><p><strong>Requirements Met:</strong></p>
+<ul>
+<li><blockquote>
+<p>View list of reported conversations.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Supervisor can see details of reported conversations such as user
+information, conversation statistics, AI moderation logs.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Supervisor can ask for permission from users to view chat logs in
+case of AI-filed reports.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Supervisors can access chat logs of manually reported conversations
+for a limited period of time.</p>
+</blockquote></li>
+</ul></th>
 </tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Outstanding Issues:</strong></p>
+<ul>
+<li><blockquote>
+<p>What to do if supervisor identity cannot be verified</p>
+</blockquote></li>
+</ul></th>
+</tr>
+</thead>
+<tbody>
 </tbody>
 </table>
 
 <table>
+<colgroup>
+<col style="width: 59%" />
+<col style="width: 1%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><p><strong>Use Case Name :</strong></p>
+<h2 id="make-questionnaire">Make Questionnaire </h2></th>
+<th><strong>UniqueID: QUT01</strong></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Area:</strong> Admin Dashboard</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Actors(s):</strong> Admin and Supervisor</th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Stakeholder :</strong> Volunteer and client</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Description :</strong> User is able to create a
+new questionnaire or edit the previous one</th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Triggering Event:</strong> Click on the
+questionnaire form</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Trigger Type :</strong> External</th>
+</tr>
+<tr class="odd">
+<th><strong>Steps Performed (Main Path)</strong></th>
+<th colspan="2"><strong>Information for steps</strong></th>
+</tr>
+<tr class="header">
+<th><ol start="6" type="1">
+<li><blockquote>
+<p>Click on the Questionnaire Tab</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Admin page</th>
+</tr>
+<tr class="odd">
+<th><ol start="7" type="1">
+<li><blockquote>
+<p>View questionnaire form</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Questionnaire template</th>
+</tr>
+<tr class="header">
+<th><ol start="8" type="1">
+<li><blockquote>
+<p>Click on any question to add or remove question</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Questionnaire form</th>
+</tr>
+<tr class="odd">
+<th><ol start="9" type="1">
+<li><blockquote>
+<p>Click on publish to make the questionnaire visible</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Admin page</th>
+</tr>
+<tr class="header">
+<th colspan="3"><blockquote>
+<p><strong>Alternative Scenario</strong></p>
+</blockquote></th>
+</tr>
+<tr class="odd">
+<th><ol type="1">
+<li><blockquote>
+<p>Search questionnaire using ID</p>
+</blockquote></li>
+<li><blockquote>
+<p>Click on edit button</p>
+</blockquote></li>
+<li><blockquote>
+<p>Add/delete the questions in questionnaire</p>
+</blockquote></li>
+<li><blockquote>
+<p>Click on draft button to store only</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2"></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Preconditions :</strong></p>
+<ul>
+<li><blockquote>
+<p>Have an internet connection.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Must be logged in as Admin/Supervisor</p>
+</blockquote></li>
+<li><blockquote>
+<p>There might be an existing questionnaire</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Postconditions:</strong></p>
+<ul>
+<li><blockquote>
+<p>User has successfully added a new questionnaire</p>
+</blockquote></li>
+<li><blockquote>
+<p>Other users can view/use the questionnaire</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Assumptions:</strong></p>
+<ul>
+<li><blockquote>
+<p>User can view the questionnaire page</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Success Guarantee :</strong></p>
+<ul>
+<li><blockquote>
+<p>Clients can answer and view the new questionnaire form</p>
+</blockquote></li>
+<li><blockquote>
+<p>Volunteers can use the questionnaire form</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Minimum Guarantee :</strong></p>
+<ul>
+<li><blockquote>
+<p>New questionnaire has been created</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Requirements Met:</strong></p>
+<ul>
+<li><blockquote>
+<p>Admin is allowed to create and store new questionnaires</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Outstanding Issues :</strong></p>
+<ul>
+<li><blockquote>
+<p>Can the admin have unlimited access in creating questionnaires
+without any time constraints?</p>
+</blockquote></li>
+<li><blockquote>
+<p>Can the admin re-edit the questionnaire immediately?</p>
+</blockquote></li>
+<li><blockquote>
+<p>Do the admins need any approval from other admins before publishing
+the new questionnaire?</p>
+</blockquote></li>
+</ul></th>
+</tr>
+</thead>
 <tbody>
-<tr class="odd">
-<td><p><strong>Use Case Name :</strong></p>
-<p><span id="anchor-45"></span>Make Questionnaire </p></td>
-<td><strong>UniqueID: QUT01</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Area:</strong> Admin Dashboard</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Actors(s): </strong>Admin and Supervisor</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Stakeholder : </strong>Volunteer and client</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Description : </strong>User is able to create a new
-questionnaire or edit the previous one</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Triggering Event: </strong>Click on the questionnaire
-form</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Trigger Type : </strong>External </td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Steps Performed (Main Path)</strong></td>
-<td><strong>Information for steps</strong></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Admin page</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Questionnaire template</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Questionnaire form</td>
-</tr>
-<tr class="even">
-<td></td>
-<td> Admin page</td>
-</tr>
-<tr class="odd">
-<td><strong>Alternative Scenario</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Preconditions : </strong></p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Postconditions:</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Assumptions:</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Success Guarantee :</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Minimum Guarantee :</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Requirements Met: </strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Outstanding Issues : </strong></td>
-<td></td>
-</tr>
 </tbody>
 </table>
 
 <table>
+<colgroup>
+<col style="width: 59%" />
+<col style="width: 1%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"><p><strong>Use Case Name :</strong></p>
+<h2 id="view-volunteer-profile">View Volunteer Profile</h2></th>
+<th><strong>UniqueID: UM01</strong></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Area:</strong> Volunteer profile page</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Actors(s):</strong> Volunteer</th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Stakeholder :</strong> Supervisor,
+Client,Admin</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Description :</strong> Users can view their own
+profile details and edit</th>
+</tr>
+<tr class="odd">
+<th colspan="3"><strong>Triggering Event:</strong> Click on Profile
+button</th>
+</tr>
+<tr class="header">
+<th colspan="3"><strong>Trigger Type :</strong> External</th>
+</tr>
+<tr class="odd">
+<th><strong>Steps Performed (Main Path)</strong></th>
+<th colspan="2"><strong>Information for steps</strong></th>
+</tr>
+<tr class="header">
+<th><ol type="1">
+<li><blockquote>
+<p>Click on the profile button.</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Profile page</th>
+</tr>
+<tr class="odd">
+<th><ol start="2" type="1">
+<li><blockquote>
+<p>View the profile details.</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">User data</th>
+</tr>
+<tr class="header">
+<th><ol start="3" type="1">
+<li><blockquote>
+<p>Click on the questionnaire button</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Profile page</th>
+</tr>
+<tr class="odd">
+<th><ol start="4" type="1">
+<li><blockquote>
+<p>View questionnaire</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Questionnaire form</th>
+</tr>
+<tr class="header">
+<th><ol start="5" type="1">
+<li><blockquote>
+<p>Click on edit button on profile page</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Request</th>
+</tr>
+<tr class="odd">
+<th><ol start="6" type="1">
+<li><blockquote>
+<p>Edit the profile</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2">Profile form</th>
+</tr>
+<tr class="header">
+<th><ol start="7" type="1">
+<li><blockquote>
+<p>Click on save button</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2"></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><blockquote>
+<p><strong>Alternative Scenario</strong></p>
+</blockquote></th>
+</tr>
+<tr class="header">
+<th><ol start="5" type="1">
+<li><blockquote>
+<p>User clicks on Sign Up.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Fills all the information required.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Clicks on submit but fails and shows “Already account created”.</p>
+</blockquote></li>
+<li><blockquote>
+<p>User is redirected to the login page.</p>
+</blockquote></li>
+</ol></th>
+<th colspan="2"></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Preconditions :</strong></p>
+<ul>
+<li><blockquote>
+<p>Have an internet connection.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Must be logged in</p>
+</blockquote></li>
+<li><blockquote>
+<p>Have permission to edit</p>
+</blockquote></li>
+<li><blockquote>
+<p>Not a banned user</p>
+</blockquote></li>
+<li><blockquote>
+<p>The user is already registered</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Postconditions:</strong></p>
+<ul>
+<li><blockquote>
+<p>User can view profile</p>
+</blockquote></li>
+<li><blockquote>
+<p>Can edit any detail if the user wishes</p>
+</blockquote></li>
+<li><blockquote>
+<p>The new edit is visible</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Assumptions:</strong></p>
+<ul>
+<li><blockquote>
+<p>User has a profile</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Success Guarantee :</strong></p>
+<ul>
+<li><blockquote>
+<p>Users can successfully view all details of their account.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Users can successfully edit and save the profile details.</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Minimum Guarantee :</strong></p>
+<ul>
+<li><blockquote>
+<p>The profile details is displayed</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="header">
+<th colspan="3"><p><strong>Requirements Met:</strong></p>
+<ul>
+<li><blockquote>
+<p>Users are allowed to view and edit accounts.</p>
+</blockquote></li>
+</ul></th>
+</tr>
+<tr class="odd">
+<th colspan="3"><p><strong>Outstanding Issues :</strong></p>
+<ul>
+<li><blockquote>
+<p>Can a banned user view their account?</p>
+</blockquote></li>
+<li><blockquote>
+<p>Are there any restrictions on the number of times a user can
+edit?</p>
+</blockquote></li>
+</ul></th>
+</tr>
+</thead>
 <tbody>
-<tr class="odd">
-<td><p><strong>Use Case Name :</strong></p>
-<p><span id="anchor-46"></span>View Volunteer Profile</p></td>
-<td><strong>UniqueID: UM01</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Area:</strong> Volunteer profile page</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Actors(s): </strong>Volunteer</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Stakeholder : </strong>Supervisor, Client,Admin</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Description : </strong>Users can view their own profile
-details and edit</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Triggering Event: </strong>Click on Profile button</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Trigger Type : </strong>External </td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Steps Performed (Main Path)</strong></td>
-<td><strong>Information for steps</strong></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Profile page</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>User data </td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Profile page</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Questionnaire form</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Request</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Profile form</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Alternative Scenario</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><strong>Preconditions : </strong></p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Postconditions:</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Assumptions:</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Success Guarantee :</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Minimum Guarantee :</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>Requirements Met: </strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Outstanding Issues : </strong></td>
-<td></td>
-</tr>
 </tbody>
 </table>
 
-<span id="anchor-47"></span>**13. Functional Requirements**
+# **13. Functional Requirements**
 
-<span id="anchor-48"></span>*** User Initiation System***
+##  ***User Initiation System***
 
 1.  Client inputs personal information, completes a questionnaire to be
-    a registered member.
+    > a registered member.
+
 2.  Login with email and password.
+
 3.  Clients can request for volunteer
+
 4.  Interested people can apply for volunteer positions by uploading the
-    required documents and signing up.
+    > required documents and signing up.
+
 5.  The chosen volunteer will be sent an email regarding the
-    confirmation of their selection.
+    > confirmation of their selection.
+
 6.  Selected volunteers will have to activate their account (which will
-    be created by the administrator) using email
+    > be created by the administrator) using email
+
 7.  Volunteers can be able to accept/reject requests of clients.
 
-<span id="anchor-49"></span>***Notification System***
+## ***Notification System***
 
 1.  System sends notification/request to the best fit Volunteer.
+
 2.  Clients get notified about the selection of new volunteer after
-    request
+    > request
+
 3.  Volunteers and clients receive notification of unread chat messages
-    while they are away.
+    > while they are away.
+
 4.  System sends notification to both volunteers and clients of their
-    scheduled session ahead of time.
+    > scheduled session ahead of time.
+
 5.  Supervisor receives notification for any AI flagged chats
+
 6.  System notifies the supervisor of a new reported chat made by a
-    client or volunteer.
+    > client or volunteer.
+
 7.  Admin receives notification of a new submitted request for leave
-    application made by employees
+    > application made by employees
+
 8.  Volunteers receive notification of the decision to leave.
 
-<span id="anchor-50"></span>***Chat System***
+## ***Chat System***
 
 1.  Exchange texts and images in chat. Volunteers and clients are kept
-    anonymous to each other.
-2.  Set chat schedules..
-3.  AI censors images and links deemed inappropriate, logs censorship
-    events.
-4.  Give permission to unblur censored images/links by the chat
-    moderator AI.
+    > anonymous to each other.
 
-<span id="anchor-51"></span>*** Report Handling System***
+2.  Set chat schedules..
+
+3.  AI censors images and links deemed inappropriate, logs censorship
+    > events.
+
+4.  Give permission to unblur censored images/links by the chat
+    > moderator AI.
+
+##  ***Report Handling System***
 
 1.  Manually report inappropriate behaviour in chat.
+
 2.  AI automatically reports chat if the threshold number of
-    inappropriate images sent.
+    > inappropriate images sent.
+
 3.  View manual and AI-generated reports of inappropriate behaviour.
+
 4.  View chat logs and questionnaire responses of reported chats.
+
 5.  View logs of censorship events, along with censored images. Report
-    false positives.
+    > false positives.
+
 6.  Send a message to reporting and reported users to explain how the
-    report has been dealt with.
+    > report has been dealt with.
+
 7.  Ban a user for an amount of time following inappropriate behaviour.
+
 8.  Reassign a volunteer in a chat.
 
-<span id="anchor-52"></span>***Questionnaire System***
+## ***Questionnaire System***
 
 1.  Create a new questionnaire.
+
 2.  Edit previous questionnaire.
+
 3.  Can view questionnaire responses.
+
 4.  Users can insert responses to the questionnaires.
+
 5.  Both responses and questionnaires can be stored.
+
 6.  Create a new newsletter and publish.
+
 7.  Users can edit questionnaire responses.
 
-<span id="anchor-53"></span>***User Management System***
+## ***User Management System***
 
 1.  View Volunteer-Client Statistics.
+
 2.  Users can view and edit profile information.
+
 3.  Clients can delete their account.
+
 4.  Supervisors can ban or remove volunteer accounts.
+
 5.  Admin can view system statistics.
+
 6.  Volunteers can view their statistics.
+
 7.  Volunteers can apply for leave applications.
+
 8.  Supervisors can approve/reject leave applications.
 
-<span id="anchor-54"></span>**14. Non-Functional Requirements**
+# **14. Non-Functional Requirements**
 
--   <span id="anchor-55"></span>***Privacy***
+-   ## ***Privacy***
 
     -   Identifying information of clients should only be visible to
         > authorised personnel of the organisation and only under
@@ -1198,7 +2238,7 @@ details and edit</td>
 
     -   Chat logs accessible to supervisors only in case of reports.
 
--   <span id="anchor-56"></span>***Security:***
+-   ## ***Security:***
 
     -   End to end encryption of chats.
 
@@ -1206,7 +2246,7 @@ details and edit</td>
 
     -   Store only the bare minimum user data in servers.
 
--   <span id="anchor-57"></span>***Cost:***
+-   ## ***Cost:***
 
     -   Compress all images on the user end to minimise server
         > bandwidth/storage requirements.
@@ -1216,7 +2256,7 @@ details and edit</td>
 
     -   Back-end must run on a cloud server provider’s budget-tier plan.
 
--   <span id="anchor-58"></span>***Usability:***
+-   ## ***Usability:***
 
     -   Mobile app with simple, intuitive UI with the bare minimum of
         > features to prevent confusion.
@@ -1239,7 +2279,7 @@ details and edit</td>
 
     -   Chatting must be instantaneous; minimal lag.
 
--   <span id="anchor-59"></span>***Misc.***
+-   ## ***Misc.***
 
     -   Must be fully open source for the sake of transparency.
 
@@ -1254,273 +2294,263 @@ details and edit</td>
     -   Not dependent on third party developer’s components, as
         > long-term support may not be guaranteed with those.
 
-<span id="anchor-60"></span>***Section 4:***
+**<u>Section 4:</u>**
 
-<span id="anchor-61"></span>**15. Entity Relationship Diagram**
+# **15. Entity Relationship Diagram**
 
-<img src="./Pictures/1000020100000800000005F64F5479FEB78798C0.png"
-style="width:9.4429in;height:7.0417in" />
+<img src="./media/image7.png"
+style="width:9.44291in;height:7.04167in" />
 
-<span id="anchor-62"></span>**16. Logical Data Flow diagram**
+# **16. Logical Data Flow diagram**
 
-<span id="anchor-63"></span>***Diagram 0***
+## ***Diagram 0***
 
-<img src="./Pictures/1000020100000800000005788D3C85A334F2DBE9.png"
-style="width:9.4429in;height:6.4583in" />
+<img src="./media/image32.png"
+style="width:9.44291in;height:6.45833in" />
 
-<span id="anchor-64"></span>***User Initiation System***
+## ***User Initiation System***
 
-<span id="anchor-65"></span>**Logical Dataflow: Existing**
+### **Logical Dataflow: Existing**
 
-<img src="./Pictures/100000000000044C000002D0482491E0D81EDB92.png"
-style="width:7.7965in;height:5.0984in" />
+<img src="./media/image47.png"
+style="width:7.79688in;height:5.09867in" />
 
-<span id="anchor-66"></span>
+### 
 
-<span id="anchor-67"></span>**Logical Dataflow: Proposed**
+### **Logical Dataflow: Proposed**
 
-<img src="./Pictures/1000000000000665000004A82946125833D98E06.png"
-style="width:8.0465in;height:5.8555in" />
+<img src="./media/image48.png"
+style="width:8.04688in;height:5.8555in" />
 
-<span id="anchor-68"></span>***Notification System***
+## ***Notification System***
 
-<span id="anchor-69"></span>**Logical Dataflow: Proposed**
+### **Logical Dataflow: Proposed**
 
-<img src="./Pictures/100000000000067D000003FC4AAD2E4C4FB9D38D.png"
-style="width:9.4429in;height:5.8055in" />
+<img src="./media/image14.png"
+style="width:9.44291in;height:5.80556in" />
 
-<span id="anchor-70"></span>***Chat System***
+## ***Chat System***
 
-<span id="anchor-71"></span>**Logical Dataflow: Existing**
+### **Logical Dataflow: Existing**
 
-<img src="./Pictures/1000020100000800000004D3457A56E1A6A86176.png"
-style="width:8.3453in;height:5.0047in" />
+<img src="./media/image36.png"
+style="width:8.34537in;height:5.00517in" />
 
-<span id="anchor-72"></span>**Logical Dataflow: Proposed**
+### **Logical Dataflow: Proposed**
 
-<img src="./Pictures/1000020100000800000005CF8FACF1AFABBEE7FC.png"
-style="width:9.4429in;height:6.861in" />
+<img src="./media/image12.png"
+style="width:9.44291in;height:6.86111in" />
 
-<span id="anchor-73"></span>***Report System***
+## ***Report System***
 
-<span id="anchor-74"></span>**Logical Dataflow: Existing**
+### **Logical Dataflow: Existing**
 
-<img src="./Pictures/1000020100000800000004BD7524BDF262398E35.png"
-style="width:7.4839in;height:4.4217in" />
+<img src="./media/image23.png"
+style="width:7.48438in;height:4.4211in" />
 
-<span id="anchor-75"></span>**Logical Dataflow: Proposed**
+### **Logical Dataflow: Proposed**
 
-<img src="./Pictures/10000201000008000000068E80CDFD595163144E.png"
-style="width:9.4429in;height:7.7362in" />
+<img src="./media/image15.png"
+style="width:9.44291in;height:7.73611in" />
 
-<span id="anchor-76"></span>***Questionnaire System***
+## ***Questionnaire System***
 
-<span id="anchor-77"></span>**Logical Dataflow: Existing**
+### **Logical Dataflow: Existing**
 
-<img src="./Pictures/1000000000000334000002E4E00179B9228268A7.png"
-style="width:7.4744in;height:6.7453in" />
+<img src="./media/image42.png"
+style="width:7.47396in;height:6.74479in" />
 
-<span id="anchor-78"></span>**Logical Dataflow: Proposed**
+### **Logical Dataflow: Proposed**
 
-<img src="./Pictures/1000000000000382000002E4DABE0785B226619E.png"
-style="width:7.328in;height:6.039in" />
+<img src="./media/image52.png"
+style="width:7.32813in;height:6.03845in" />
 
-<span id="anchor-79"></span>***User Management System***
+## ***User Management System***
 
-<span id="anchor-80"></span>**Logical Dataflow: Proposed**
+### **Logical Dataflow: Proposed**
 
-<span
-id="anchor-81"></span><img src="./Pictures/1000000000000410000003200B82F164CAC196AE.png"
-style="width:7.7472in;height:5.9555in" />
+### <img src="./media/image41.png"
+style="width:7.74729in;height:5.95567in" />
 
-<span id="anchor-82"></span>**17. Physical Data Flow diagram**
+# **17. Physical Data Flow diagram**
 
-<span id="anchor-83"></span>***User Initiation System***
+## ***User Initiation System***
 
-<img src="./Pictures/100002010000074E0000052A8DEA7D2E43FDEB24.png"
-style="width:8.9346in;height:4.9898in" />
+<img src="./media/image35.png" style="width:8.935in;height:4.98958in" />
 
-<span id="anchor-84"></span>
+## 
 
-<span id="anchor-85"></span>***Notification System***
+## ***Notification System***
 
-<img src="./Pictures/1000000000000521000003D48488A3BED436FD38.png"
-style="width:8.272in;height:6.1638in" />
+<img src="./media/image38.png"
+style="width:8.27205in;height:6.16368in" />
 
-<span id="anchor-86"></span>***Chat System***
+## ***Chat System***
 
-<img src="./Pictures/1000020100000800000005AEE06831094E070E8F.png"
-style="width:8.2634in;height:5.8681in" />
+<img src="./media/image22.png"
+style="width:8.26292in;height:5.86818in" />
 
-<span id="anchor-87"></span>
+## 
 
-<span id="anchor-88"></span>***Report System***
+## ***Report System***
 
-<img src="./Pictures/1000020100000800000006B7E2FE8009C20FAE73.png"
-style="width:8.4319in;height:7.0752in" />
+<img src="./media/image4.png"
+style="width:8.43229in;height:7.07537in" />
 
-<span id="anchor-89"></span>**18. Activity diagrams**
+# **18. Activity diagrams**
 
-<span id="anchor-90"></span>***Activity: User Initiation System ***
+## ***Activity: User Initiation System*** 
 
-<img src="./Pictures/10000201000005DC000004F4418B13FCEDA932DB.png"
-style="width:8.6516in;height:7.3161in" />
+<img src="./media/image65.png"
+style="width:8.65104in;height:7.31571in" />
 
-<span id="anchor-91"></span>***Activity: Volunteer signup System***
+## ***Activity: Volunteer signup System***
 
-<img src="./Pictures/100000000000048800000500F873E05F67D76F54.png"
-style="width:8.8181in;height:9.7217in" />
+<img src="./media/image44.png"
+style="width:8.81771in;height:9.72184in" />
 
-<span id="anchor-92"></span>***Activity: Report Notification System***
+## ***Activity: Report Notification System***
 
-<img src="./Pictures/10000000000005AA000003E8667ACCD0089AB375.png"
-style="width:8.8311in;height:6.089in" />
+<img src="./media/image40.png"
+style="width:8.83094in;height:6.08854in" />
 
-<span id="anchor-93"></span>***Activity: Chat Notification System***
+## ***Activity: Chat Notification System***
 
-<img src="./Pictures/1000000000000578000005B4F149EFD6662E1359.png"
-style="width:8.8937in;height:9.2661in" />
+<img src="./media/image56.png"
+style="width:8.89376in;height:9.26563in" />
 
-<span id="anchor-94"></span>***Activity: Chat System***
+## ***Activity: Chat System***
 
-<img src="./Pictures/1000020100000800000005BEED84A975BFB9A34E.png"
-style="width:9.3181in;height:6.6783in" />
+<img src="./media/image57.png"
+style="width:9.31809in;height:6.67815in" />
 
-<span id="anchor-95"></span>***Activity: Report System***
+## ***Activity: Report System***
 
-<img src="./Pictures/100002010000080000000635398322016081A00F.png"
-style="width:9.672in;height:7.4898in" />
+<img src="./media/image43.png"
+style="width:9.67211in;height:7.48921in" />
 
-<span id="anchor-96"></span>***Activity: Questionnaire System***
+## ***Activity: Questionnaire System***
 
-<img src="./Pictures/10000000000005C8000005A0B6A4B9DF548EC1A7.png"
-style="width:9.4429in;height:9.1945in" />
+<img src="./media/image51.png"
+style="width:9.44291in;height:9.19444in" />
 
-> <span id="anchor-97"></span>**19. Sequence diagrams**
+# **19. Sequence diagrams**
 
-<span id="anchor-98"></span>***User Initiation System***
+## ***User Initiation System***
 
-<span id="anchor-99"></span>***User sign up***
+### ***User sign up***
 
-<span
-id="anchor-100"></span><img src="./Pictures/10000000000007760000033ED04032499FC69F56.png"
-style="width:8.8154in;height:3.8201in" />
+### <img src="./media/image33.png"
+style="width:8.81521in;height:3.82026in" />
 
-<span id="anchor-101"></span>
+## 
 
-<span id="anchor-102"></span>***Notification System***
+## ***Notification System***
 
-<span id="anchor-103"></span>***Reported Notification***
+### ***Reported Notification***
 
-<img src="./Pictures/10000000000005FC000003344232CA56219A285D.png"
-style="width:8.7161in;height:4.5417in" />
+<img src="./media/image37.png"
+style="width:8.71604in;height:4.54167in" />
 
-<span id="anchor-104"></span>***Chat System***
+## ***Chat System***
 
-<span id="anchor-105"></span>**Have Conversations**
+### **Have Conversations**
 
-<span
-id="anchor-106"></span><img src="./Pictures/1000020100000800000003FF0B4308E181E39F80.png"
-style="width:9.4429in;height:4.722in" />
+## <img src="./media/image5.png"
+style="width:9.44291in;height:4.72222in" />
 
-<span id="anchor-107"></span>  
-*Report System*
+##  *Report System*
 
-<span id="anchor-108"></span>** View Reported Conversation**
+###  **View Reported Conversation**
 
-<img src="./Pictures/1000020100000800000004658B37E81F5CF41067.png"
-style="width:9.4429in;height:5.1807in" />
+<img src="./media/image3.png"
+style="width:9.44291in;height:5.18056in" />
 
-<span id="anchor-109"></span>*Questionnaire System*
+## *Questionnaire System*
 
-<span id="anchor-110"></span>**Edit Questionnaire**
+### **Edit Questionnaire**
 
-<img src="./Pictures/1000000000000348000003C05956205A5BE27970.png"
-style="width:6.7909in;height:7.7374in" />
+<img src="./media/image34.png"
+style="width:6.79089in;height:7.73749in" />
 
-<span id="anchor-111"></span>**20. Communication diagrams**
+# **20. Communication diagrams**
 
-<span id="anchor-112"></span>***User Initiation System***
+## ***User Initiation System***
 
-<span id="anchor-113"></span>**User sign up**
+### **User sign up**
 
-<img src="./Pictures/10000000000005B4000000C8B1E61D829FA27D6C.png"
-style="width:9.448in;height:1.8165in" />
+<img src="./media/image6.png"
+style="width:9.44792in;height:1.81691in" />
 
-<span id="anchor-114"></span>***Notification System***
+## ***Notification System***
 
-<span id="anchor-115"></span>**Reported Notification**
+### **Reported Notification**
 
-<img src="./Pictures/10000000000003C0000001CA674451CBF968E380.png"
-style="width:7.539in;height:3.5902in" />
+<img src="./media/image11.png"
+style="width:7.53917in;height:3.59008in" />
 
-<span id="anchor-116"></span>***Chat System***
+## ***Chat System***
 
-<span id="anchor-117"></span>**Have
-Conversations**<img src="./Pictures/1000020100000800000003782AA689D01C19C058.png"
-style="width:9.4429in;height:4.0972in" />
+### **Have Conversations**<img src="./media/image10.png"
+style="width:9.44291in;height:4.09722in" />
 
-<span id="anchor-118"></span>
+## 
 
-<span id="anchor-119"></span>***Report System***
+## ***Report System***
 
-<span id="anchor-120"></span>**View Reported
-Conversation**<img src="./Pictures/1000000000000690000003C24EB7F8A2827B629B.png"
-style="width:8.2953in;height:4.7563in" />
+### **View Reported Conversation**<img src="./media/image27.png"
+style="width:8.29514in;height:4.75576in" />
 
-<span id="anchor-121"></span>***Questionnaire System***
+## ***Questionnaire System***
 
-<span id="anchor-122"></span>**Make questionnaire**
+### **Make questionnaire**
 
-<img src="./Pictures/10000000000003C900000185343A0D6E573B5BA2.png"
-style="width:7.8728in;height:3.1634in" />
+<img src="./media/image13.png"
+style="width:7.87327in;height:3.16355in" />
 
-<span id="anchor-123"></span>**21. Class diagrams**
+# **21. Class diagrams**
 
-<img src="./Pictures/100002010000075300000800FFD60B942AF9855D.png"
-style="width:9.4429in;height:10.3055in" />
+<img src="./media/image25.png"
+style="width:9.44291in;height:10.30556in" />
 
-<span id="anchor-124"></span>**22. State-chart diagrams.**
+# **22. State-chart diagrams.**
 
-<span id="anchor-125"></span>***Client class***
+## ***Client class***
 
-<img src="./Pictures/10000000000003D80000025EFC4760DE1524EC90.png"
-style="width:6.5in;height:4in" />
+<img src="./media/image17.png" style="width:6.5in;height:4in" />
 
-<span id="anchor-126"></span>***Volunteer class***
+## ***Volunteer class***
 
-<img src="./Pictures/1000000000000325000003FCBA058CA26CC6B8B9.png"
-style="width:6.5in;height:7.4764in" />
+<img src="./media/image59.png" style="width:6.5in;height:7.47621in" />
 
-<span id="anchor-127"></span>***Chat class***
+## ***Chat class***
 
-<img src="./Pictures/1000020100000800000005533F5AEF3FA9BEAEC9.png"
-style="width:7.3957in;height:4.9165in" />
+<img src="./media/image1.png"
+style="width:7.39583in;height:4.91697in" />
 
-<span id="anchor-128"></span>
+## 
 
-<span id="anchor-129"></span>***Report class***
+## ***Report class***
 
-<img src="./Pictures/1000000000000637000005A4D76D8D494FAB360A.png"
-style="width:6.778in;height:6.1453in" />
+<img src="./media/image28.png"
+style="width:6.77762in;height:6.14504in" />
 
-<span id="anchor-130"></span>***Leave Application class***
+## ***Leave Application class***
 
-<img src="./Pictures/1000000000000598000002584D3AB0EE7E6CED20.png"
-style="width:7.7992in;height:3.2665in" />
+<img src="./media/image49.png"
+style="width:7.79938in;height:3.26691in" />
 
-<span id="anchor-131"></span>***Questionnaire class***
+## ***Questionnaire class***
 
-<img src="./Pictures/1000000000000495000001D07091886F47EC577B.png"
-style="width:7.9866in;height:3.1472in" />
+<img src="./media/image31.png"
+style="width:7.98708in;height:3.14736in" />
 
-<span id="anchor-132"></span>**23. CRUD matrix**
+# **23. CRUD matrix**
 
-<span id="anchor-133"></span>***User Initiation System***
+## ***User Initiation System***
 
-|                                     |            |               |           |                |                       |
-|-------------------------------------|------------|---------------|-----------|----------------|-----------------------|
 | **Activity**                        | **Client** | **Volunteer** | **Admin** | **Supervisor** | **AI Chat Moderator** |
+|-------------------------------------|------------|---------------|-----------|----------------|-----------------------|
 | Enter Client Personal Details       | U          |               |           |                |                       |
 | Create Client Account               | C          |               |           |                |                       |
 | Complete signup questionnaire       | U          |               |           |                |                       |
@@ -1534,13 +2564,12 @@ style="width:7.9866in;height:3.1472in" />
 | Deliver Notification                | RU         |               |           | R              |                       |
 | Volunteer request                   | C          |               |           |                |                       |
 
-<span id="anchor-134"></span>
+## 
 
-<span id="anchor-135"></span>***Chat System***
+## ***Chat System***
 
-|                               |           |                 |             |                |
-|-------------------------------|-----------|-----------------|-------------|----------------|
 | **Activity**                  | **Chats** | **UserRecords** | **Reports** | **CensorLogs** |
+|-------------------------------|-----------|-----------------|-------------|----------------|
 | Report Conversation           | R         | R               | C           | R              |
 | View Report Details           |           |                 | R           | R              |
 | Write Report-Handling Message |           |                 | RU          |                |
@@ -1549,164 +2578,158 @@ style="width:7.9866in;height:3.1472in" />
 | View Chat-log                 | R         |                 |             |                |
 | Ban/Reassign                  |           | RU              | RU          |                |
 
-<span id="anchor-136"></span>
+## 
 
-<span id="anchor-137"></span>
+## 
 
-<span id="anchor-138"></span>
+## 
 
-<span id="anchor-139"></span>***Report System***
+## ***Report System***
 
-|                |           |                |                   |
-|----------------|-----------|----------------|-------------------|
 | **Activity**   | **Chats** | **CensorLogs** | **Notifications** |
+|----------------|-----------|----------------|-------------------|
 | Send Message   | CRU       |                |                   |
 | Load Messages  | R         |                |                   |
 | Censor Message | R         | CR             |                   |
 | Schedule Chat  |           |                | C                 |
 | Unblur Message | U         |                |                   |
 
-<span id="anchor-140"></span>***Questionnaire System***
+## ***Questionnaire System***
 
-|                              |                   |
-|------------------------------|-------------------|
 | **Activity**                 | **Questionnaire** |
+|------------------------------|-------------------|
 | Create questionnaire         | C                 |
 | View questionnaire           | R                 |
 | Edit questionnaire responses | RU                |
 | Edit questionnaire           | U                 |
 | Publish questionnaire        | CU                |
 
-<span id="anchor-141"></span>***Section 5:***
+**<u>Section 5:</u>**
 
-<span id="anchor-142"></span>**24. Structure English pseudo code for the
-system**
+# **24. Structure English pseudo code for the system**
 
-<span id="anchor-143"></span>***User Initiation System***
+## ***User Initiation System***
 
-<img src="./Pictures/100002010000043A00000800579880AF0FAD031F.png"
-style="width:6.2429in;height:11.8102in" />
+<img src="./media/image16.png"
+style="width:6.24324in;height:11.81004in" />
 
-<span id="anchor-144"></span>***Notification System***
+## ***Notification System***
 
-<img src="./Pictures/10000201000004B20000054C997CFB67F804319D.png"
-style="width:7.4736in;height:8.4311in" />
+<img src="./media/image21.png"
+style="width:7.47352in;height:8.4311in" />
 
-<span id="anchor-145"></span>***Having Conversations***
+## ***Having Conversations***
 
-<img src="./Pictures/10000000000005C0000005D4C0EC712BE231A2FB.png"
-style="width:8.3in;height:8.4043in" />
+<img src="./media/image2.png"
+style="width:8.29986in;height:8.40448in" />
 
-<span id="anchor-146"></span>***Handle Reports***
+## ***Handle Reports***
 
-<img src="./Pictures/1000000000000514000006E2F19F0C596C94DF09.png"
-style="width:8.4547in;height:11.4571in" />
+<img src="./media/image20.png"
+style="width:8.45492in;height:11.45656in" />
 
-<span id="anchor-147"></span>***User Management***
+## ***User Management***
 
-<img src="./Pictures/10000201000006B300000800006877C1A48E0078.png"
-style="width:9.4429in;height:11.278in" />
+<img src="./media/image39.png"
+style="width:9.44291in;height:11.27778in" />
 
-<span id="anchor-148"></span>***Questionnaire Management***
+## ***Questionnaire Management***
 
-<img src="./Pictures/10000000000005A200000800881BA9D2AEDEDA2D.png"
-style="width:9.4429in;height:13.4165in" />
+<img src="./media/image8.png"
+style="width:9.44291in;height:13.41667in" />
 
-<span id="anchor-149"></span>**25. Prototype the user interface**
+# **25. Prototype the user interface**
 
-<span id="anchor-150"></span>***User Signup***
+## ***User Signup***
 
-<img src="./Pictures/1000020100000780000004382CF899E7C81F6724.png"
-style="width:7.6957in;height:4.3181in" />
+<img src="./media/image61.png"
+style="width:7.69558in;height:4.31775in" />
 
-<span id="anchor-151"></span>***Volunteer Application***
+## ***Volunteer Application***
 
-<img src="./Pictures/100002010000078000000438D6393B3C2AAD9830.png"
-style="width:7.8063in;height:4.3728in" />
+<img src="./media/image64.png"
+style="width:7.80609in;height:4.37305in" />
 
-<span id="anchor-152"></span>***User Login***
+## ***User Login***
 
-<img src="./Pictures/100002010000078000000438D1AC315BCC133B42.png"
-style="width:8.0236in;height:4.4965in" />
+<img src="./media/image58.png"
+style="width:8.02372in;height:4.49692in" />
 
-<span id="anchor-153"></span>***Chat ***
+## ***Chat*** 
 
-<img src="./Pictures/100002010000078000000438636093F0623BA4F4.png"
-style="width:8.2453in;height:4.6272in" />
+<img src="./media/image50.png"
+style="width:8.24479in;height:4.6269in" />
 
-<span id="anchor-154"></span>***Chat Client List (visible to volunteers
-only)***
+## ***Chat Client List (visible to volunteers only)***
 
-<img src="./Pictures/100002010000078000000438863B08E78D796D4D.png"
-style="width:8.1429in;height:4.5661in" />
+<img src="./media/image67.png"
+style="width:8.14346in;height:4.56558in" />
 
-<span id="anchor-155"></span>***Chat Schedule***
+## ***Chat Schedule***
 
-<img src="./Pictures/100002010000078000000438A3C7409158CAF900.png"
-style="width:8.089in;height:4.5398in" />
+<img src="./media/image63.png"
+style="width:8.08854in;height:4.53921in" />
 
-<span id="anchor-156"></span>***Chat Questionnaire***
+## ***Chat Questionnaire***
 
-<img src="./Pictures/10000201000007800000043856095A682539268E.png"
-style="width:7.9425in;height:4.4516in" />
+<img src="./media/image60.png" style="width:7.94255in;height:4.451in" />
 
-<span id="anchor-157"></span>
+## 
 
-<span id="anchor-158"></span>***Add Custom Questionnaire (visible to
-volunteers only)***
+## ***Add Custom Questionnaire (visible to volunteers only)***
 
-<img src="./Pictures/100002010000078000000438966ED8B3A00F4608.png"
-style="width:7.8457in;height:4.4071in" />
+<img src="./media/image71.png"
+style="width:7.84567in;height:4.4072in" />
 
-<span id="anchor-159"></span>***Chat Notification***
+## ***Chat Notification***
 
-<img src="./Pictures/1000020100000780000004383944EF029EB892D0.png"
-style="width:7.7508in;height:4.3465in" />
+<img src="./media/image62.png"
+style="width:7.75048in;height:4.34683in" />
 
-<span id="anchor-160"></span>
+## 
 
-<span id="anchor-161"></span>***Report Chat***
+## ***Report Chat***
 
-<img src="./Pictures/100002010000078000000438ADB90B267760E2EE.png"
-style="width:7.7756in;height:4.3646in" />
+<img src="./media/image72.png"
+style="width:7.77604in;height:4.36462in" />
 
-<span id="anchor-162"></span>
+## 
 
-<span id="anchor-163"></span>***Report Management***
+## ***Report Management***
 
-<img src="./Pictures/100002010000078000000438A2FA3F7C48D52200.png"
-style="width:7.411in;height:4.1535in" />
+<img src="./media/image70.png"
+style="width:7.41146in;height:4.15357in" />
 
-<span id="anchor-164"></span>***AI-flagged Report Details***
+## ***AI-flagged Report Details***
 
-<img src="./Pictures/1000020100000780000004387EE2829CFB1E38CB.png"
-style="width:7.5319in;height:4.2201in" />
+<img src="./media/image66.png"
+style="width:7.53187in;height:4.22027in" />
 
-<span id="anchor-165"></span>
+## 
 
-<span id="anchor-166"></span>***Manually-flagged Report Details***
+## ***Manually-flagged Report Details***
 
-<img src="./Pictures/1000020100000780000004380CA6AF9654CEE1D2.png"
-style="width:7.6819in;height:4.3138in" />
+<img src="./media/image68.png"
+style="width:7.68229in;height:4.31429in" />
 
-<span id="anchor-167"></span>
+## 
 
-<span id="anchor-168"></span>***Report-handling wizard***
+## ***Report-handling wizard***
 
-<img src="./Pictures/100002010000078000000438A5E9343B80AF2631.png"
-style="width:7.7457in;height:4.3492in" />
+<img src="./media/image53.png"
+style="width:7.74614in;height:4.34909in" />
 
-<span id="anchor-169"></span>***Leave Application List***
+## ***Leave Application List***
 
-<img src="./Pictures/1000020100000780000004385817624B7CF4AF24.png"
-style="width:7.0575in;height:3.9602in" />
+<img src="./media/image69.png"
+style="width:7.05729in;height:3.96049in" />
 
-<span id="anchor-170"></span>***Leave Application Details***
+## ***Leave Application Details***
 
-<img src="./Pictures/100002010000078000000438C73DEBDD4AF3C8E4.png"
-style="width:7.372in;height:4.1327in" />
+<img src="./media/image45.png"
+style="width:7.37206in;height:4.13282in" />
 
-<span id="anchor-171"></span>***Admin Add Questionnaire***
+## ***Admin Add Questionnaire***
 
-<img src="./Pictures/1000020100000780000004387F3E9B8B3B6FB29D.png"
-style="width:7.3201in;height:4.111in" />
+<img src="./media/image73.png"
+style="width:7.32042in;height:4.11118in" />
