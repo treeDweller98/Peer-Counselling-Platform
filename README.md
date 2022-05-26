@@ -951,13 +951,13 @@ dashboard
 
 ## ***User Initiation System***
 
-### <img src="./media/image19.png"
+<img src="./media/image19.png"
 style="width:6.78646in;height:4.34529in" />
 
 ## ***Notification System***
 
-> <img src="./media/image55.png"
-> style="width:6.85938in;height:3.88459in" />
+<img src="./media/image55.png"
+style="width:6.85938in;height:3.88459in" />
 
 ## ***Chat System***
 
