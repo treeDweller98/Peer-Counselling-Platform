@@ -324,7 +324,7 @@ system](#structure-english-pseudo-code-for-the-system) 54**
 
 **<u>Section 1:</u>**
 
-# **1. Introduction**
+# **Introduction**
 
 HealthyMind is a non-profit organisation aimed at providing peer-support
 services to people of all ages. It is run by a group of mental health
