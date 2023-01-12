@@ -2369,7 +2369,7 @@ style="width:7.32813in;height:6.03845in" />
 
 ### **Logical Dataflow: Proposed**
 
-### <img src="./media/image41.png"
+<img src="./media/image41.png"
 style="width:7.74729in;height:5.95567in" />
 
 # **17. Physical Data Flow diagram**
@@ -2440,7 +2440,7 @@ style="width:9.44291in;height:9.19444in" />
 
 ### ***User sign up***
 
-### <img src="./media/image33.png"
+<img src="./media/image33.png"
 style="width:8.81521in;height:3.82026in" />
 
 ## 
@@ -2456,7 +2456,7 @@ style="width:8.71604in;height:4.54167in" />
 
 ### **Have Conversations**
 
-## <img src="./media/image5.png"
+<img src="./media/image5.png"
 style="width:9.44291in;height:4.72222in" />
 
 ##  *Report System*
