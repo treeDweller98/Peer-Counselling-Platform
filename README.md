@@ -31,31 +31,31 @@ A Peer Counselling Platform
 
 **Table of Contents**
 
-**[1. Introduction](#introduction) 5**
+**[1. Introduction](#1-introduction) 5**
 
 **[2. History leading to project
-request](#history-leading-to-project-request) 5**
+request](#2-history-leading-to-project-request) 5**
 
-**[3. Problems, opportunities](#problems-opportunities) 6**
+**[3. Problems, opportunities](#3-problems-opportunities) 6**
 
 > [Problems and Solutions](#problems-and-solutions) 6
->
+>Introduction
 > [Opportunities](#opportunities) 6
 
-**[4. Project goal and objectives](#project-goal-and-objectives) 7**
+**[4. Project goal and objectives](#4-project-goal-and-objectives) 7**
 
-**[5. Product Description](#product-description) 8**
+**[5. Product Description](#5-product-description) 8**
 
-**[6. System Context diagram](#system-context-diagram) 8**
+**[6. System Context diagram](#6-system-context-diagram) 8**
 
 **[7. Hardware detail (Include Rich
-Picture)](#hardware-detail-include-rich-picture) 9**
+Picture)](#7-hardware-detail-include-rich-picture) 9**
 
 **[8. Key Technical Features of
-Software](#key-technical-features-of-software) 9**
+Software](#8-key-technical-features-of-software) 9**
 
 **[9. Information Gathering methods (At least three
-methods)](#information-gathering-methods-at-least-three-methods) 10**
+methods)](#9-information-gathering-methods-at-least-three-methods) 10**
 
 > [Questionnaires:](#questionnaires) 10
 >
@@ -73,9 +73,9 @@ methods)](#information-gathering-methods-at-least-three-methods) 10**
 > 13
 
 **[10. Major functionalities offered by the
-system](#major-functionalities-offered-by-the-system) 14**
+system](#10-major-functionalities-offered-by-the-system) 14**
 
-**[11. Use Case Diagram](#use-case-diagram) 15**
+**[11. Use Case Diagram](#11-use-case-diagram) 15**
 
 > [User Initiation System](#user-initiation-system) 15
 >
@@ -89,7 +89,7 @@ system](#major-functionalities-offered-by-the-system) 14**
 >
 > [User Management System](#user-management-system) 17
 
-**[12. Normal and Alternate Scenarios](#normal-and-alternate-scenarios)
+**[12. Normal and Alternate Scenarios](#12-normal-and-alternate-scenarios)
 18**
 
 > [User signup](#user-signup) 18
@@ -105,7 +105,7 @@ system](#major-functionalities-offered-by-the-system) 14**
 >
 > [View Volunteer Profile](#view-volunteer-profile) 23
 
-**[13. Functional Requirements](#functional-requirements) 24**
+**[13. Functional Requirements](#13-functional-requirements) 24**
 
 > [User Initiation System](#user-initiation-system-1) 24
 >
@@ -119,7 +119,7 @@ system](#major-functionalities-offered-by-the-system) 14**
 >
 > [User Management System](#user-management-system-1) 24
 
-**[14. Non-Functional Requirements](#non-functional-requirements) 25**
+**[14. Non-Functional Requirements](#14-non-functional-requirements) 25**
 
 > [Privacy](#privacy) 25
 >
@@ -131,9 +131,9 @@ system](#major-functionalities-offered-by-the-system) 14**
 >
 > [Misc.](#misc.) 25
 
-**[15. Entity Relationship Diagram](#entity-relationship-diagram) 26**
+**[15. Entity Relationship Diagram](#15-entity-relationship-diagram) 26**
 
-**[16. Logical Data Flow diagram](#logical-data-flow-diagram) 27**
+**[16. Logical Data Flow diagram](#16-logical-data-flow-diagram) 27**
 
 > [Diagram 0](#diagram-0) 27
 >
@@ -169,7 +169,7 @@ system](#major-functionalities-offered-by-the-system) 14**
 >
 > [Logical Dataflow: Proposed](#logical-dataflow-proposed-5) 33
 
-**[17. Physical Data Flow diagram](#physical-data-flow-diagram) 34**
+**[17. Physical Data Flow diagram](#17-physical-data-flow-diagram) 34**
 
 > [User Initiation System](#user-initiation-system-3) 34
 >
@@ -179,7 +179,7 @@ system](#major-functionalities-offered-by-the-system) 14**
 >
 > [Report System](#report-system-1) 35
 
-**[18. Activity diagrams](#activity-diagrams) 36**
+**[18. Activity diagrams](#18-activity-diagrams) 36**
 
 > [Activity: User Initiation System](#activity-user-initiation-system)
 > 36
@@ -199,7 +199,7 @@ system](#major-functionalities-offered-by-the-system) 14**
 >
 > [Activity: Questionnaire System](#activity-questionnaire-system) 42
 
-**[19. Sequence diagrams](#sequence-diagrams) 43**
+**[19. Sequence diagrams](#19-sequence-diagrams) 43**
 
 > [User Initiation System](#user-initiation-system-4) 43
 >
@@ -221,7 +221,7 @@ system](#major-functionalities-offered-by-the-system) 14**
 >
 > [Edit Questionnaire](#edit-questionnaire) 45
 
-**[20. Communication diagrams](#communication-diagrams) 46**
+**[20. Communication diagrams](#20-communication-diagrams) 46**
 
 > [User Initiation System](#user-initiation-system-5) 46
 >
@@ -243,9 +243,9 @@ system](#major-functionalities-offered-by-the-system) 14**
 >
 > [Make questionnaire](#make-questionnaire-1) 47
 
-**[21. Class diagrams](#class-diagrams) 48**
+**[21. Class diagrams](#21-class-diagrams) 48**
 
-**[22. State-chart diagrams.](#state-chart-diagrams.) 49**
+**[22. State-chart diagrams.](#22-state-chart-diagrams.) 49**
 
 > [Client class](#client-class) 49
 >
@@ -259,7 +259,7 @@ system](#major-functionalities-offered-by-the-system) 14**
 >
 > [Questionnaire class](#questionnaire-class) 51
 
-**[23. CRUD matrix](#crud-matrix) 52**
+**[23. CRUD matrix](#23-crud-matrix) 52**
 
 > [User Initiation System](#user-initiation-system-6) 52
 >
@@ -270,7 +270,7 @@ system](#major-functionalities-offered-by-the-system) 14**
 > [Questionnaire System](#questionnaire-system-5) 53
 
 **[24. Structure English pseudo code for the
-system](#structure-english-pseudo-code-for-the-system) 54**
+system](#24-structure-english-pseudo-code-for-the-system) 54**
 
 > [User Initiation System](#user-initiation-system-7) 54
 >
@@ -284,7 +284,7 @@ system](#structure-english-pseudo-code-for-the-system) 54**
 >
 > [Questionnaire Management](#questionnaire-management) 59
 
-**[25. Prototype the user interface](#prototype-the-user-interface) 60**
+**[25. Prototype the user interface](#25-prototype-the-user-interface) 60**
 
 > [User Signup](#user-signup-1) 60
 >
@@ -324,7 +324,7 @@ system](#structure-english-pseudo-code-for-the-system) 54**
 
 **<u>Section 1:</u>**
 
-# **Introduction**
+# **1. Introduction**
 
 HealthyMind is a non-profit organisation aimed at providing peer-support
 services to people of all ages. It is run by a group of mental health
